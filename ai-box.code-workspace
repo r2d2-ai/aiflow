@@ -1,25 +1,36 @@
 {
 	"folders": [
 		{
+			"name": "app",
+			"path": "app"
+		},
+		{
+			"name": "core",
 			"path": "core"
 		},
 		{
-			"path": "server"
-		},
-		{
+			"name": "cli",
 			"path": "cli"
 		},
 		{
-			"path": "contrib"
-		},
-		{
+			"name": "flow",
 			"path": "flow"
 		},
 		{
+			"name": "stream",
 			"path": "stream"
 		},
 		{
+			"name": "contrib",
+			"path": "contrib"
+		},
+		{
+			"name": "services",
 			"path": "services"
+		},
+		{
+			"name": "server",
+			"path": "server"
 		}
 	],
 	"settings": {}

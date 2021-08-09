@@ -94,9 +94,9 @@ func ExternalResolverProcessor(properties map[string]interface{}) error {
 		enabledResolvers = append(enabledResolvers, resolver.Name())
 	}
 	if len(enabledResolvers) == 1 {
-		logger.Infof("Properties will be resolved with the '%s' resolver", EnabledResolvers[0].Name())
+		logger.Debugf("Properties will be resolved with the '%s' resolver", EnabledResolvers[0].Name())
 	} else {
-		logger.Infof("Properties will be resolved with these resolvers (in decreasing order of priority): %v", enabledResolvers)
+		logger.Debugf("Properties will be resolved with these resolvers (in decreasing order of priority): %v", enabledResolvers)
 	}
 
 	for name := range properties {

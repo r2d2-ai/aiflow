@@ -20,7 +20,7 @@ const testEventJson = `
     "in1":"in1_value",
     "in2":"in2_value"
   },
-  "AIflow" : {
+  "aiflow" : {
       "inputs": { 
         "customerId": "=$.payload.in1",
           "orderId": "=$.payload.in2" 
@@ -54,7 +54,7 @@ const testEventJson = `
 
 type Event struct {
 	Payload interface{}     `json:"payload"`
-	aiflow  json.RawMessage `json:"AIflow"`
+	AIflow  json.RawMessage `json:"AIflow"`
 }
 
 //TestInitNoFlavorError

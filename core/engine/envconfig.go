@@ -125,8 +125,8 @@ func StopEngineOnError() bool {
 
 func displayAppPropertyValueResolversHelp(logger log.Logger, resolvers []string) {
 	logger.Warn("Multiple property resolvers where defined without setting a priority order!")
-	logger.Infof("Set environment variable '%s' with a comma-separated list of resolvers to use (definition order is decreasing order of priority)", EnvAppPropertyResolvers)
-	logger.Infof("List of available resolvers: %v", resolvers)
+	logger.Debugf("Set environment variable '%s' with a comma-separated list of resolvers to use (definition order is decreasing order of priority)", EnvAppPropertyResolvers)
+	logger.Debugf("List of available resolvers: %v", resolvers)
 	logger.Warn("No property resolver will be used")
 }
 

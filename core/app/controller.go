@@ -69,9 +69,9 @@ func (c *controllerData) ReleaseControl() error {
 func (app *App) initFlowController() {
 	controllerData := &controllerData{lock: sync.Mutex{}}
 	controllerData.triggers = make(map[string]trigger.FlowControlAware)
-	for id, trgW := range app.triggers {
+	for _, trgW := range app.triggers {
 		if t, ok := trgW.trg.(trigger.FlowControlAware); ok {
-			controllerData.triggers[id] = t
+			controllerData.triggers[trgW.id] = t
 		}
 	}
 	controller = controllerData
@@ -89,7 +89,7 @@ func (c *controllerData) resumeTriggers() error {
 			log.RootLogger().Errorf("Trigger [%s] failed to resume due to error - %s.", id, err.Error())
 			continue
 		}
-		log.RootLogger().Infof("Trigger [%s] is resumed.", id)
+		log.RootLogger().Debugf("Trigger [%s] is resumed.", id)
 	}
 	log.RootLogger().Info("Triggers Resumed")
 	return nil
@@ -107,7 +107,7 @@ func (c *controllerData) pauseTriggers() error {
 			log.RootLogger().Errorf("Trigger [%s] failed to pause due to error - %s.", id, err.Error())
 			continue
 		}
-		log.RootLogger().Infof("Trigger [%s] is paused.", id)
+		log.RootLogger().Debugf("Trigger [%s] is paused.", id)
 	}
 	log.RootLogger().Info("Triggers Paused")
 	return nil
