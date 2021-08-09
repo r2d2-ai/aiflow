@@ -26,7 +26,7 @@ Project Flogo is an open source framework to simplify building efficient & moder
 Flogo Core is the core flogo library which contains the apis to create and extend Flogo applications.
 
 ## Getting started
-If you want to get started with [Project Flogo](flogo.io), you should install the install the [Flogo CLI](https://github.com/r2d2-ai/cli).  You can find details there on creating a quick sample application.  You also might want to check out the [getting started](https://tibcosoftware.github.io/flogo/getting-started/) guide in our docs or check out the [Labs](https://tibcosoftware.github.io/flogo/labs/) section in our docs for in depth tutorials.
+If you want to get started with [Project Flogo](flogo.io), you should install the install the [Flogo CLI](https://github.com/r2d2-ai/ai-box/cli).  You can find details there on creating a quick sample application.  You also might want to check out the [getting started](https://tibcosoftware.github.io/flogo/getting-started/) guide in our docs or check out the [Labs](https://tibcosoftware.github.io/flogo/labs/) section in our docs for in depth tutorials.
 
 ## Documentation
 Here is some documentation to help you get started understanding some of the fundamentals of the Flogo Core library. 
@@ -45,7 +45,7 @@ Want to contribute to Project Flogo? We've made it easy, all you need to do is f
 
 Not sure where to start? No problem, you can browse the Project Flogo repos and look for issues tagged `kind/help-wanted` or `good first issue`. To make this even easier, we've added the links right here too!
 * Project Flogo: [kind/help-wanted](https://github.com/TIBCOSoftware/flogo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/TIBCOSoftware/flogo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* flogo cli: [kind/help-wanted](https://github.com/r2d2-ai/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/r2d2-ai/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* flogo cli: [kind/help-wanted](https://github.com/r2d2-ai/ai-box/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/r2d2-ai/ai-box/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 * flogo core: [kind/help-wanted](https://github.com/r2d2-ai/ai-box/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/r2d2-ai/ai-box/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 * flogo contrib: [kind/help-wanted](https://github.com/r2d2-ai/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/r2d2-ai/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
