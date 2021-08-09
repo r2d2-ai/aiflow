@@ -3,14 +3,14 @@ In AIflow, the concept of an application-level property bag is available to allo
 
 ### Configuration
 
-Properties are defined within the top-level of the aiflow application json, as shown below via the `properties` element.
+Properties are defined within the top-level of the AIflow application json, as shown below via the `properties` element.
 
 ```json
 {
   "name": "default_app",
   "type": "AIflow:app",
   "version": "0.0.1",
-  "description": "Sample aiflow app",
+  "description": "Sample AIflow app",
   "properties": [
      {
        "name": "my_property",
@@ -44,7 +44,7 @@ Even though the engine itself doesn't support property grouping, this can be acc
   "name": "default_app",
   "type": "AIflow:app",
   "version": "0.0.1",
-  "description": "Sample aiflow app",
+  "description": "Sample AIflow app",
   "properties": [
      {
        "name": "PURCHASE.SERVICE.DB.URL",
@@ -76,12 +76,12 @@ These properties can be accessed via `$property[PURCHASE.SERVICE.DB.URL]` or `$p
 
 In order to override properties at runtime, you have to enable external property resolvers.
 
-This can be done by setting the `AIflow_APP_PROP_RESOLVERS` environment variable.  Currently, there are two built-in external
+This can be done by setting the `AIFLOW_APP_PROP_RESOLVERS` environment variable.  Currently, there are two built-in external
 property resolvers: json(JSON) and env(Environment Variable).
 
 
 ```terminal
-AIflow_APP_PROP_RESOLVERS=env,json ./<app_binary>
+AIFLOW_APP_PROP_RESOLVERS=env,json ./<app_binary>
 ```
 
 You can override app properties at runtime in two ways:
@@ -91,7 +91,7 @@ You can override app properties at runtime in two ways:
 When using the `json` property resolver, you can provide a comma separated list of json files that
 will override the application's existing property values.
 ```env
-AIflow_APP_PROPS_JSON=app1.json,common.json
+AIFLOW_APP_PROPS_JSON=app1.json,common.json
 ```
 
 **Example**
@@ -111,8 +111,8 @@ Now run your application:
 
 ```terminal
 
-export AIflow_APP_PROPS_JSON=props.json 
-AIflow_APP_PROP_RESOLVERS=json ./MyApp
+export AIFLOW_APP_PROPS_JSON=props.json 
+AIFLOW_APP_PROP_RESOLVERS=json ./MyApp
 ```
 
 #### Resolver: env
@@ -120,7 +120,7 @@ AIflow_APP_PROP_RESOLVERS=json ./MyApp
 In order to override properties using environment variables, you just need enable the `env` property resolver
 
 ```terminal
-AIflow_APP_PROP_RESOLVERS=env ./<app_binary>
+AIFLOW_APP_PROP_RESOLVERS=env ./<app_binary>
 ```
 
 **Example**
@@ -130,7 +130,7 @@ Let's say you want to override `myprop` property in your app.  You would do the 
 ```terminal
 
 export myprop=bar
-AIflow_APP_PROP_RESOLVERS=env ./MyApp
+AIFLOW_APP_PROP_RESOLVERS=env ./MyApp
 ```
 
 
@@ -176,8 +176,8 @@ func (resolver *SamplePropertyResolver) LookupValue(propertyName string) (interf
 *Note: In order for your resolver to be loaded in the go code, you need to add an entry to your resolver in the imports section of the engine.json*
 
 
-Set the `AIflow_APP_PROP_RESOLVERS` environment variable to `sampleresolver` while running your application. For example:
+Set the `AIFLOW_APP_PROP_RESOLVERS` environment variable to `sampleresolver` while running your application. For example:
 
 ```terminal
-AIflow_APP_PROPS_RESOLVERS=sampleresolver ./<app_binary>
+AIFLOW_APP_PROPS_RESOLVERS=sampleresolver ./<app_binary>
 ```

@@ -3,7 +3,7 @@
 	"type": "AIflow:activity",
 	"version": "1.20.0",
 	"title": "SQL Database Activity",
-  	"description": "aiflow Activity for SQL",
+  	"description": "AIflow Activity for SQL",
   	"homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/sqlquery",
 	"settings": [
 		{

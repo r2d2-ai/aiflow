@@ -145,7 +145,7 @@ func Invoke() (string, error) {
 
 	logger := trigger.GetLogger(support.GetRef(singleton))
 
-	lvl := os.Getenv("AIflow_LOG_LEVEL")
+	lvl := os.Getenv("AIFLOW_LOG_LEVEL")
 	if lvl == "" {
 		log.SetLogLevel(log.RootLogger(), log.ErrorLevel)
 		log.SetLogLevel(logger, log.ErrorLevel)

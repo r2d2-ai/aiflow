@@ -6,10 +6,10 @@ import (
 )
 
 const (
-	EnvKeyEventQueueSize  = "AIflow_EVENT_QUEUE_SIZE"
+	EnvKeyEventQueueSize  = "AIFLOW_EVENT_QUEUE_SIZE"
 	DefaultEventQueueSize = 100
 
-	EnvKeyPublishAuditEvents  = "AIflow_PUBLISH_AUDIT_EVENTS"
+	EnvKeyPublishAuditEvents  = "AIFLOW_PUBLISH_AUDIT_EVENTS"
 	DefaultPublishAuditEvents = true
 )
 

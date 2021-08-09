@@ -1,7 +1,7 @@
 # Flow Model
 
 
-The Flow Model is used to define a basic process flow.  The flow is essentially a DAG (Directed Acyclic Graph), which basically means it is a directed graph with no cycles.  You can think of it as a flow chart with no lines looping back.  A graph typically consist of nodes and edges.  In this model, Tasks are the equivalent of nodes and Links are directed edges.  Tasks are associated with aiflow Activities and this structure is used to orchestrate those activities.  This basically allows you to create an application using a simple json or you can use our UI to compose the flow.
+The Flow Model is used to define a basic process flow.  The flow is essentially a DAG (Directed Acyclic Graph), which basically means it is a directed graph with no cycles.  You can think of it as a flow chart with no lines looping back.  A graph typically consist of nodes and edges.  In this model, Tasks are the equivalent of nodes and Links are directed edges.  Tasks are associated with AIflow Activities and this structure is used to orchestrate those activities.  This basically allows you to create an application using a simple json or you can use our UI to compose the flow.
 
 The model also provides some additional task constructs to get around some of the limitations of a simple DAG.  For example, there are both Iterator and DoWhile tasks that can be used to create looping constructs.  These are used to loop over a specified activity.  If more complex logic is needed within that loop, one can also the [Subflow](activity/subflow/README.md) activity which can run another flow.
 
@@ -40,7 +40,7 @@ The `metadata` section allows one to define all inputs and outputs of a flow.
 
 
 ## Tasks
-The `tasks` section allows one to define the tasks that are part of the flow. Tasks are associated with the aiflow activity you would like to execute.  In this case a log activity.
+The `tasks` section allows one to define the tasks that are part of the flow. Tasks are associated with the AIflow activity you would like to execute.  In this case a log activity.
 
 ```json
 "tasks": [
@@ -270,7 +270,7 @@ The `errorHandler` section is used to define the global error handler for the fl
 
 
 ## Full Example
-Sample aiflow application configuration file. 
+Sample AIflow application configuration file. 
 
 ```json
 {
@@ -278,7 +278,7 @@ Sample aiflow application configuration file.
   "type": "AIflow:app",
   "version": "0.0.1",
   "appModel": "1.0.0",
-  "description": "My aiflow application description",
+  "description": "My AIflow application description",
   "imports": [
     "github.com/r2d2-ai/ai-box/flow",
     "github.com/r2d2-ai/ai-box/contrib/trigger/rest",

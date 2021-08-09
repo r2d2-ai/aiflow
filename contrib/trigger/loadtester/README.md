@@ -3,14 +3,14 @@ title: LoadTester
 weight: 4706
 -->
 # LoadTester Trigger
-This trigger provides your aiflow application the ability to run simple load test on a specified action
+This trigger provides your AIflow application the ability to run simple load test on a specified action
 
 Implementation based off [go-wrk](github.com/tsliwowicz/go-wrk).
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/loadtester
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/loadtester
 ```
 
 ## Configuration    

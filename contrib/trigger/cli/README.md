@@ -3,12 +3,12 @@ title: CLI
 weight: 4701
 -->
 # CLI Trigger
-This trigger provides your aiflow application the ability to run as a CLI app, that is, accept input via the CLI & run once till completion and return the results to stdout.
+This trigger provides your AIflow application the ability to run as a CLI app, that is, accept input via the CLI & run once till completion and return the results to stdout.
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/trigger/cli
+AIflow install github.com/r2d2-ai/trigger/cli
 ```
 
 ## Configuration

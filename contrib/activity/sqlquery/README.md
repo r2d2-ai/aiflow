@@ -4,13 +4,13 @@ weight: 4616
 -->
 
 # SQLQuery Database Activity 
-This activity provides your aiflow application execute database queries. 
+This activity provides your AIflow application execute database queries. 
 
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/activity/sqlquery
+AIflow install github.com/r2d2-ai/activity/sqlquery
 ```
 
 ## Configuration

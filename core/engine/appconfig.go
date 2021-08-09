@@ -33,21 +33,21 @@ func GetAppVersion() string {
 	return appVersion
 }
 
-func LoadAppConfig(AIflowJson string, compressed bool) (*app.Config, error) {
+func LoadAppConfig(flowJson string, compressed bool) (*app.Config, error) {
 
 	var jsonBytes []byte
 
-	if AIflowJson == "" {
+	if flowJson == "" {
 
 		// a json string wasn't provided, so lets lookup the file in path
 		configPath := GetAIflowAppConfigPath()
 
-		AIflow, err := os.Open(configPath)
+		flow, err := os.Open(configPath)
 		if err != nil {
 			return nil, err
 		}
 
-		jsonBytes, err = ioutil.ReadAll(AIflow)
+		jsonBytes, err = ioutil.ReadAll(flow)
 		if err != nil {
 			return nil, err
 		}
@@ -55,12 +55,12 @@ func LoadAppConfig(AIflowJson string, compressed bool) (*app.Config, error) {
 
 		if compressed {
 			var err error
-			jsonBytes, err = support.DecodeAndUnzip(AIflowJson)
+			jsonBytes, err = support.DecodeAndUnzip(flowJson)
 			if err != nil {
 				return nil, err
 			}
 		} else {
-			jsonBytes = []byte(AIflowJson)
+			jsonBytes = []byte(flowJson)
 		}
 	}
 

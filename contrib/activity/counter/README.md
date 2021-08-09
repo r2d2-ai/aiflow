@@ -8,9 +8,9 @@ This activity allows you to use a global counter.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/counter
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/counter
 ```
 
 ## Configuration

@@ -10,15 +10,15 @@ type Level int
 type Format int
 
 const (
-	EnvKeyLogCtx         = "AIflow_LOG_CTX"
-	EnvKeyLogDateFormat  = "AIflow_LOG_DTFORMAT"
+	EnvKeyLogCtx         = "AIFLOW_LOG_CTX"
+	EnvKeyLogDateFormat  = "AIFLOW_LOG_DTFORMAT"
 	DefaultLogDateFormat = "2006-01-02 15:04:05.000"
-	EnvKeyLogLevel       = "AIflow_LOG_LEVEL"
+	EnvKeyLogLevel       = "AIFLOW_LOG_LEVEL"
 	DefaultLogLevel      = InfoLevel
-	EnvKeyLogFormat      = "AIflow_LOG_FORMAT"
+	EnvKeyLogFormat      = "AIFLOW_LOG_FORMAT"
 	DefaultLogFormat     = FormatConsole
 
-	EnvKeyLogSeparator  = "AIflow_LOG_SEPARATOR"
+	EnvKeyLogSeparator  = "AIFLOW_LOG_SEPARATOR"
 	DefaultLogSeparator = "\t"
 
 	TraceLevel Level = iota

@@ -20,7 +20,7 @@ const testEventJson = `
     "in1":"in1_value",
     "in2":"in2_value"
   },
-  "aiflow" : {
+  "AIflow" : {
       "inputs": { 
         "customerId": "=$.payload.in1",
           "orderId": "=$.payload.in2" 

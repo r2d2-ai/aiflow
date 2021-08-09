@@ -2,7 +2,7 @@
 
 ## What are mappings?
 
-A mapping in aiflow is used to assign the value of one parameter (a trigger output, for example) to that an input 
+A mapping in AIflow is used to assign the value of one parameter (a trigger output, for example) to that an input 
 parameter (a flow's input, for example).  This expression can also be used to manipulate that value during the 
 assignment.
 
@@ -184,7 +184,7 @@ we wanted to grab the value of an environment variable we could use `$env.VarNam
 Mapping expressions also support functions.  These functions are used to manipulate the data that is being assigned.
 You may want to add some custom logic to the mapping, such as concat/substring/length of a string or generate a random 
 number base on a range and so on. Refer to the [functions repository](https://github.com/r2d2-ai/ai-box/contrib/tree/master/function) 
-for available functions. Also note, you can install functions using the CLI’s `aiflow install` command.
+for available functions. Also note, you can install functions using the CLI’s `AIflow install` command.
 
 Example:
 ```json

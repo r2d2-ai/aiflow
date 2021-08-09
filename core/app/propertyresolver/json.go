@@ -15,8 +15,8 @@ var preload = make(map[string]interface{})
 //var log = logger.GetLogger("app-props-json-resolver")
 
 // Comma separated list of json files overriding default application property values
-// e.g. AIflow_APP_PROPS_JSON=app1.json,common.json
-const EnvAppPropertyFileConfigKey = "AIflow_APP_PROPS_JSON"
+// e.g. AIFLOW_APP_PROPS_JSON=app1.json,common.json
+const EnvAppPropertyFileConfigKey = "AIFLOW_APP_PROPS_JSON"
 const ResolverNameJson = "json"
 
 func init() {

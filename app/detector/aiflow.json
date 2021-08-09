@@ -1,8 +1,8 @@
 {
   "name": "Detector",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "0.0.1",
-  "appModel": "1.20.0",
+  "appModel": "1.0.0",
   "description": "",
   "imports": [
     "github.com/r2d2-ai/contrib/activity/log",

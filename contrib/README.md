@@ -1,8 +1,8 @@
-# aiflow Contrib
+# AIflow Contrib
 
 [![Build Status](https://travis-ci.org/r2d2-ai/ai-box/contrib.svg?branch=master)](https://travis-ci.org/r2d2-ai/ai-box/contrib.svg?branch=master)
 
-Core collection of aiflow contributions.  This repository consists of activities, triggers and functions.
+Core collection of AIflow contributions.  This repository consists of activities, triggers and functions.
 
 ## Contributions
 
@@ -41,19 +41,19 @@ Core collection of aiflow contributions.  This repository consists of activities
 Example: install **log** activity
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/log
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/log
 ```
 #### Install Trigger
 Example: install **rest** trigger
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/rest
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/rest
 ```
 #### Install Functions
 Example: install **string** functions
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/function/string
+AIflow install github.com/r2d2-ai/ai-box/contrib/function/string
 ```
 
 ## Contributing and support

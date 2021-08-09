@@ -21,7 +21,7 @@ const (
 	// URL-escaped, etc).
 	HTTPHeaders
 	// Lambda represents trace context as a special header which can be only used
-	// with aiflow xray tracing
+	// with AIflow xray tracing
 	Lambda
 )
 

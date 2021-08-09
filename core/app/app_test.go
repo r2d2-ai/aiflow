@@ -13,8 +13,8 @@ var app = `{
 	"name": "_APP_NAME_",
 	"type": "AIflow:app",
 	"version": "0.0.1",
-	"description": "My aiflow application description",
-	"appModel": "1.1.0",
+	"description": "My AIflow application description",
+	"appModel": "1.0.0",
 	"imports": [
 	  "github.com/r2d2-ai/ai-box/core/examples/trigger",
 	  "github.com/r2d2-ai/ai-box/core/examples/action"

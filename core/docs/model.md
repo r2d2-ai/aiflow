@@ -233,7 +233,7 @@ These connections can be reference by values of type `connection`,
 ```
 
 ## Full Example
-Sample aiflow application configuration file. 
+Sample AIflow application configuration file. 
 
 ```json
 {
@@ -241,7 +241,7 @@ Sample aiflow application configuration file.
   "type": "AIflow:app",
   "version": "0.0.1",
   "appModel": "1.0.0",
-  "description": "My aiflow application description",
+  "description": "My AIflow application description",
   "imports": [
     "github.com/r2d2-ai/ai-box/flow",
     "github.com/r2d2-ai/ai-box/contrib/trigger/rest",

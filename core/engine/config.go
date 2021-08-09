@@ -39,12 +39,12 @@ func LoadEngineConfig(engineJson string, compressed bool) (*Config, error) {
 		configPath := GetAIflowEngineConfigPath()
 
 		if _, err := os.Stat(configPath); err == nil {
-			AIflow, err := os.Open(configPath)
+			flow, err := os.Open(configPath)
 			if err != nil {
 				return nil, err
 			}
 
-			jsonBytes, err = ioutil.ReadAll(AIflow)
+			jsonBytes, err = ioutil.ReadAll(flow)
 			if err != nil {
 				return nil, err
 			}

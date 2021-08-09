@@ -6,10 +6,10 @@ import (
 )
 
 const (
-	EnvMappingIgnoreError        = "AIflow_MAPPING_IGNORE_ERRORS"
+	EnvMappingIgnoreError        = "AIFLOW_MAPPING_IGNORE_ERRORS"
 	EnvMappingIgnoreErrorDefault = false
 
-	EnvMappingSkipMissing        = "AIflow_MAPPING_SKIP_MISSING"
+	EnvMappingSkipMissing        = "AIFLOW_MAPPING_SKIP_MISSING"
 	EnvMappingSkipMissingDefault = false
 )
 

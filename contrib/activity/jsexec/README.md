@@ -7,9 +7,9 @@ weight: 4616
 
 The `jsexec` activity evaluates a javascript `script` along with provided `parameters` and returns the result in the `outputs`.
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/jsexec
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/jsexec
 ```
 
 ## Configuration
@@ -80,7 +80,7 @@ Utilizing the response values can be seen in a response handler:
 Additional microgateway examples that utilize the `jsexec` activity
 
 * [api](examples/microgateway/api/README.md) - A simple API example
-* [json](examples/microgateway/api/README.md) - An example that using a  _aiflow.json_
+* [json](examples/microgateway/api/README.md) - An example that using a  _AIflow.json_
  
 ## Development
 

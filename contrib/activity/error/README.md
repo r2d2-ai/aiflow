@@ -9,9 +9,9 @@ This activity allows you to cause an explicit error in the flow (throw an error)
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install  github.com/r2d2-ai/ai-box/contrib/activity/error
+AIflow install  github.com/r2d2-ai/ai-box/contrib/activity/error
 ```
 
 ## Configuration

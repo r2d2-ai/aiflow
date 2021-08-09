@@ -1,11 +1,11 @@
 # RunAction
-This activity allows you to run aiflow actions.
+This activity allows you to run AIflow actions.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/runaction
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/runaction
 ```
 
 ## Configuration

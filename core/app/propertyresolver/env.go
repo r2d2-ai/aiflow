@@ -9,7 +9,7 @@ import (
 	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
-const EnvAppPropertyEnvConfigKey = "AIflow_APP_PROPS_ENV"
+const EnvAppPropertyEnvConfigKey = "AIFLOW_APP_PROPS_ENV"
 const ResolverNameEnv = "env"
 
 type PropertyMappings struct {

@@ -2,12 +2,12 @@
   "name": "_APP_NAME_",
   "type": "AIflow:app",
   "version": "0.0.1",
-  "description": "My aiflow application description",
-  "appModel": "1.1.0",
+  "description": "My AIflow application description",
+  "appModel": "1.0.0",
   "imports": [
-    "github.com/r2d2-ai/ai-box/contrib@latest:/activity/log",
-    "github.com/r2d2-ai/ai-box/contrib@latest:/trigger/rest",
-    "github.com/r2d2-ai/ai-box/flow@latest"
+    "github.com/r2d2-ai/ai-box/contrib/activity/log",
+    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+    "github.com/r2d2-ai/ai-box/flow"
   ],
   "triggers": [
     {
@@ -58,8 +58,7 @@
               "ref": "#log",
               "input": {
                 "message": "=$flow.in",
-                "flowInfo": "false",
-                "addToFlow": "false"
+                "addDetails": "false"
               }
             }
           }

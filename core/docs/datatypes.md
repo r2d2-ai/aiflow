@@ -26,7 +26,7 @@
 The **connection** datatype is used to indicate that the value is "connection".  A connection is
 typically used to connect to a networked resource.  These connections can be shared or defined
 in-line.  When a connection is defined in-line, it is only used by that contribution.  Shared 
-connection is defined once in the aiflow.json and can shared between multiple resources.  
+connection is defined once in the AIflow.json and can shared between multiple resources.  
 
 #### In-line
 

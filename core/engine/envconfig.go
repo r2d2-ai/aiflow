@@ -13,27 +13,27 @@ import (
 )
 
 const (
-	EnvKeyAppConfigLocation     = "AIflow_CONFIG_PATH"
-	DefaultAppConfigLocation    = "aiflow.json"
-	EnvKeyEngineConfigLocation  = "AIflow_ENG_CONFIG_PATH"
+	EnvKeyAppConfigLocation     = "AIFLOW_CONFIG_PATH"
+	DefaultAppConfigLocation    = "AIflow.json"
+	EnvKeyEngineConfigLocation  = "AIFLOW_ENG_CONFIG_PATH"
 	DefaultEngineConfigLocation = "engine.json"
 
-	EnvKeyStopEngineOnError  = "AIflow_ENGINE_STOP_ON_ERROR"
+	EnvKeyStopEngineOnError  = "AIFLOW_ENGINE_STOP_ON_ERROR"
 	DefaultStopEngineOnError = true
-	EnvKeyRunnerType         = "AIflow_RUNNER_TYPE"
+	EnvKeyRunnerType         = "AIFLOW_RUNNER_TYPE"
 	DefaultRunnerType        = ValueRunnerTypePooled
-	EnvKeyRunnerWorkers      = "AIflow_RUNNER_WORKERS"
+	EnvKeyRunnerWorkers      = "AIFLOW_RUNNER_WORKERS"
 	DefaultRunnerWorkers     = 5
 
 	//Deprecated
-	EnvKeyRunnerQueueSizeLegacy = "AIflow_RUNNER_QUEUE"
+	EnvKeyRunnerQueueSizeLegacy = "AIFLOW_RUNNER_QUEUE"
 
-	EnvKeyRunnerQueueSize  = "AIflow_RUNNER_QUEUE_SIZE"
+	EnvKeyRunnerQueueSize  = "AIFLOW_RUNNER_QUEUE_SIZE"
 	DefaultRunnerQueueSize = 50
 
-	EnvAppPropertyResolvers   = "AIflow_APP_PROP_RESOLVERS"
-	EnvEnableSchemaSupport    = "AIflow_SCHEMA_SUPPORT"
-	EnvEnableSchemaValidation = "AIflow_SCHEMA_VALIDATION"
+	EnvAppPropertyResolvers   = "AIFLOW_APP_PROP_RESOLVERS"
+	EnvEnableSchemaSupport    = "AIFLOW_SCHEMA_SUPPORT"
+	EnvEnableSchemaValidation = "AIFLOW_SCHEMA_VALIDATION"
 
 	ValueRunnerTypePooled = "POOLED"
 	ValueRunnerTypeDirect = "DIRECT"
@@ -57,12 +57,12 @@ func IsSchemaValidationEnabled() bool {
 	return true
 }
 
-//GetAIflowAppConfigPath returns the aiflow config path
+//GetAIflowAppConfigPath returns the AIflow config path
 func GetAIflowAppConfigPath() string {
 
-	AIflowConfigPathEnv := os.Getenv(EnvKeyAppConfigLocation)
-	if len(AIflowConfigPathEnv) > 0 {
-		return AIflowConfigPathEnv
+	flowConfigPathEnv := os.Getenv(EnvKeyAppConfigLocation)
+	if len(flowConfigPathEnv) > 0 {
+		return flowConfigPathEnv
 	}
 
 	if _, err := os.Stat(DefaultAppConfigLocation); err != nil {
@@ -75,12 +75,12 @@ func GetAIflowAppConfigPath() string {
 	return DefaultAppConfigLocation
 }
 
-//GetAIflowEngineConfigPath returns the aiflow engine config path
+//GetAIflowEngineConfigPath returns the AIflow engine config path
 func GetAIflowEngineConfigPath() string {
 
-	AIflowConfigPathEnv := os.Getenv(EnvKeyEngineConfigLocation)
-	if len(AIflowConfigPathEnv) > 0 {
-		return AIflowConfigPathEnv
+	flowConfigPathEnv := os.Getenv(EnvKeyEngineConfigLocation)
+	if len(flowConfigPathEnv) > 0 {
+		return flowConfigPathEnv
 	}
 
 	if _, err := os.Stat(DefaultEngineConfigLocation); err != nil {

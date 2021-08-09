@@ -4,7 +4,7 @@ weight: 4706
 -->
 
 # App Trigger
-This trigger provides your aiflow application the ability to start an action on the Lifecycle events of the 
+This trigger provides your AIflow application the ability to start an action on the Lifecycle events of the 
 application.  The handler associated with the *STARTUP* event gets invoked before all other triggers have 
 been started. The handler associated with the *SHUTDOWN* event gets invoked after all other triggers have 
 been stopped.  
@@ -12,7 +12,7 @@ been stopped.
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/app
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/app
 ```
 
 ## Configuration

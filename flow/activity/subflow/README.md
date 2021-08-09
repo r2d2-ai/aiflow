@@ -7,11 +7,11 @@ weight: 4619
 This activity allows you to start a subflow.
 
 ## Installation
-### aiflow Web
-This activity comes out of the box with the aiflow Web UI
-### aiflow CLI
+### AIflow Web
+This activity comes out of the box with the AIflow Web UI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/flow/activity/subflow
+AIflow install github.com/r2d2-ai/ai-box/flow/activity/subflow
 ```
 
 ## Metadata

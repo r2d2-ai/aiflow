@@ -5,9 +5,9 @@ that there is one handler, which runs by default.
 
 To build and run cli example and execute
 ```
-aiflow create -f AIflow-single-cli.json
+AIflow create -f AIflow-single-cli.json
 cd cli
-aiflow build --shim cli
+AIflow build --shim cli
 ./bin/cli
 ```
 

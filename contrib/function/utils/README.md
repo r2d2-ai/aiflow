@@ -1,5 +1,5 @@
 # Utils Functions
-This package adds a set of functions that can be used in aiflow versions >= 0.9.0.
+This package adds a set of functions that can be used in AIflow versions >= 0.9.0.
 
 
 ## Functions

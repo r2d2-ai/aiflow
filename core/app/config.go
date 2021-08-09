@@ -13,8 +13,8 @@ import (
 )
 
 const (
-	EnvKeyDelayedAppStopInterval = "AIflow_APP_DELAYED_STOP_INTERVAL"
-	EnvKeyEnableFlowControl      = "AIflow_APP_ENABLE_FLOW_CONTROL"
+	EnvKeyDelayedAppStopInterval = "AIFLOW_APP_DELAYED_STOP_INTERVAL"
+	EnvKeyEnableFlowControl      = "AIFLOW_APP_ENABLE_FLOW_CONTROL"
 )
 
 // Def is the configuration for the App

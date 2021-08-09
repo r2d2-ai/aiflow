@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	EnvKeyDataSecretKey  = "AIflow_DATA_SECRET_KEY"
+	EnvKeyDataSecretKey  = "AIFLOW_DATA_SECRET_KEY"
 	defaultDataSecretKey = "AIflow"
 )
 
@@ -39,7 +39,7 @@ func GetDataSecretKey() string {
 }
 
 // Get secret value handler. If not already set by SetSecretValueHandler(), will return default KeyBasedSecretValueDecoder
-// where decoding key value is expected to be set through AIflow_DATA_SECRET_KEY environment variable.
+// where decoding key value is expected to be set through AIFLOW_DATA_SECRET_KEY environment variable.
 // If key is not set, a default key value(github.com/r2d2-ai/ai-box/core/config.DATA_SECRET_KEY_DEFAULT) will be used.
 func GetSecretValueHandler() SecretValueHandler {
 	if secretValueHandler == nil {

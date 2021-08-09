@@ -4,7 +4,7 @@
 ## Configuration DLS
 
 Engine specific configuration can be set in an *engine.json* file.  This file should be placed 
-along side the aiflow.json
+along side the AIflow.json
 
 Sections:
 

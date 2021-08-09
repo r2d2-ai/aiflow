@@ -4,12 +4,12 @@ weight: 4706
 -->
 
 # Channel Trigger
-This trigger provides your aiflow application the ability to start an action via a named engine channel
+This trigger provides your AIflow application the ability to start an action via a named engine channel
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/channel
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/channel
 ```
 
 ## Configuration    

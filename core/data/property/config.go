@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-var EnvAppPropertySnapshotEnabled = "AIflow_APP_PROP_SNAPSHOTS"
+var EnvAppPropertySnapshotEnabled = "AIFLOW_APP_PROP_SNAPSHOTS"
 
 func IsPropertySnapshotEnabled() bool {
 	appPropertySnapshotEnabled := os.Getenv(EnvAppPropertySnapshotEnabled)

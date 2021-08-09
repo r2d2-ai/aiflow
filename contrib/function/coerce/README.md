@@ -6,7 +6,7 @@ weight: 4601
 # Data Coerce Functions
 This function package enables you to coerce data from one type to another.
 
-Valid data types in aiflow include:
+Valid data types in AIflow include:
 
 | Type     | Description
 |:---      | :---    
@@ -18,7 +18,7 @@ Valid data types in aiflow include:
 | float32 | A 32 bit float
 | float64 | A 64 bit float
 | bool | A boolean (true | false)
-| object | A aiflow object. Essentially a JOSN object
+| object | A AIflow object. Essentially a JOSN object
 | bytes | A byte data type
 | params | Parameters data type
 | array | An array type

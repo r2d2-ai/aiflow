@@ -16,6 +16,6 @@
 
 **Please tell us about your environment (Operating system, docker version, browser & web ui version, etc):**
 
-**aiflow version (CLI & contrib/lib. If unknown, leave empty or state unknown):** 0.X.X
+**AIflow version (CLI & contrib/lib. If unknown, leave empty or state unknown):** 0.X.X
 
 **Additional information you deem important (e.g. issue happens only occasionally):**

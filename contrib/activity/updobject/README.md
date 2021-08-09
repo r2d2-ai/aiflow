@@ -8,9 +8,9 @@ This activity allows update an existing object's values.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/updobject
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/updobject
 ```
 
 ## Configuration

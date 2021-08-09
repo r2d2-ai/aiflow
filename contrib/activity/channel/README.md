@@ -4,15 +4,15 @@ weight: 4603
 -->
 
 # Channel
-This activity allows you to put a data on a named channel in the aiflow engine.  Channels are
+This activity allows you to put a data on a named channel in the AIflow engine.  Channels are
 essentially an internal communication channel in the engine.
 
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/channel
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/channel
 ```
 
 ## Configuration

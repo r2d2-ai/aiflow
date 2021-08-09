@@ -6,9 +6,9 @@ weight: 4701
 
 This trigger reads/writes data using TCI/UDP networks.
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/tcpudp
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/tcpudp
 ```
 
 ## Configuration

@@ -4,9 +4,9 @@ This example shows how to configure the CLI trigger to run as a cli with multipl
 
 To build and run cli example and execute
 ```
-aiflow create -f AIflow-multi-cli.json
+AIflow create -f AIflow-multi-cli.json
 cd cli
-aiflow build --shim cli
+AIflow build --shim cli
 ./bin/cli
 ```
 

@@ -93,7 +93,7 @@ func TestIntegrationJSON(t *testing.T) {
 		t.Skip("skipping JSON integration test in short mode")
 	}
 
-	data, err := ioutil.ReadFile(filepath.FromSlash("../json/aiflow.json"))
+	data, err := ioutil.ReadFile(filepath.FromSlash("../json/AIflow.json"))
 	assert.Nil(t, err)
 	cfg, err := engine.LoadAppConfig(string(data), false)
 	assert.Nil(t, err)

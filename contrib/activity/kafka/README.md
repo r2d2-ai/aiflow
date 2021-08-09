@@ -7,9 +7,9 @@ weight: 4616
 
 This activity publishes messages on a topic in a Kafka cluster.
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/kafka
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/kafka
 ```
 
 ## Configuration

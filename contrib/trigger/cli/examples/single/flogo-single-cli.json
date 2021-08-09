@@ -3,7 +3,7 @@
   "description": "single command CLI",
   "version": "1.0.0",
   "type": "AIflow:app",
-  "appModel": "1.1.0",
+  "appModel": "1.0.0",
   "imports": [
     "github.com/r2d2-ai/ai-box/contrib/trigger/cli",
     "github.com/r2d2-ai/ai-box/flow",

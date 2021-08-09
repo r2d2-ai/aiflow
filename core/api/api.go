@@ -60,7 +60,7 @@ type Action struct {
 	outputMappings []string
 }
 
-// NewApp creates a new aiflow application
+// NewApp creates a new AIflow application
 func NewApp() *App {
 	return &App{
 		properties: make(map[string]data.TypedValue),
@@ -119,7 +119,7 @@ func (a *App) AddProperty(name string, dataType data.Type, value interface{}) er
 	return nil
 }
 
-// AddResource adds a aiflow resource to the application
+// AddResource adds a AIflow resource to the application
 func (a *App) AddResource(id string, data json.RawMessage) {
 
 	res := &resource.Config{ID: id, Data: data}
@@ -245,7 +245,7 @@ func (a *Action) OutputMappings() []string {
 	return a.outputMappings
 }
 
-// NewEngine creates a new aiflow Engine from the specified App
+// NewEngine creates a new AIflow Engine from the specified App
 func NewEngine(a *App) (engine.Engine, error) {
 	appConfig := toAppConfig(a)
 

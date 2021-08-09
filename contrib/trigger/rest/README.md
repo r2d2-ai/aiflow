@@ -3,12 +3,12 @@ title: REST
 weight: 4706
 -->
 # REST Trigger
-This trigger provides your aiflow application the ability to start an action via REST over HTTP
+This trigger provides your AIflow application the ability to start an action via REST over HTTP
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/rest
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/rest
 ```
 
 ## Configuration

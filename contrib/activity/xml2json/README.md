@@ -8,9 +8,9 @@ This activity allows you to convert XML data to JSON object.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/xml2json
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/xml2json
 ```
 
 ## Configuration

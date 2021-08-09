@@ -8,9 +8,9 @@ This activity allows you to reply to a trigger invocation and map output values.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/actreply
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/actreply
 ```
 
 ## Configuration

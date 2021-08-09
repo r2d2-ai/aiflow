@@ -6,9 +6,9 @@ weight: 4701
 
 This trigger subscribes to a topic on Kafka cluster and listens for the messages.
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/kafka
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/kafka
 ```
 
 ## Configuration

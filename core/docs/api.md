@@ -1,4 +1,4 @@
-# Go API to Run aiflow Application
+# Go API to Run AIflow Application
 
 ## Go API's
 #### func  EvalActivity
@@ -20,7 +20,7 @@ NewActivity creates an instance of the specified activity
 ```go
 func NewEngine(a *App) (engine.Engine, error)
 ```
-NewEngine creates a new aiflow Engine from the specified App
+NewEngine creates a new AIflow Engine from the specified App
 
 #### func RunAction
 
@@ -103,7 +103,7 @@ App is the structure that defines an application
 ```go
 func NewApp() *App
 ```
-NewApp creates a new aiflow application
+NewApp creates a new AIflow application
 
 #### func (*App) Actions
 
@@ -131,7 +131,7 @@ AddProperty adds a shared property to the application
 ```go
 func (a *App) AddResource(id string, data json.RawMessage)
 ```
-AddResource adds a aiflow resource to the application
+AddResource adds a AIflow resource to the application
 
 #### func (*App) NewIndependentAction
 
@@ -230,9 +230,9 @@ Settings gets the Trigger's settings
 
 
 ## Run Flow
-This short tutorial walks through how to run aiflow Actions using the Go-API provided by the aiflow core.
+This short tutorial walks through how to run AIflow Actions using the Go-API provided by the AIflow core.
 
-First Import the action you need to run. In this example import Flow Action. Initialize the aiflow App. Initialiaze and configure a Rest Trigger. 
+First Import the action you need to run. In this example import Flow Action. Initialize the AIflow App. Initialiaze and configure a Rest Trigger. 
 Add the Flow Action to the desired Trigger Handler.
 
 ```go
@@ -250,13 +250,13 @@ import (
 )
 
 func main() {
-	// Initialize the aiflow App
+	// Initialize the AIflow App
 	app, err := myApp()
     if err != nil {
     		fmt.Println("Error:", err)
     		return
     }
-    // Create a aiflow Engine using the aiflow App.
+    // Create a AIflow Engine using the AIflow App.
 	e, err := api.NewEngine(app)
 
 	if err != nil {
@@ -268,7 +268,7 @@ func main() {
 }
 
 func myApp() (*api.App, error) {
-	// Initialize a aiflow App.
+	// Initialize a AIflow App.
     app := api.NewApp()
     
     // Intialize a New Rest Trigger.

@@ -8,4 +8,4 @@ about: If you have a question 💬, please check out our [Gitter](https://gitter
 
 **Please tell us about your environment (Operating system, docker version, browser & web ui version, etc):**
 
-**aiflow version (CLI & contrib/lib. If unknown, leave empty or state unknown):** 0.X.X
+**AIflow version (CLI & contrib/lib. If unknown, leave empty or state unknown):** 0.X.X

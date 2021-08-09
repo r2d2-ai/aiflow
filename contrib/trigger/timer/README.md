@@ -3,12 +3,12 @@ title: Timer
 weight: 4707
 -->
 # Timer Trigger
-This trigger provides your aiflow application the ability to schedule an action
+This trigger provides your AIflow application the ability to schedule an action
 
 ## Installation
 
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/trigger/timer
+AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/timer
 ```
 
 ## Configuration

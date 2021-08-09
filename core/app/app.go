@@ -63,7 +63,7 @@ func (ae *appEvent) AppStatus() Status {
 	return ae.status
 }
 
-var AIflowImportPattern = regexp.MustCompile(`^(([^ ]*)[ ]+)?([^@:]*)@?([^:]*)?:?(.*)?$`) // extract import path even if there is an alias and/or a version
+var flowImportPattern = regexp.MustCompile(`^(([^ ]*)[ ]+)?([^@:]*)@?([^:]*)?:?(.*)?$`) // extract import path even if there is an alias and/or a version
 
 func New(config *Config, runner action.Runner, options ...Option) (*App, error) {
 
@@ -117,7 +117,7 @@ func New(config *Config, runner action.Runner, options ...Option) (*App, error) 
 	appresolve.SetAppResolver(resolver)
 
 	for _, anImport := range config.Imports {
-		matches := AIflowImportPattern.FindStringSubmatch(anImport)
+		matches := flowImportPattern.FindStringSubmatch(anImport)
 		err := registerImport(matches[1] + matches[3] + matches[5]) // alias + module path + relative import path
 		if err != nil {
 			log.RootLogger().Errorf("cannot register import '%s' : %v", anImport, err)

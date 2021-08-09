@@ -8,9 +8,9 @@ This activity is a simple No-Op that can be used for testing.
 
 ## Installation
 
-### aiflow CLI
+### AIflow CLI
 ```bash
-aiflow install github.com/r2d2-ai/ai-box/contrib/activity/noop
+AIflow install github.com/r2d2-ai/ai-box/contrib/activity/noop
 ```
 
 ## Examples
