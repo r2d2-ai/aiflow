@@ -1,0 +1,25 @@
+{
+  "name": "number",
+  "type": "AIflow:function",
+  "version": "1.20.0",
+  "title": "Number Functions",
+  "description": "Number Functions",
+  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/function/number",
+  "functions": [
+    {
+      "name": "random",
+      "description": "generate a random number",
+      "example": "number.random(100) => 90",
+      "varArgs": true,
+      "args": [
+        {
+          "name": "limit",
+          "type": "int"
+        }
+      ],
+      "return": {
+        "type": "int"
+      }
+    }
+  ]
+}

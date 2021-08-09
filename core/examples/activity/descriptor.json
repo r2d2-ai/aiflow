@@ -1,6 +1,6 @@
 {
   "name": "sample-activity",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "Sample Activity",
   "description": "Sample Activity",

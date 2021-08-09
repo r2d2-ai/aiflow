@@ -1,0 +1,29 @@
+{
+  "name": "AIflow-channel",
+  "type": "AIflow:trigger",
+  "version": "1.20.0",
+  "title": "Listen to Channel",
+  "description": "Listens to Channel",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/trigger/channel",
+  "settings": [
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "any",
+      "description": "The data pulled from the channel"
+    }
+  ],
+  "reply": [
+  ],
+  "handler": {
+    "settings": [
+      {
+        "name": "channel",
+        "type": "string",
+        "required" : true,
+        "description": "The internal engine channel"
+      }
+    ]
+  }
+}

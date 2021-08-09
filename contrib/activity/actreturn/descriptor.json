@@ -1,0 +1,22 @@
+{
+  "name": "AIflow-return",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Return",
+  "description": "Return Activity",
+  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/actreturn",
+  "return":true,
+  "settings":[
+    {
+      "name": "mappings",
+      "type": "object",
+      "required": true,
+      "display": {
+        "name": "Mapper",
+        "type": "mapper",
+        "mapperOutputScope" : "action.output"
+      },
+      "description": "Set of mappings to execute when the activity runs"
+    }
+  ]
+}

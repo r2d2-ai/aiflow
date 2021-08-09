@@ -1,0 +1,15 @@
+language: go
+go:
+  - 1.16.x
+os:
+  - linux
+env:
+  - GO111MODULE=auto
+git:
+  depth: 1
+  
+install: skip  
+
+script:
+  - cd .travis/
+  - bash test.sh

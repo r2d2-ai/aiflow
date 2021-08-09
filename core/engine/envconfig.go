@@ -13,27 +13,27 @@ import (
 )
 
 const (
-	EnvKeyAppConfigLocation     = "FLOGO_CONFIG_PATH"
-	DefaultAppConfigLocation    = "flogo.json"
-	EnvKeyEngineConfigLocation  = "FLOGO_ENG_CONFIG_PATH"
+	EnvKeyAppConfigLocation     = "AIflow_CONFIG_PATH"
+	DefaultAppConfigLocation    = "aiflow.json"
+	EnvKeyEngineConfigLocation  = "AIflow_ENG_CONFIG_PATH"
 	DefaultEngineConfigLocation = "engine.json"
 
-	EnvKeyStopEngineOnError  = "FLOGO_ENGINE_STOP_ON_ERROR"
+	EnvKeyStopEngineOnError  = "AIflow_ENGINE_STOP_ON_ERROR"
 	DefaultStopEngineOnError = true
-	EnvKeyRunnerType         = "FLOGO_RUNNER_TYPE"
+	EnvKeyRunnerType         = "AIflow_RUNNER_TYPE"
 	DefaultRunnerType        = ValueRunnerTypePooled
-	EnvKeyRunnerWorkers      = "FLOGO_RUNNER_WORKERS"
+	EnvKeyRunnerWorkers      = "AIflow_RUNNER_WORKERS"
 	DefaultRunnerWorkers     = 5
 
 	//Deprecated
-	EnvKeyRunnerQueueSizeLegacy = "FLOGO_RUNNER_QUEUE"
+	EnvKeyRunnerQueueSizeLegacy = "AIflow_RUNNER_QUEUE"
 
-	EnvKeyRunnerQueueSize  = "FLOGO_RUNNER_QUEUE_SIZE"
+	EnvKeyRunnerQueueSize  = "AIflow_RUNNER_QUEUE_SIZE"
 	DefaultRunnerQueueSize = 50
 
-	EnvAppPropertyResolvers   = "FLOGO_APP_PROP_RESOLVERS"
-	EnvEnableSchemaSupport    = "FLOGO_SCHEMA_SUPPORT"
-	EnvEnableSchemaValidation = "FLOGO_SCHEMA_VALIDATION"
+	EnvAppPropertyResolvers   = "AIflow_APP_PROP_RESOLVERS"
+	EnvEnableSchemaSupport    = "AIflow_SCHEMA_SUPPORT"
+	EnvEnableSchemaValidation = "AIflow_SCHEMA_VALIDATION"
 
 	ValueRunnerTypePooled = "POOLED"
 	ValueRunnerTypeDirect = "DIRECT"
@@ -57,12 +57,12 @@ func IsSchemaValidationEnabled() bool {
 	return true
 }
 
-//GetFlogoAppConfigPath returns the flogo config path
-func GetFlogoAppConfigPath() string {
+//GetAIflowAppConfigPath returns the aiflow config path
+func GetAIflowAppConfigPath() string {
 
-	flogoConfigPathEnv := os.Getenv(EnvKeyAppConfigLocation)
-	if len(flogoConfigPathEnv) > 0 {
-		return flogoConfigPathEnv
+	AIflowConfigPathEnv := os.Getenv(EnvKeyAppConfigLocation)
+	if len(AIflowConfigPathEnv) > 0 {
+		return AIflowConfigPathEnv
 	}
 
 	if _, err := os.Stat(DefaultAppConfigLocation); err != nil {
@@ -75,12 +75,12 @@ func GetFlogoAppConfigPath() string {
 	return DefaultAppConfigLocation
 }
 
-//GetFlogoEngineConfigPath returns the flogo engine config path
-func GetFlogoEngineConfigPath() string {
+//GetAIflowEngineConfigPath returns the aiflow engine config path
+func GetAIflowEngineConfigPath() string {
 
-	flogoConfigPathEnv := os.Getenv(EnvKeyEngineConfigLocation)
-	if len(flogoConfigPathEnv) > 0 {
-		return flogoConfigPathEnv
+	AIflowConfigPathEnv := os.Getenv(EnvKeyEngineConfigLocation)
+	if len(AIflowConfigPathEnv) > 0 {
+		return AIflowConfigPathEnv
 	}
 
 	if _, err := os.Stat(DefaultEngineConfigLocation); err != nil {

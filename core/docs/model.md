@@ -20,15 +20,15 @@ The imports section allows one to define all the contributions that should be im
 
 ```json
   "imports": [
-    "github.com/r2d2-ai/flow",
-    "github.com/r2d2-ai/contrib/trigger/rest",
-    "github.com/r2d2-ai/contrib/activity/log"
+    "github.com/r2d2-ai/ai-box/flow",
+    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+    "github.com/r2d2-ai/ai-box/contrib/activity/log"
   ],
 ```
 
 A contribution can be referenced directly using the full go package or indirectly to its imported package.
 
-Direct: `"ref" : "github.com/r2d2-ai/flow"`
+Direct: `"ref" : "github.com/r2d2-ai/ai-box/flow"`
  
 Indirect: `"ref" : "#flow"` 
 
@@ -62,7 +62,7 @@ The channels section allows one to define internal communications channels for t
 ```
 A channel is used for internal communications in an engine.  It is defined by a channel name and buffer size. 
 
-The `github.com/r2d2-ai/contrib/activity/channel` activity can be used to put a message on the channel.  The `github.com/r2d2-ai/contrib/trigger/channel` trigger can be used to listen on a channel and trigger actions from messages received on that channel.
+The `github.com/r2d2-ai/ai-box/contrib/activity/channel` activity can be used to put a message on the channel.  The `github.com/r2d2-ai/ai-box/contrib/trigger/channel` trigger can be used to listen on a channel and trigger actions from messages received on that channel.
 
 ## Triggers
 The triggers section is used to define the triggers that will be used by the application.
@@ -211,7 +211,7 @@ activities.  It allows you to define a connection once and use it in multiple pl
 ```json
 "connections": {
   "myConn": {
-    "ref" : "github.com/r2d2-ai/contrib/connection/sql",
+    "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
     "settings" : {
       "dbType": "mysql",
       "driver": "mysql",
@@ -233,19 +233,19 @@ These connections can be reference by values of type `connection`,
 ```
 
 ## Full Example
-Sample flogo application configuration file. 
+Sample aiflow application configuration file. 
 
 ```json
 {
   "name": "simpleApp",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "0.0.1",
   "appModel": "1.0.0",
-  "description": "My flogo application description",
+  "description": "My aiflow application description",
   "imports": [
-    "github.com/r2d2-ai/flow",
-    "github.com/r2d2-ai/contrib/trigger/rest",
-    "github.com/r2d2-ai/contrib/activity/log"
+    "github.com/r2d2-ai/ai-box/flow",
+    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+    "github.com/r2d2-ai/ai-box/contrib/activity/log"
   ],
   "triggers": [
     {

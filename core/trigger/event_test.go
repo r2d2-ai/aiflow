@@ -20,7 +20,7 @@ func (sl *SampleListener) HandleEvent(ctx *event.Context) error {
 }
 
 func TestTriggerEvent(t *testing.T) {
-	os.Setenv("FLOGO_PUBLISH_AUDIT_EVENTS", "true")
+	os.Setenv("AIflow_PUBLISH_AUDIT_EVENTS", "true")
 	var err error
 	err = event.RegisterListener("sample", &SampleListener{}, []string{"triggerevent"})
 	assert.Nil(t, err)

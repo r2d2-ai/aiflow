@@ -1,0 +1,32 @@
+{
+    "name": "AIflow-run-action",
+    "type": "AIflow:activity",
+    "version": "1.20.0",
+    "title": "Run an Action",
+    "description": "Run an Action in activity",
+    "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/runaction",
+    "settings":[
+      {
+        "name": "actionRef",
+        "type": "string",
+        "required": true,
+        "description" : "The 'ref' to the action to be run"
+      },
+      {
+        "name": "actionSettings",
+        "type": "object",
+        "required": true,
+        "description" : "The settings of the action"
+      }
+    ],
+    "input":[
+    ],
+    "output":[
+      {
+        "name": "output",
+        "type": "object",
+        "description" : "The output of the action."
+      }
+    ]
+  }
+  

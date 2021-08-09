@@ -1,4 +1,4 @@
-# Go API to Run Flogo Application
+# Go API to Run aiflow Application
 
 ## Go API's
 #### func  EvalActivity
@@ -20,7 +20,7 @@ NewActivity creates an instance of the specified activity
 ```go
 func NewEngine(a *App) (engine.Engine, error)
 ```
-NewEngine creates a new flogo Engine from the specified App
+NewEngine creates a new aiflow Engine from the specified App
 
 #### func RunAction
 
@@ -103,7 +103,7 @@ App is the structure that defines an application
 ```go
 func NewApp() *App
 ```
-NewApp creates a new Flogo application
+NewApp creates a new aiflow application
 
 #### func (*App) Actions
 
@@ -131,7 +131,7 @@ AddProperty adds a shared property to the application
 ```go
 func (a *App) AddResource(id string, data json.RawMessage)
 ```
-AddResource adds a Flogo resource to the application
+AddResource adds a aiflow resource to the application
 
 #### func (*App) NewIndependentAction
 
@@ -230,9 +230,9 @@ Settings gets the Trigger's settings
 
 
 ## Run Flow
-This short tutorial walks through how to run Flogo Actions using the Go-API provided by the flogo core.
+This short tutorial walks through how to run aiflow Actions using the Go-API provided by the aiflow core.
 
-First Import the action you need to run. In this example import Flow Action. Initialize the Flogo App. Initialiaze and configure a Rest Trigger. 
+First Import the action you need to run. In this example import Flow Action. Initialize the aiflow App. Initialiaze and configure a Rest Trigger. 
 Add the Flow Action to the desired Trigger Handler.
 
 ```go
@@ -243,20 +243,20 @@ import (
 
 	"github.com/r2d2-ai/ai-box/core/api"
 	"github.com/r2d2-ai/ai-box/core/engine"
-	"github.com/r2d2-ai/flow"
+	"github.com/r2d2-ai/ai-box/flow"
 
-	_ "github.com/r2d2-ai/contrib/activity/log" //our flow contains a log activity, so we need to include this
-	"github.com/r2d2-ai/contrib/trigger/rest"
+	_ "github.com/r2d2-ai/ai-box/contrib/activity/log" //our flow contains a log activity, so we need to include this
+	"github.com/r2d2-ai/ai-box/contrib/trigger/rest"
 )
 
 func main() {
-	// Initialize the Flogo App
+	// Initialize the aiflow App
 	app, err := myApp()
     if err != nil {
     		fmt.Println("Error:", err)
     		return
     }
-    // Create a Flogo Engine using the Flogo App.
+    // Create a aiflow Engine using the aiflow App.
 	e, err := api.NewEngine(app)
 
 	if err != nil {
@@ -268,7 +268,7 @@ func main() {
 }
 
 func myApp() (*api.App, error) {
-	// Initialize a Flogo App.
+	// Initialize a aiflow App.
     app := api.NewApp()
     
     // Intialize a New Rest Trigger.
@@ -380,7 +380,7 @@ import (
 ...
 "github.com/r2d2-ai/ai-box/core/action"
 "github.com/r2d2-ai/ai-box/core/api"
-cml"github.com/r2d2-ai/catalystml-flogo/action"
+cml"github.com/r2d2-ai/catalystml-AIflow/action"
 ...
 )
 var actions map[string]action.Action

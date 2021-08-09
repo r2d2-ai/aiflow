@@ -36,15 +36,15 @@ func LoadEngineConfig(engineJson string, compressed bool) (*Config, error) {
 	if engineJson == "" {
 
 		// a json string wasn't provided, so lets lookup the file in path
-		configPath := GetFlogoEngineConfigPath()
+		configPath := GetAIflowEngineConfigPath()
 
 		if _, err := os.Stat(configPath); err == nil {
-			flogo, err := os.Open(configPath)
+			AIflow, err := os.Open(configPath)
 			if err != nil {
 				return nil, err
 			}
 
-			jsonBytes, err = ioutil.ReadAll(flogo)
+			jsonBytes, err = ioutil.ReadAll(AIflow)
 			if err != nil {
 				return nil, err
 			}

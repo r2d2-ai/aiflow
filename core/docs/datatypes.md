@@ -26,7 +26,7 @@
 The **connection** datatype is used to indicate that the value is "connection".  A connection is
 typically used to connect to a networked resource.  These connections can be shared or defined
 in-line.  When a connection is defined in-line, it is only used by that contribution.  Shared 
-connection is defined once in the flogo.json and can shared between multiple resources.  
+connection is defined once in the aiflow.json and can shared between multiple resources.  
 
 #### In-line
 
@@ -35,7 +35,7 @@ connection is defined once in the flogo.json and can shared between multiple res
   "ref": "#sql",
   "settings": {
     "connection": {
-      "ref" : "github.com/r2d2-ai/contrib/connection/sql",
+      "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
       "settings" : {
         "dbType": "mysql",
         "driver": "mysql",
@@ -51,7 +51,7 @@ connection is defined once in the flogo.json and can shared between multiple res
 ```json
 "connections": {
   "myConn": {
-    "ref" : "github.com/r2d2-ai/contrib/connection/sql",
+    "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
     "settings" : {
       "dbType": "mysql",
       "driver": "mysql",

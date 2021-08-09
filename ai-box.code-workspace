@@ -8,6 +8,18 @@
 		},
 		{
 			"path": "cli"
+		},
+		{
+			"path": "contrib"
+		},
+		{
+			"path": "flow"
+		},
+		{
+			"path": "stream"
+		},
+		{
+			"path": "services"
 		}
 	],
 	"settings": {}

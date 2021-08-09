@@ -21,7 +21,7 @@ const (
 	// URL-escaped, etc).
 	HTTPHeaders
 	// Lambda represents trace context as a special header which can be only used
-	// with flogo xray tracing
+	// with aiflow xray tracing
 	Lambda
 )
 
@@ -35,7 +35,7 @@ type Tracer interface {
 
 	// Extract() returns a TracingContext given `format` and `carrier`.
 	//
-	// FlogoTracer defines a common set of `format` values, and each has an expected `carrier` type.
+	// AIflowTracer defines a common set of `format` values, and each has an expected `carrier` type.
 	//
 	// After extracting the trace context from the incoming request, the trace context must be appended
 	// to the go context to propogate it to the action handler.

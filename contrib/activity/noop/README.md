@@ -1,0 +1,27 @@
+<!--
+title: No-Op
+weight: 4615
+-->
+
+# No-Op
+This activity is a simple No-Op that can be used for testing.
+
+## Installation
+
+### aiflow CLI
+```bash
+aiflow install github.com/r2d2-ai/ai-box/contrib/activity/noop
+```
+
+## Examples
+Configuration of a No-Op activity
+
+```json
+{
+  "id": "noop",
+  "name": "NoOp",
+  "activity": {
+    "ref": "github.com/r2d2-ai/ai-box/contrib/activity/noop"
+  }
+}
+```

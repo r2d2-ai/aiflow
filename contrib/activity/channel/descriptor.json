@@ -1,0 +1,21 @@
+{
+  "name": "AIflow-channel",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Channel",
+  "description": "Publish on Channel",
+  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/channel",
+  "input": [
+    {
+      "name": "channel",
+      "type": "string",
+      "required": true,
+      "description": "The name of channel to use"
+    },
+    {
+      "name": "data",
+      "type": "any",
+      "description": "The data to put on the channel"
+    }
+  ]
+}

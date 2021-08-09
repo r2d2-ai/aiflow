@@ -10,15 +10,15 @@ type Level int
 type Format int
 
 const (
-	EnvKeyLogCtx         = "FLOGO_LOG_CTX"
-	EnvKeyLogDateFormat  = "FLOGO_LOG_DTFORMAT"
+	EnvKeyLogCtx         = "AIflow_LOG_CTX"
+	EnvKeyLogDateFormat  = "AIflow_LOG_DTFORMAT"
 	DefaultLogDateFormat = "2006-01-02 15:04:05.000"
-	EnvKeyLogLevel       = "FLOGO_LOG_LEVEL"
+	EnvKeyLogLevel       = "AIflow_LOG_LEVEL"
 	DefaultLogLevel      = InfoLevel
-	EnvKeyLogFormat      = "FLOGO_LOG_FORMAT"
+	EnvKeyLogFormat      = "AIflow_LOG_FORMAT"
 	DefaultLogFormat     = FormatConsole
 
-	EnvKeyLogSeparator  = "FLOGO_LOG_SEPARATOR"
+	EnvKeyLogSeparator  = "AIflow_LOG_SEPARATOR"
 	DefaultLogSeparator = "\t"
 
 	TraceLevel Level = iota
@@ -158,7 +158,7 @@ func configureLogging() {
 		logFormat = FormatJson
 	}
 
-	rootLogger = newZapRootLogger("flogo", logFormat, rootLogLevel)
+	rootLogger = newZapRootLogger("AIflow", logFormat, rootLogLevel)
 	SetLogLevel(rootLogger, rootLogLevel)
 }
 

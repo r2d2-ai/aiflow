@@ -822,7 +822,7 @@ func TestExpression(t *testing.T) {
 
 	scope := data.NewSimpleScope(map[string]interface{}{"queryParams": map[string]interface{}{"id": "helloworld"}}, nil)
 	factory := NewExprFactory(resolve.GetBasicResolver())
-	_ = os.Setenv("name", "flogo")
+	_ = os.Setenv("name", "AIflow")
 	_ = os.Setenv("address", "tibco")
 
 	testcases := make(map[string]interface{})
@@ -873,7 +873,7 @@ func TestExpression(t *testing.T) {
 
 	//testcases[`script.length("helloworld")>11?$env[name]:$env[address]`] = "tibco"
 	//testcases[`$env[name] != nil`] = true
-	//testcases[`$env[name] == "flogo"`] = true
+	//testcases[`$env[name] == "AIflow"`] = true
 
 	for k, v := range testcases {
 		vv, err := factory.NewExpr(k)
@@ -887,17 +887,17 @@ func TestExpression(t *testing.T) {
 }
 
 func TestEscapedExpr(t *testing.T) {
-	expr, err := factory.NewExpr(`script.concat("\"Hello\" ", '\'FLOGO\'')`)
+	expr, err := factory.NewExpr(`script.concat("\"Hello\" ", '\'AIflow\'')`)
 	assert.Nil(t, err)
 	v, err := expr.Eval(nil)
 	assert.Nil(t, err)
-	assert.Equal(t, `"Hello" 'FLOGO'`, v)
+	assert.Equal(t, `"Hello" 'AIflow'`, v)
 
-	expr, err = factory.NewExpr("script.concat(`Hello `, `'FLOGO'`)")
+	expr, err = factory.NewExpr("script.concat(`Hello `, `'AIflow'`)")
 	assert.Nil(t, err)
 	v, err = expr.Eval(nil)
 	assert.Nil(t, err)
-	assert.Equal(t, `Hello 'FLOGO'`, v)
+	assert.Equal(t, `Hello 'AIflow'`, v)
 
 	expr, err = factory.NewExpr(`script.concat("Hello", "\world")`)
 	assert.Nil(t, err)
@@ -920,12 +920,12 @@ func TestEscapedExpr(t *testing.T) {
 rld`, v)
 
 	//Newline
-	expr, err = factory.NewExpr("script.concat(\"Hello\n\", \"FLOGO\")")
+	expr, err = factory.NewExpr("script.concat(\"Hello\n\", \"AIflow\")")
 	assert.Nil(t, err)
 	v, err = expr.Eval(nil)
 	assert.Nil(t, err)
 	assert.Equal(t, `Hello
-FLOGO`, v)
+AIflow`, v)
 }
 
 func TestBuiltInFunction(t *testing.T) {
@@ -949,11 +949,11 @@ func TestBuiltInFunction(t *testing.T) {
 			ExpectResult: false,
 		},
 		{
-			Expr:         "getValue($.foo.store.exit, \"flogo\")",
-			ExpectResult: "flogo",
+			Expr:         "getValue($.foo.store.exit, \"AIflow\")",
+			ExpectResult: "AIflow",
 		},
 		{
-			Expr:         "getValue($.foo['store'].book[2].price, \"flogo\")",
+			Expr:         "getValue($.foo['store'].book[2].price, \"AIflow\")",
 			ExpectResult: 8.99,
 		},
 	}

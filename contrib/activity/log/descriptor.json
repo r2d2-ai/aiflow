@@ -1,0 +1,31 @@
+{
+  "name": "AIflow-log",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Log",
+  "description": "Logs a message",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/log",
+  "display": {
+    "icon": "log-icon.svg"
+  },
+  "input": [
+    {
+      "name": "message",
+      "type": "string",
+      "value": "",
+      "description": "The message to log"
+    },
+    {
+      "name": "addDetails",
+      "type": "boolean",
+      "value": false,
+      "description": "Append contextual execution information to the log message"
+    },
+    {
+      "name": "usePrint",
+      "type": "boolean",
+      "value": false,
+      "description": "Use Print to stdout instead of built-in logger"
+    }
+  ]
+}

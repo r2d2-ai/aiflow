@@ -33,21 +33,21 @@ func GetAppVersion() string {
 	return appVersion
 }
 
-func LoadAppConfig(flogoJson string, compressed bool) (*app.Config, error) {
+func LoadAppConfig(AIflowJson string, compressed bool) (*app.Config, error) {
 
 	var jsonBytes []byte
 
-	if flogoJson == "" {
+	if AIflowJson == "" {
 
 		// a json string wasn't provided, so lets lookup the file in path
-		configPath := GetFlogoAppConfigPath()
+		configPath := GetAIflowAppConfigPath()
 
-		flogo, err := os.Open(configPath)
+		AIflow, err := os.Open(configPath)
 		if err != nil {
 			return nil, err
 		}
 
-		jsonBytes, err = ioutil.ReadAll(flogo)
+		jsonBytes, err = ioutil.ReadAll(AIflow)
 		if err != nil {
 			return nil, err
 		}
@@ -55,12 +55,12 @@ func LoadAppConfig(flogoJson string, compressed bool) (*app.Config, error) {
 
 		if compressed {
 			var err error
-			jsonBytes, err = support.DecodeAndUnzip(flogoJson)
+			jsonBytes, err = support.DecodeAndUnzip(AIflowJson)
 			if err != nil {
 				return nil, err
 			}
 		} else {
-			jsonBytes = []byte(flogoJson)
+			jsonBytes = []byte(AIflowJson)
 		}
 	}
 

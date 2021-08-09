@@ -1,0 +1,42 @@
+{
+  "name": "AIflow-loader",
+  "type": "AIflow:trigger",
+  "version": "1.20.0",
+  "title": "Load Tester",
+  "description": "Simple Load Tester",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/trigger/loadtester",
+  "settings": [
+    {
+      "name": "startDelay",
+      "type": "int",
+      "description": "The start delay of the test in seconds, default: 30"
+    },
+    {
+      "name": "concurrency",
+      "type": "int",
+      "description": "The level of concurrency, default: 5"
+    },
+    {
+      "name": "duration",
+      "type": "int",
+      "description": "The duration of the test in seconds, default: 60"
+    },
+    {
+      "name": "data",
+      "type": "any",
+      "description": "Optional data to pass along to the action"
+    },
+    {
+      "name": "handler",
+      "type": "string",
+      "description": "The named handler to test, defaults to the first handler"
+    }
+  ],
+  "output": [
+    {
+      "name": "data",
+      "type": "any",
+      "description": "The data from the settings to pass along"
+    }
+  ]
+}

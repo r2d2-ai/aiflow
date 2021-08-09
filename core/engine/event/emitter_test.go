@@ -19,9 +19,9 @@ func (sl *SampleListener) HandleEvent(ctx *Context) error {
 }
 
 func TestRegisterListener(t *testing.T) {
-	os.Setenv("FLOGO_PUBLISH_AUDIT_EVENTS", "true")
+	os.Setenv("AIflow_PUBLISH_AUDIT_EVENTS", "true")
 	defer func() {
-		os.Unsetenv("FLOGO_PUBLISH_AUDIT_EVENTS")
+		os.Unsetenv("AIflow_PUBLISH_AUDIT_EVENTS")
 	}()
 	var err error
 	err = RegisterListener("sample", &SampleListener{}, []string{"sample"})

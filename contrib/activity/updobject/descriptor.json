@@ -1,0 +1,20 @@
+{
+  "name": "AIflow-updobject",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Update Object Value",
+  "description": "Update the values of an object",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/updobject",
+  "input": [
+    {
+      "name": "object",
+      "type": "object",
+      "description": "The object to update"
+    },
+    {
+      "name": "values",
+      "type": "object",
+      "description": "The key and values to update or add"
+    }
+  ]
+}

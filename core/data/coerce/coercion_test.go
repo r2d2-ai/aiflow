@@ -1,9 +1,10 @@
 package coerce
 
 import (
-	"github.com/stretchr/testify/assert"
 	"reflect"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCoerceToString(t *testing.T) {
@@ -28,9 +29,9 @@ func TestCoerceToString(t *testing.T) {
 	cval, _ = ToString(valNil)
 	assert.Equal(t, "", cval, "not equal")
 
-	var pointerString interface{} = StringPointer("flogo")
+	var pointerString interface{} = StringPointer("AIflow")
 	cval, _ = ToString(pointerString)
-	assert.Equal(t, "flogo", cval, "not equal")
+	assert.Equal(t, "AIflow", cval, "not equal")
 }
 
 func StringPointer(s string) *string {
@@ -135,11 +136,11 @@ func TestCoerceToObject(t *testing.T) {
 		Id   int
 		Name string
 	}{Id: 1001,
-		Name: "flogo"}
+		Name: "AIflow"}
 
 	obj, err := ToObject(s)
 	assert.Nil(t, err)
-	assert.Equal(t, "flogo", obj["Name"])
+	assert.Equal(t, "AIflow", obj["Name"])
 }
 
 func TestCoerceArray(t *testing.T) {

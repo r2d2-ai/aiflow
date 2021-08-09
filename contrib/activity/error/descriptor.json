@@ -1,0 +1,23 @@
+{
+  "name": "AIflow-error",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Throw Error",
+  "description": "Throws an Error",
+  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/error",
+  "display": {
+    "icon": "error-icon.svg"
+  },
+  "input": [
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "data",
+      "type": "object"
+    }
+  ],
+  "output": [
+  ]
+}

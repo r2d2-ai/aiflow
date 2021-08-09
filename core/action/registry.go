@@ -60,8 +60,8 @@ func LegacyRegister(ref string, f Factory) error {
 func GetFactory(ref string) Factory {
 
 	//temp hack
-	if ref == "github.com/TIBCOSoftware/flogo-contrib/action/flow" {
-		ref = "github.com/r2d2-ai/flow"
+	if ref == "github.com/TIBCOSoftware/AIflow-contrib/action/flow" {
+		ref = "github.com/r2d2-ai/ai-box/flow"
 	}
 
 	return actionFactories[ref]

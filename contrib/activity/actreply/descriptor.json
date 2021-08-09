@@ -1,0 +1,22 @@
+{
+  "name": "AIflow-reply",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "Reply To Trigger",
+  "description": "Replies to Trigger",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/actreply",
+  "reply":true,
+  "settings":[
+    {
+      "name": "mappings",
+      "type": "object",
+      "required": true,
+      "display": {
+        "name": "Mapper",
+        "type": "mapper",
+        "mapperOutputScope" : "action.output"
+      },
+      "description": "Set of mappings to execute when the activity runs"
+    }
+  ]
+}

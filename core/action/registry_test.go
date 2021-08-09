@@ -135,5 +135,5 @@ func TestLegacyRegister(t *testing.T) {
 
 func TestGetFactory(t *testing.T) {
 	assert.NotNil(t, GetFactory("sample"))
-	assert.Nil(t, GetFactory("github.com/TIBCOSoftware/flogo-contrib/action/flow"))
+	assert.Nil(t, GetFactory("github.com/TIBCOSoftware/AIflow-contrib/action/flow"))
 }

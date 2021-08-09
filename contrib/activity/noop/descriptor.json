@@ -1,0 +1,8 @@
+{
+  "name": "AIflow-noop",
+  "type": "AIflow:activity",
+  "version": "1.20.0",
+  "title": "No-Op",
+  "description": "No-Op Activity",
+  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/noop"
+}

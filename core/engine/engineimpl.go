@@ -19,7 +19,7 @@ import (
 // engineImpl is the type for the Default Engine Implementation
 type engineImpl struct {
 	config         *Config
-	flogoApp       *app.App
+	AIflowApp      *app.App
 	actionRunner   action.Runner
 	serviceManager *service.Manager
 	logger         log.Logger
@@ -130,13 +130,13 @@ func New(appConfig *app.Config, options ...Option) (Engine, error) {
 	}
 
 	// Create the application
-	flogoApp, err := app.New(appConfig, engine.actionRunner, appOptions...)
+	AIflowApp, err := app.New(appConfig, engine.actionRunner, appOptions...)
 	if err != nil {
 		return nil, err
 	}
 
 	logger.Debugf("Creating app [ %s ] with version [ %s ]", appConfig.Name, appConfig.Version)
-	engine.flogoApp = flogoApp
+	engine.AIflowApp = AIflowApp
 
 	return engine, nil
 }
@@ -156,7 +156,7 @@ func ConfigOption(engineJson string, compressed bool) func(*engineImpl) error {
 }
 
 func (e *engineImpl) App() *app.App {
-	return e.flogoApp
+	return e.AIflowApp
 }
 
 //Start initializes and starts the Triggers and initializes the Actions
@@ -164,7 +164,7 @@ func (e *engineImpl) Start() error {
 
 	logger := e.logger
 
-	logger.Infof("Starting app [ %s ] with version [ %s ]", e.flogoApp.Name(), e.flogoApp.Version())
+	logger.Infof("Starting app [ %s ] with version [ %s ]", e.AIflowApp.Name(), e.AIflowApp.Version())
 
 	logger.Info("Engine Starting...")
 
@@ -195,13 +195,13 @@ func (e *engineImpl) Start() error {
 	}
 
 	logger.Info("Starting Application...")
-	e.flogoApp.PostAppEvent(app.STARTING)
-	err = e.flogoApp.Start()
+	e.AIflowApp.PostAppEvent(app.STARTING)
+	err = e.AIflowApp.Start()
 	if err != nil {
-		e.flogoApp.PostAppEvent(app.FAILED)
+		e.AIflowApp.PostAppEvent(app.FAILED)
 		return err
 	}
-	e.flogoApp.PostAppEvent(app.STARTED)
+	e.AIflowApp.PostAppEvent(app.STARTED)
 	logger.Info("Application Started")
 
 	if channels.Count() > 0 {
@@ -228,10 +228,10 @@ func (e *engineImpl) Stop() error {
 	}
 
 	logger.Info("Stopping Application...")
-	e.flogoApp.PostAppEvent(app.STOPPING)
-	_ = e.flogoApp.Stop()
+	e.AIflowApp.PostAppEvent(app.STOPPING)
+	_ = e.AIflowApp.Stop()
 	logger.Info("Application Stopped")
-	e.flogoApp.PostAppEvent(app.STOPPED)
+	e.AIflowApp.PostAppEvent(app.STOPPED)
 
 	//TODO temporarily add services
 	logger.Info("Stopping Services...")

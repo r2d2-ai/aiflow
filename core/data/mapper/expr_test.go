@@ -73,23 +73,23 @@ func TestExpressionMapperFunction(t *testing.T) {
 	assert.Nil(t, err)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 	results, err := mapper.Apply(scope)
 	assert.Nil(t, err)
-	assert.Equal(t, "Hello FLOGO", results["SimpleO"])
+	assert.Equal(t, "Hello AIflow", results["SimpleO"])
 }
 
 func TestExpressionMapperConditionExpr(t *testing.T) {
 
-	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "FLOGO"`}
+	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "AIflow"`}
 	factory := NewFactory(resolve.GetBasicResolver())
 	mapper, err := factory.NewMapper(mappings)
 	assert.Nil(t, err)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 	results, err := mapper.Apply(scope)
@@ -99,21 +99,21 @@ func TestExpressionMapperConditionExpr(t *testing.T) {
 
 func TestExpressionMapperTernaryExpr(t *testing.T) {
 
-	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "FLOGO" ? "Welcome FLOGO" : "Bye bye !"`}
+	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "AIflow" ? "Welcome AIflow" : "Bye bye !"`}
 	factory := NewFactory(resolve.GetBasicResolver())
 	mapper, err := factory.NewMapper(mappings)
 	assert.Nil(t, err)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 	results, err := mapper.Apply(scope)
 	assert.Nil(t, err)
-	assert.Equal(t, "Welcome FLOGO", results["SimpleO"])
+	assert.Equal(t, "Welcome AIflow", results["SimpleO"])
 
 	inputValues2 := make(map[string]interface{})
-	inputValues2["SimpleI"] = "FLOGO2"
+	inputValues2["SimpleI"] = "AIflow2"
 
 	scope = data.NewSimpleScope(inputValues2, nil)
 	results, err = mapper.Apply(scope)
@@ -181,7 +181,7 @@ func BenchmarkExpressionMapperFunction(b *testing.B) {
 	mapper, _ := factory.NewMapper(mappings)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 
@@ -195,7 +195,7 @@ func BenchmarkExpressionMapperFunction(b *testing.B) {
 
 		val, ok := results["SimpleO"]
 		if ok {
-			if val != "Hello FLOGO" {
+			if val != "Hello AIflow" {
 				b.Fail()
 			}
 		}
@@ -204,12 +204,12 @@ func BenchmarkExpressionMapperFunction(b *testing.B) {
 
 func BenchmarkExpressionMapperConditionExpr(b *testing.B) {
 
-	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "FLOGO"`}
+	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "AIflow"`}
 	factory := NewFactory(resolve.GetBasicResolver())
 	mapper, _ := factory.NewMapper(mappings)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 
@@ -232,12 +232,12 @@ func BenchmarkExpressionMapperConditionExpr(b *testing.B) {
 
 func BenchmarkExpressionMapperTernaryExpr(b *testing.B) {
 
-	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "FLOGO" ? "Welcome FLOGO" : "Bye bye !"`}
+	mappings := map[string]interface{}{"SimpleO": `=$.SimpleI == "AIflow" ? "Welcome AIflow" : "Bye bye !"`}
 	factory := NewFactory(resolve.GetBasicResolver())
 	mapper, _ := factory.NewMapper(mappings)
 
 	inputValues := make(map[string]interface{})
-	inputValues["SimpleI"] = "FLOGO"
+	inputValues["SimpleI"] = "AIflow"
 
 	scope := data.NewSimpleScope(inputValues, nil)
 
@@ -251,7 +251,7 @@ func BenchmarkExpressionMapperTernaryExpr(b *testing.B) {
 
 		val, ok := results["SimpleO"]
 		if ok {
-			if val != "Welcome FLOGO" {
+			if val != "Welcome AIflow" {
 				b.Fail()
 			}
 		}

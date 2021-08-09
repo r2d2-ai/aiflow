@@ -1,6 +1,6 @@
 {
   "name": "sample-trigger",
-  "type": "flogo:trigger",
+  "type": "AIflow:trigger",
   "version": "0.0.1",
   "title": "Sample Trigger",
   "description": "Sample Trigger",

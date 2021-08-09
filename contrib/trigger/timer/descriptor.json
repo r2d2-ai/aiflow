@@ -1,0 +1,22 @@
+{
+  "name": "AIflow-timer",
+  "type": "AIflow:trigger",
+  "version": "1.20.0",
+  "title": "Timer",
+  "description": "Simple Timer trigger",
+  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/trigger/timer",
+  "handler": {
+    "settings": [
+      {
+        "name": "startDelay",
+        "type": "string",
+        "description": "The start delay (ex. 1m, 1h, etc.), immediate if not specified"
+      },
+      {
+        "name": "repeatInterval",
+        "type": "string",
+        "description": "The repeat interval (ex. 1m, 1h, etc.), doesn't repeat if not specified"
+      }
+    ]
+  }
+}

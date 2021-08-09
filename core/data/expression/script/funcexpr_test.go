@@ -44,21 +44,21 @@ func TestFuncExprNested(t *testing.T) {
 
 func TestFuncExprNestedMultiSpace(t *testing.T) {
 
-	expr, err := factory.NewExpr(`script.concat("This",   " is" , " Flogo")`)
+	expr, err := factory.NewExpr(`script.concat("This",   " is" , " AIflow")`)
 	assert.Nil(t, err)
 
 	v, err := expr.Eval(nil)
 	assert.Nil(t, err)
 
-	assert.Equal(t, "This is Flogo", v.(string))
+	assert.Equal(t, "This is AIflow", v.(string))
 }
 
 func TestFunctionWithRef(t *testing.T) {
 
-	scope := data.NewSimpleScope(map[string]interface{}{"queryParams": map[string]interface{}{"id": "flogo"}}, nil)
+	scope := data.NewSimpleScope(map[string]interface{}{"queryParams": map[string]interface{}{"id": "AIflow"}}, nil)
 	factory := NewExprFactory(resolve.GetBasicResolver())
 	testcases := make(map[string]interface{})
-	testcases[`script.concat("This", " is ", $.queryParams.id)`] = "This is flogo"
+	testcases[`script.concat("This", " is ", $.queryParams.id)`] = "This is AIflow"
 
 	for k, v := range testcases {
 		vv, err := factory.NewExpr(k)

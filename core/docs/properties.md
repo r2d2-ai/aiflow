@@ -1,16 +1,16 @@
 #Properties
-In Flogo, the concept of an application-level property bag is available to allow reuse of properties across different actions, triggers and activities.  For example, they can be used in trigger or activity settings. Properties are accessed via the `$property` resolver and made available to the scopes defined in the [mappings](mapping.md) documentation.
+In AIflow, the concept of an application-level property bag is available to allow reuse of properties across different actions, triggers and activities.  For example, they can be used in trigger or activity settings. Properties are accessed via the `$property` resolver and made available to the scopes defined in the [mappings](mapping.md) documentation.
 
 ### Configuration
 
-Properties are defined within the top-level of the flogo application json, as shown below via the `properties` element.
+Properties are defined within the top-level of the aiflow application json, as shown below via the `properties` element.
 
 ```json
 {
   "name": "default_app",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "0.0.1",
-  "description": "Sample flogo app",
+  "description": "Sample aiflow app",
   "properties": [
      {
        "name": "my_property",
@@ -42,9 +42,9 @@ Even though the engine itself doesn't support property grouping, this can be acc
 ```json
 {
   "name": "default_app",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "0.0.1",
-  "description": "Sample flogo app",
+  "description": "Sample aiflow app",
   "properties": [
      {
        "name": "PURCHASE.SERVICE.DB.URL",
@@ -76,12 +76,12 @@ These properties can be accessed via `$property[PURCHASE.SERVICE.DB.URL]` or `$p
 
 In order to override properties at runtime, you have to enable external property resolvers.
 
-This can be done by setting the `FLOGO_APP_PROP_RESOLVERS` environment variable.  Currently, there are two built-in external
+This can be done by setting the `AIflow_APP_PROP_RESOLVERS` environment variable.  Currently, there are two built-in external
 property resolvers: json(JSON) and env(Environment Variable).
 
 
 ```terminal
-FLOGO_APP_PROP_RESOLVERS=env,json ./<app_binary>
+AIflow_APP_PROP_RESOLVERS=env,json ./<app_binary>
 ```
 
 You can override app properties at runtime in two ways:
@@ -91,7 +91,7 @@ You can override app properties at runtime in two ways:
 When using the `json` property resolver, you can provide a comma separated list of json files that
 will override the application's existing property values.
 ```env
-FLOGO_APP_PROPS_JSON=app1.json,common.json
+AIflow_APP_PROPS_JSON=app1.json,common.json
 ```
 
 **Example**
@@ -111,8 +111,8 @@ Now run your application:
 
 ```terminal
 
-export FLOGO_APP_PROPS_JSON=props.json 
-FLOGO_APP_PROP_RESOLVERS=json ./MyApp
+export AIflow_APP_PROPS_JSON=props.json 
+AIflow_APP_PROP_RESOLVERS=json ./MyApp
 ```
 
 #### Resolver: env
@@ -120,7 +120,7 @@ FLOGO_APP_PROP_RESOLVERS=json ./MyApp
 In order to override properties using environment variables, you just need enable the `env` property resolver
 
 ```terminal
-FLOGO_APP_PROP_RESOLVERS=env ./<app_binary>
+AIflow_APP_PROP_RESOLVERS=env ./<app_binary>
 ```
 
 **Example**
@@ -130,7 +130,7 @@ Let's say you want to override `myprop` property in your app.  You would do the 
 ```terminal
 
 export myprop=bar
-FLOGO_APP_PROP_RESOLVERS=env ./MyApp
+AIflow_APP_PROP_RESOLVERS=env ./MyApp
 ```
 
 
@@ -176,8 +176,8 @@ func (resolver *SamplePropertyResolver) LookupValue(propertyName string) (interf
 *Note: In order for your resolver to be loaded in the go code, you need to add an entry to your resolver in the imports section of the engine.json*
 
 
-Set the `FLOGO_APP_PROP_RESOLVERS` environment variable to `sampleresolver` while running your application. For example:
+Set the `AIflow_APP_PROP_RESOLVERS` environment variable to `sampleresolver` while running your application. For example:
 
 ```terminal
-FLOGO_APP_PROPS_RESOLVERS=sampleresolver ./<app_binary>
+AIflow_APP_PROPS_RESOLVERS=sampleresolver ./<app_binary>
 ```

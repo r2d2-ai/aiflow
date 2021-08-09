@@ -1,0 +1,74 @@
+{
+    "name": "flogo-mongodb",
+    "type": "flogo:activity",
+    "version": "0.1.0",
+    "title": "MongoDB",
+    "description": "Manage MongoDB documents in a specified collection",
+    "homepage": "",
+    "settings":[
+      {
+        "name": "uri",
+        "type": "string",
+        "required": true,
+        "description": "The MongoDB connection URI"
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "allowed": [
+          "GET",
+          "DELETE",
+          "INSERT",
+          "UPDATE"
+        ],
+        "required": true,
+        "description": "The method type (GET, INSERT, UPDATE or DELETE)"
+      }, 
+      {
+        "name": "dbName",
+        "type": "string",
+        "required": true,
+        "description": "The name of the database"
+      },
+      {
+        "name": "collection",
+        "type": "string",
+        "required": true,
+        "description": "The collection to work on "
+      },
+      {
+        "name": "username",
+        "type": "string",
+        "description" : "The username of the client"
+      },
+      {
+        "name": "password",
+        "type": "string",
+        "description" : "The password of the client"
+      }
+    ],
+    "input": [
+      {
+        "name": "keyName",
+        "type": "string",
+        "description": "The name of the key to use when looking up an object (used in GET, UPDATE and DELETE)"
+      },
+      {
+        "name": "keyValue",
+        "type": "string",
+        "description": "The value of the key to use when looking up an object (used in GET, UPDATE, and DELETE)"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "The bson document to insert in mongodb"
+      }
+    ],
+    "output": [
+      {
+        "name": "data",
+        "type": "any",
+        "description": "The result of the MongoDB method invocation"
+      }
+    ]
+  }

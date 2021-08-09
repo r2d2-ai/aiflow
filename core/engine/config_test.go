@@ -9,12 +9,12 @@ import (
 
 const testEngineConfig = `
 {
-  "type": "flogo:engine",
+  "type": "AIflow:engine",
   "imports": [
-    "github.com/r2d2-ai/services/flow-state/store/mem"
+    "github.com/r2d2-ai/ai-box/services/flow-state/store/mem"
   ],
   "actionSettings": {
-    "github.com/r2d2-ai/flow": {
+    "github.com/r2d2-ai/ai-box/flow": {
       "stepRecordingMode": "full",
       "snapshotRecordingMode": "off",
       "enableExternalFlows": true
@@ -23,7 +23,7 @@ const testEngineConfig = `
   "services": [
     {
       "name": "flowTester",
-      "ref": "github.com/r2d2-ai/flow/tester",
+      "ref": "github.com/r2d2-ai/ai-box/flow/tester",
       "enabled": true,
       "settings": {
         "port": "8181"
@@ -31,14 +31,14 @@ const testEngineConfig = `
     },
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/services/flow-state/client/local",
+      "ref": "github.com/r2d2-ai/ai-box/services/flow-state/client/local",
       "enabled": true,
       "settings": {
       }
     },
     {
       "name": "flowStateProvider",
-      "ref": "github.com/r2d2-ai/services/flow-state/server/rest",
+      "ref": "github.com/r2d2-ai/ai-box/services/flow-state/server/rest",
       "enabled": true,
       "settings": {
         "host": "blah",

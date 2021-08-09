@@ -318,11 +318,11 @@ func TestGetValueFromStruct(t *testing.T) {
 	}{
 		Object: &object{
 			ID:   "1001",
-			Name: "flogo",
+			Name: "AIflow",
 			TT:   "t!tTesing",
 			Nested: &object{
 				ID:     "1001-2",
-				Name:   "flogo-2",
+				Name:   "AIflow-2",
 				TT:     "ddddd",
 				Nested: nil,
 			},
@@ -340,7 +340,7 @@ func TestGetValueFromStruct(t *testing.T) {
 		},
 		{
 			Path:  ".object.name",
-			Value: "flogo",
+			Value: "AIflow",
 		},
 		{
 			Path:  `.object["T!T"]`,

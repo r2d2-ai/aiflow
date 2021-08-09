@@ -1,6 +1,6 @@
 {
   "name": "sample-action",
-  "type": "flogo:action",
+  "type": "AIflow:action",
   "version": "0.0.1",
   "title": "Simple Action",
   "description": "Sample Action",
