@@ -241,8 +241,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/api"
-	"github.com/r2d2-ai/core/engine"
+	"github.com/r2d2-ai/ai-box/core/api"
+	"github.com/r2d2-ai/ai-box/core/engine"
 	"github.com/r2d2-ai/flow"
 
 	_ "github.com/r2d2-ai/contrib/activity/log" //our flow contains a log activity, so we need to include this
@@ -306,8 +306,8 @@ Complete Example
 ```go
 import (
 ...
-"github.com/r2d2-ai/core/activity"
-"github.com/r2d2-ai/core/api"
+"github.com/r2d2-ai/ai-box/core/activity"
+"github.com/r2d2-ai/ai-box/core/api"
 ...
 )
 
@@ -378,8 +378,8 @@ Just like running activities, you might want to directly run a certain action. T
 ```go
 import (
 ...
-"github.com/r2d2-ai/core/action"
-"github.com/r2d2-ai/core/api"
+"github.com/r2d2-ai/ai-box/core/action"
+"github.com/r2d2-ai/ai-box/core/api"
 cml"github.com/r2d2-ai/catalystml-flogo/action"
 ...
 )

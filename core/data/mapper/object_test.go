@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/property"
-	"github.com/r2d2-ai/core/data/resolve"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/property"
+	"github.com/r2d2-ai/ai-box/core/data/resolve"
 
 	"github.com/stretchr/testify/assert"
 )

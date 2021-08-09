@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/r2d2-ai/core/support"
+	"github.com/r2d2-ai/ai-box/core/support"
 )
 
 // Config is the configuration for the Engine, assumes all necessary imports have been add to go code

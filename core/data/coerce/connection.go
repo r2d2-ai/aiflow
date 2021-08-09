@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/core/support/connection"
+	"github.com/r2d2-ai/ai-box/core/support/connection"
 )
 
 func ToConnection(val interface{}) (connection.Manager, error) {

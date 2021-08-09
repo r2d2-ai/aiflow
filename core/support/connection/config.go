@@ -3,8 +3,8 @@ package connection
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/app/resolve"
-	"github.com/r2d2-ai/core/support"
+	"github.com/r2d2-ai/ai-box/core/app/resolve"
+	"github.com/r2d2-ai/ai-box/core/support"
 )
 
 type Config struct {

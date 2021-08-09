@@ -3,8 +3,8 @@ package resolve
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/path"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/path"
 )
 
 var loopResolverInfo = NewImplicitResolverInfo(false, true)

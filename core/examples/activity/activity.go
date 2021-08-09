@@ -1,8 +1,8 @@
 package sample
 
 import (
-	"github.com/r2d2-ai/core/activity"
-	"github.com/r2d2-ai/core/data/metadata"
+	"github.com/r2d2-ai/ai-box/core/activity"
+	"github.com/r2d2-ai/ai-box/core/data/metadata"
 )
 
 func init() {

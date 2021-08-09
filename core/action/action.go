@@ -3,9 +3,9 @@ package action
 import (
 	"context"
 
-	"github.com/r2d2-ai/core/app/resource"
-	"github.com/r2d2-ai/core/data/metadata"
-	"github.com/r2d2-ai/core/support/service"
+	"github.com/r2d2-ai/ai-box/core/app/resource"
+	"github.com/r2d2-ai/ai-box/core/data/metadata"
+	"github.com/r2d2-ai/ai-box/core/support/service"
 )
 
 // Action is an action to perform as a result of a trigger

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	parseError "github.com/r2d2-ai/core/data/expression/script/gocc/errors"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/token"
+	parseError "github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/errors"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/token"
 )
 
 const (

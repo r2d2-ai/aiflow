@@ -3,7 +3,7 @@ package trigger
 import (
 	"context"
 
-	"github.com/r2d2-ai/core/engine/event"
+	"github.com/r2d2-ai/ai-box/core/engine/event"
 )
 
 type Status string

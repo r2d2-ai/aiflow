@@ -7,13 +7,13 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/r2d2-ai/core/action"
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/coerce"
-	"github.com/r2d2-ai/core/data/expression"
-	"github.com/r2d2-ai/core/data/mapper"
-	"github.com/r2d2-ai/core/data/property"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/action"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/ai-box/core/data/expression"
+	"github.com/r2d2-ai/ai-box/core/data/mapper"
+	"github.com/r2d2-ai/ai-box/core/data/property"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 var handlerLog = log.ChildLogger(log.RootLogger(), "handler")

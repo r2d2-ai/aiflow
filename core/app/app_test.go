@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	_ "github.com/r2d2-ai/core/examples/action"
-	_ "github.com/r2d2-ai/core/examples/trigger"
+	_ "github.com/r2d2-ai/ai-box/core/examples/action"
+	_ "github.com/r2d2-ai/ai-box/core/examples/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -16,13 +16,13 @@ var app = `{
 	"description": "My flogo application description",
 	"appModel": "1.1.0",
 	"imports": [
-	  "github.com/r2d2-ai/core/examples/trigger",
-	  "github.com/r2d2-ai/core/examples/action"
+	  "github.com/r2d2-ai/ai-box/core/examples/trigger",
+	  "github.com/r2d2-ai/ai-box/core/examples/action"
 	],
 	"triggers": [
 	  {
 		"id": "my_trigger",
-		"ref": "github.com/r2d2-ai/core/examples/trigger",
+		"ref": "github.com/r2d2-ai/ai-box/core/examples/trigger",
 		"settings": {
 		  "aSetting": 2
 		},
@@ -33,7 +33,7 @@ var app = `{
 			},
 			"actions": [
 			  {
-				"ref": "github.com/r2d2-ai/core/examples/action",
+				"ref": "github.com/r2d2-ai/ai-box/core/examples/action",
 				"settings": {
 				  "aSetting": "a"
 				},

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/r2d2-ai/core/action"
+	"github.com/r2d2-ai/ai-box/core/action"
 )
 
 // DirectRunner runs an action synchronously

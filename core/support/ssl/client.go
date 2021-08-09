@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/r2d2-ai/core/data/coerce"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 const ConfigSchema = `

@@ -1,11 +1,11 @@
 package mapper
 
 import (
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/expression"
-	"github.com/r2d2-ai/core/data/mapper/config"
-	"github.com/r2d2-ai/core/data/resolve"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/expression"
+	"github.com/r2d2-ai/ai-box/core/data/mapper/config"
+	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 type ExprMapperFactory struct {

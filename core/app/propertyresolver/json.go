@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/r2d2-ai/core/data/property"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/data/property"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 var preload = make(map[string]interface{})

@@ -1,7 +1,7 @@
 package sample
 
 import (
-	"github.com/r2d2-ai/core/data/coerce"
+	"github.com/r2d2-ai/ai-box/core/data/coerce"
 )
 
 type Settings struct {

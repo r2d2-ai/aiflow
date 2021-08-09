@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/resolve"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/resolve"
 
-	"github.com/r2d2-ai/core/data/coerce"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/token"
 )
 
 type literalExpr struct {

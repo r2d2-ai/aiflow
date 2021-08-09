@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/r2d2-ai/core/support"
+	"github.com/r2d2-ai/ai-box/core/support"
 )
 
 type TestManager struct {

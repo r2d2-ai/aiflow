@@ -3,7 +3,7 @@ package trigger
 import (
 	"testing"
 
-	"github.com/r2d2-ai/core/data"
+	"github.com/r2d2-ai/ai-box/core/data"
 	"github.com/stretchr/testify/assert"
 )
 

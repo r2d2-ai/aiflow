@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/metadata"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/metadata"
 )
 
 type Metadata struct {

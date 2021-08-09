@@ -3,7 +3,7 @@ package schema
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 var (

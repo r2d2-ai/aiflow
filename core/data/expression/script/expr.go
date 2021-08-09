@@ -3,14 +3,14 @@ package script
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/data/expression"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/ast"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/errors"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/lexer"
-	"github.com/r2d2-ai/core/data/expression/script/gocc/parser"
-	"github.com/r2d2-ai/core/data/resolve"
+	"github.com/r2d2-ai/ai-box/core/data/expression"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/ast"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/errors"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/lexer"
+	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/parser"
+	"github.com/r2d2-ai/ai-box/core/data/resolve"
 
-	_ "github.com/r2d2-ai/core/data/expression/function/builtin"
+	_ "github.com/r2d2-ai/ai-box/core/data/expression/function/builtin"
 )
 
 func init() {

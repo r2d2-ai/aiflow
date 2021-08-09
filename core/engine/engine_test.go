@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/r2d2-ai/core/app"
+	"github.com/r2d2-ai/ai-box/core/app"
 	"github.com/stretchr/testify/assert"
 )
 

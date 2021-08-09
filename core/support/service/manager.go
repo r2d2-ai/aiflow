@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/r2d2-ai/core/support/managed"
+	"github.com/r2d2-ai/ai-box/core/support/managed"
 )
 
 // Manager is a simple service manager

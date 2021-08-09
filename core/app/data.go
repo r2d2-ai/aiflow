@@ -3,9 +3,9 @@ package app
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/resolve"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 var appData = data.NewSimpleSyncScope(nil, nil)

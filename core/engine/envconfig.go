@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/r2d2-ai/core/app/propertyresolver"
-	"github.com/r2d2-ai/core/data/property"
-	"github.com/r2d2-ai/core/engine/runner"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/app/propertyresolver"
+	"github.com/r2d2-ai/ai-box/core/data/property"
+	"github.com/r2d2-ai/ai-box/core/engine/runner"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 const (

@@ -3,9 +3,9 @@ package sample
 import (
 	"context"
 
-	"github.com/r2d2-ai/core/action"
-	"github.com/r2d2-ai/core/data/metadata"
-	"github.com/r2d2-ai/core/support/log"
+	"github.com/r2d2-ai/ai-box/core/action"
+	"github.com/r2d2-ai/ai-box/core/data/metadata"
+	"github.com/r2d2-ai/ai-box/core/support/log"
 )
 
 func init() {

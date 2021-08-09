@@ -1,6 +1,6 @@
 package trace
 
-import "github.com/r2d2-ai/core/support/managed"
+import "github.com/r2d2-ai/ai-box/core/support/managed"
 
 // CarrierFormat defines the format of the propogation that needs to injected or extracted
 type CarrierFormat byte

@@ -3,8 +3,8 @@ package function
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/core/data"
-	"github.com/r2d2-ai/core/data/coerce"
+	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/ai-box/core/data/coerce"
 )
 
 type Function interface {
