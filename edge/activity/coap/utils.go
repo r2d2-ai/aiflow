@@ -1,7 +1,6 @@
 package coap
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 
@@ -20,7 +19,7 @@ const (
 	typeRST = "RESET"
 )
 
-func toCoapMethodCode(method string) coap.COAPCode  {
+func toCoapMethodCode(method string) coap.COAPCode {
 
 	var code coap.COAPCode
 
