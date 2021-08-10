@@ -4,5 +4,5 @@
   "version": "1.20.0",
   "title": "No-Op",
   "description": "No-Op Activity",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/noop"
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commonactivity/noop"
 }

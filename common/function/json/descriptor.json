@@ -4,7 +4,7 @@
   "version": "0.11.0",
   "title": "Json Functions",
   "description": "Json Functions",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/function/json",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/json",
   "functions": [
     {
       "name": "get",

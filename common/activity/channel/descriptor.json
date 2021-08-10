@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Channel",
   "description": "Publish on Channel",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/channel",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commonactivity/channel",
   "input": [
     {
       "name": "channel",

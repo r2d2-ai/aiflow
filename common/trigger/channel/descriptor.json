@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Listen to Channel",
   "description": "Listens to Channel",
-  "homepage": "https://github.com/r2d2-ai/aiflow/common/tree/master/trigger/channel",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/trigger/channel",
   "settings": [
   ],
   "output": [

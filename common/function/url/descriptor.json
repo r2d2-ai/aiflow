@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "title": "URL Functions",
   "description": "URL Functions",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/function/url",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/url",
   "functions": [
     {
       "name": "encode",

@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Misc utility functions",
   "description": "Useful tools and utilities",
-  "homepage": "https://github.com/r2d2-ai/aiflow/common/tree/master/function/utils",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/utils",
   "functions": [
     {
       "name": "uuid",

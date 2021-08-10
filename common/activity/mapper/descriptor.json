@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Mapper",
   "description": "Mapper",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/mapper",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commonactivity/mapper",
   "settings":[
     {
       "name": "mappings",

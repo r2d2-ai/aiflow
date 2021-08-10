@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Number Functions",
   "description": "Number Functions",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/function/number",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/number",
   "functions": [
     {
       "name": "random",

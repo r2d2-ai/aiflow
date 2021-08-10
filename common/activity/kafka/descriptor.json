@@ -4,7 +4,7 @@
     "title": "Publish Kafka message",
     "type": "AIflow:activity",
     "description": "Publish a message to a kafka topic",
-    "homepage": "https://github.com/r2d2-ai/aiflow/common/tree/master/activity/kafka",
+    "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/activity/kafka",
     "author": "Wendell Nichols <wnichols@tibco.com>",
     "settings":[
       {

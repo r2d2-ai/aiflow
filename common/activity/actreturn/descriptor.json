@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Return",
   "description": "Return Activity",
-  "homepage": "https://github.com/prject-AIflow/contrib/tree/master/activity/actreturn",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commonactivity/actreturn",
   "return":true,
   "settings":[
     {
