@@ -41,11 +41,12 @@ _cgo_export.*
 
 _testmain.go
 
+.idea/
 .vscode/
 tags
-.vscode/symbols.json
-.idea
+.idea/
+.vscode/
 .build-cache
-submodules/flogo-cicd/.build-cache
+submodules/AIflow-cicd/.build-cache
 ./Dockerfile
 
