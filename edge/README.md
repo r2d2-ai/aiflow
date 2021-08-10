@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/r2d2-ai/aiflow/edge-contrib.svg?branch=master)](https://travis-ci.org/r2d2-ai/aiflow/datastore-contrib.svg?branch=master)
 
-A collection of Edge related Flogo contributions.  This repository consists of activities and triggers typically used on edge devices.
+A collection of Edge related AIflow contributions.  This repository consists of activities and triggers typically used on edge devices.
 
 ## Contributions
 
@@ -19,7 +19,7 @@ A collection of Edge related Flogo contributions.  This repository consists of a
 
 ### Contributing
 
-New activities, triggers and functions are welcomed. If you would like to contribute, please following the [contribution guidelines](https://github.com/TIBCOSoftware/flogo/blob/master/CONTRIBUTING.md). If you have any questions, issues, etc feel free to chat with us on [Gitter](https://gitter.im/r2d2-ai/aiflow/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
+New activities, triggers and functions are welcomed. If you would like to contribute, please following the [contribution guidelines](https://github.com/TIBCOSoftware/AIflow/blob/master/CONTRIBUTING.md). If you have any questions, issues, etc feel free to chat with us on [Gitter](https://gitter.im/r2d2-ai/aiflow/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
 ## License
 The contrib repository is licensed under a BSD-type license. See [LICENSE](LICENSE) for license text.

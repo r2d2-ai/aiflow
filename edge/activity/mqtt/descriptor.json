@@ -1,6 +1,6 @@
 {
-  "name": "flogo-mqtt",
-  "type": "flogo:activity",
+  "name": "AIflow-mqtt",
+  "type": "AIflow:activity",
   "version": "0.1.0",
   "title": "MQTT Activity",
   "description": "Send MQTT message",

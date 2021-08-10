@@ -8,9 +8,9 @@ This activity allows you to send a CoAP message.
 
 ## Installation
 
-### Flogo CLI
+### AIflow CLI
 ```bash
-flogo install github.com/r2d2-ai/aiflow/edge-contrib/activity/coap
+AIflow install github.com/r2d2-ai/aiflow/edge-contrib/activity/coap
 ```
 
 ## Configuration
@@ -49,10 +49,10 @@ flogo install github.com/r2d2-ai/aiflow/edge-contrib/activity/coap
     "ref": "github.com/r2d2-ai/aiflow/edge-contrib/activity/coap",
     "settings": {
       "method" : "GET",
-      "uri": "coap://localhost:5683/flogo"
+      "uri": "coap://localhost:5683/AIflow"
     },
     "input" : {
-        "payload" : "Hello from Flogo"
+        "payload" : "Hello from AIflow"
     }
   }
 }

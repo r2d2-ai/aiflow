@@ -7,9 +7,9 @@ This activity allows you to control GPIO pins on a Raspberry Pi.
 
 ## Installation
 
-### Flogo CLI
+### AIflow CLI
 ```bash
-flogo install github.com/r2d2-ai/aiflow/edge-contrib/activity/gpio
+AIflow install github.com/r2d2-ai/aiflow/edge-contrib/activity/gpio
 ```
 
 ## Configuration
@@ -46,7 +46,7 @@ flogo install github.com/r2d2-ai/aiflow/edge-contrib/activity/gpio
     "ref": "github.com/r2d2-ai/aiflow/edge-contrib/activity/gpio",
     "settings": {
       "method" : "Pull",
-      "uri": "coap://localhost:5683/flogo"
+      "uri": "coap://localhost:5683/AIflow"
     },
     "input" : {
         "direction" : "Input",

@@ -50,7 +50,7 @@ const testConfig string = `{
         "certstore": "*****8",
         "cleansess": false,
         "enableTLS": true,
-		"id": "FlogoTest237123",
+		"id": "AIflowTest237123",
         "keepalive": 30,
         "password": "****",
         "store": ":memory:",
@@ -76,7 +76,7 @@ const testConfigLocal string = `{
 	        "broker": "tcp://localhost:1883",
 	        "cleansess": false,
 	        "enableTLS": false,
-					"id": "FlogoTest237123",
+					"id": "AIflowTest237123",
 	        "keepalive": 30,
 	        "store": ":memory:"
 	    },
@@ -100,7 +100,7 @@ const testConfigLocalgetHandler string = `{
 			        "broker": "tcp://localhost:1883",
 			        "cleansess": false,
 			        "enableTLS": false,
-							"id": "FlogoTest2371231",
+							"id": "AIflowTest2371231",
 			        "keepalive": 30,
 			        "store": ":memory:"
 			    },

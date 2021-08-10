@@ -1,11 +1,11 @@
 # CoAP
-This trigger provides your flogo application the ability to start a flow via CoAP.
+This trigger provides your AIflow application the ability to start a flow via CoAP.
 
 ## Installation
 
-### Flogo CLI
+### AIflow CLI
 ```bash
-flogo install github.com/r2d2-ai/aiflow/edge-contrib/trigger/coap
+AIflow install github.com/r2d2-ai/aiflow/edge-contrib/trigger/coap
 ```
 
 ## Configuration
@@ -43,7 +43,7 @@ flogo install github.com/r2d2-ai/aiflow/edge-contrib/trigger/coap
   },
   "handlers": {
     "settings": {
-    	"path": "/flogo"
+    	"path": "/AIflow"
     
     }
   }

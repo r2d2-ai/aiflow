@@ -17,7 +17,7 @@ func TestRegister(t *testing.T) {
 }
 
 func TestSimple(t *testing.T) {
-	settings := &Settings{Method: "GET", URI: "coap://localhost:5683/flogo"}
+	settings := &Settings{Method: "GET", URI: "coap://localhost:5683/AIflow"}
 
 	iCtx := test.NewActivityInitContext(settings, nil)
 	act, err := New(iCtx)

@@ -24,7 +24,7 @@ const testConfig string = `{
 	"handlers": [
 	  {
 			"settings": {
-		  	"path": "/flogo"
+		  	"path": "/AIflow"
 			},
 			"action" : {
 		  	"id": "dummy"

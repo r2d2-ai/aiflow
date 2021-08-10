@@ -7,9 +7,9 @@ This trigger allows you to listen to messages on MQTT.
 
 ## Installation
 
-### Flogo CLI
+### AIflow CLI
 ```bash
-flogo install github.com/r2d2-ai/aiflow/edge-contrib/trigger/mqtt
+AIflow install github.com/r2d2-ai/aiflow/edge-contrib/trigger/mqtt
 ```
 
 ## Configuration
@@ -76,7 +76,7 @@ MQTT wildcard syntax is supported. For example if the topic is '/x/+/y/#' then t
   },
   "handlers": {
     "settings": {
-    	"topic": "flogo",
+    	"topic": "AIflow",
     	"qos": "0"
     }
   }

@@ -7,9 +7,9 @@ This activity allows you to send message on MQTT Queue.
 
 ## Installation
 
-### Flogo CLI
+### AIflow CLI
 ```bash
-flogo install github.com/r2d2-ai/aiflow/edge-contrib/activity/mqtt
+AIflow install github.com/r2d2-ai/aiflow/edge-contrib/activity/mqtt
 ```
 
 ## Configuration
@@ -68,10 +68,10 @@ A substitution syntax is supported. For example if the topic is '/x/:/y/:' then 
       "broker" : "tcp://localhost:1883",
       "qos": "0",
       "id":"client-1",
-      "topic": "flogo"
+      "topic": "AIflow"
     },
     "input" : {
-        "message" : "Hello From Flogo"
+        "message" : "Hello From AIflow"
     }
   }
 }
