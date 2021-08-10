@@ -241,12 +241,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/api"
-	"github.com/r2d2-ai/ai-box/core/engine"
-	"github.com/r2d2-ai/ai-box/flow"
+	"github.com/r2d2-ai/AIflow/core/api"
+	"github.com/r2d2-ai/AIflow/core/engine"
+	"github.com/r2d2-ai/AIflow/flow"
 
-	_ "github.com/r2d2-ai/ai-box/common/activity/log" //our flow contains a log activity, so we need to include this
-	"github.com/r2d2-ai/ai-box/common/trigger/rest"
+	_ "github.com/r2d2-ai/AIflow/common/activity/log" //our flow contains a log activity, so we need to include this
+	"github.com/r2d2-ai/AIflow/common/trigger/rest"
 )
 
 func main() {
@@ -306,8 +306,8 @@ Complete Example
 ```go
 import (
 ...
-"github.com/r2d2-ai/ai-box/core/activity"
-"github.com/r2d2-ai/ai-box/core/api"
+"github.com/r2d2-ai/AIflow/core/activity"
+"github.com/r2d2-ai/AIflow/core/api"
 ...
 )
 
@@ -378,8 +378,8 @@ Just like running activities, you might want to directly run a certain action. T
 ```go
 import (
 ...
-"github.com/r2d2-ai/ai-box/core/action"
-"github.com/r2d2-ai/ai-box/core/api"
+"github.com/r2d2-ai/AIflow/core/action"
+"github.com/r2d2-ai/AIflow/core/api"
 cml"github.com/r2d2-ai/catalystml-AIflow/action"
 ...
 )

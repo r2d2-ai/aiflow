@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	_ "github.com/r2d2-ai/ai-box/core/data/expression/script"
-	"github.com/r2d2-ai/ai-box/core/engine"
-	"github.com/r2d2-ai/ai-box/core/support/log"
+	_ "github.com/r2d2-ai/AIflow/core/data/expression/script"
+	"github.com/r2d2-ai/AIflow/core/engine"
+	"github.com/r2d2-ai/AIflow/core/support/log"
 )
 
 var (

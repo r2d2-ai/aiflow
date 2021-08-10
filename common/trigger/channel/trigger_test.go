@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -30,7 +30,7 @@ func getTestMetadata(t *testing.T) *trigger.Metadata {
 //
 const testConfig string = `{
   "id": "AIflow-channel",
-  "ref": "github.com/r2d2-ai/ai-box/common/trigger/channel",
+  "ref": "github.com/r2d2-ai/AIflow/common/trigger/channel",
   "handlers": [
     {
       "settings": {

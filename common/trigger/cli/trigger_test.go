@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/support/test"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -22,7 +22,7 @@ import (
 
 const testConfig string = `{
   "id": "AIflow-cli",
-	"ref": "github.com/r2d2-ai/ai-box/common/trigger/cli",
+	"ref": "github.com/r2d2-ai/AIflow/common/trigger/cli",
 	"settings":{
 		"singleCmd":true
 	},

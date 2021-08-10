@@ -3,15 +3,15 @@ package tester
 import (
 	"context"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/engine/runner"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/flow/instance"
-	"github.com/r2d2-ai/ai-box/flow/support"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/engine/runner"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/flow/instance"
+	"github.com/r2d2-ai/AIflow/flow/support"
 )
 
 const (
-	RefFlow = "github.com/r2d2-ai/ai-box/flow"
+	RefFlow = "github.com/r2d2-ai/AIflow/flow"
 )
 
 // RequestProcessor processes request objects and invokes the corresponding

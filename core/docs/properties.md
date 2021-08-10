@@ -154,7 +154,7 @@ type ExternalResolver interface {
 ```go
 package sampleresolver
 
-import "github.com/r2d2-ai/ai-box/core/data/property"
+import "github.com/r2d2-ai/AIflow/core/data/property"
 
 
 type SamplePropertyResolver struct {

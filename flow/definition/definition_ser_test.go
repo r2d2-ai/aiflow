@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/expression"
-	_ "github.com/r2d2-ai/ai-box/core/data/expression/script"
-	"github.com/r2d2-ai/ai-box/core/data/mapper"
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
-	flowUtil "github.com/r2d2-ai/ai-box/flow/util"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
+	_ "github.com/r2d2-ai/AIflow/core/data/expression/script"
+	"github.com/r2d2-ai/AIflow/core/data/mapper"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	flowUtil "github.com/r2d2-ai/AIflow/flow/util"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -286,14 +286,14 @@ func validate(t *testing.T, defJson string) {
 
 	ac := task.ActivityConfig()
 	assert.NotNil(t, ac)
-	assert.Equal(t, "github.com/r2d2-ai/ai-box/flow/definition", ac.Ref())
+	assert.Equal(t, "github.com/r2d2-ai/AIflow/flow/definition", ac.Ref())
 
 	task = def.GetTask("LogSingle")
 
 	assert.NotNil(t, task)
 	ac = task.ActivityConfig()
 	assert.NotNil(t, ac)
-	assert.Equal(t, "github.com/r2d2-ai/ai-box/flow/definition", ac.Ref())
+	assert.Equal(t, "github.com/r2d2-ai/AIflow/flow/definition", ac.Ref())
 
 	assert.Nil(t, task.LoopConfig())
 	assert.Nil(t, task.RetryOnErrConfig())
@@ -318,7 +318,7 @@ func validate(t *testing.T, defJson string) {
 
 	ac = task.ActivityConfig()
 	assert.NotNil(t, ac)
-	assert.Equal(t, "github.com/r2d2-ai/ai-box/flow/definition", ac.Ref())
+	assert.Equal(t, "github.com/r2d2-ai/AIflow/flow/definition", ac.Ref())
 
 }
 

@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"gocv.io/x/gocv"
 )
 

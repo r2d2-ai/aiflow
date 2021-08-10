@@ -3,7 +3,7 @@ package resolve
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/data"
+	"github.com/r2d2-ai/AIflow/core/data"
 )
 
 var scopeResolverInfo = NewResolverInfo(false, false)

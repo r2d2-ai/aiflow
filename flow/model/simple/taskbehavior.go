@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/support/trace"
-	"github.com/r2d2-ai/ai-box/flow/definition"
-	"github.com/r2d2-ai/ai-box/flow/instance"
-	"github.com/r2d2-ai/ai-box/flow/model"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/support/trace"
+	"github.com/r2d2-ai/AIflow/flow/definition"
+	"github.com/r2d2-ai/AIflow/flow/instance"
+	"github.com/r2d2-ai/AIflow/flow/model"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

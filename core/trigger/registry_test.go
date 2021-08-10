@@ -3,7 +3,7 @@ package trigger
 import (
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/action"
+	"github.com/r2d2-ai/AIflow/core/action"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -78,7 +78,7 @@ func TestAddFactoryDuplicated(t *testing.T) {
 	// Register factory: this time should fail, duplicated
 	err = Register(&MockTrigger{}, f)
 	assert.NotNil(t, err)
-	assert.Equal(t, "trigger already registered for ref github.com/r2d2-ai/ai-box/core/trigger", err.Error())
+	assert.Equal(t, "trigger already registered for ref github.com/r2d2-ai/AIflow/core/trigger", err.Error())
 }
 
 //TestAddFactoryOk

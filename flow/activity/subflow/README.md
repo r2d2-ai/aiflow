@@ -11,7 +11,7 @@ This activity allows you to start a subflow.
 This activity comes out of the box with the AIflow Web UI
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/flow/activity/subflow
+AIflow install github.com/r2d2-ai/AIflow/flow/activity/subflow
 ```
 
 ## Metadata
@@ -40,7 +40,7 @@ The below example executes "mysubflow" and set its input values to literals "foo
 {
   "id": "RunSubFlow",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/flow/activity/subflow",
+    "ref": "github.com/r2d2-ai/AIflow/flow/activity/subflow",
     "settings" : {
       "flowURI" : "res://flow:mysubflow"
     },

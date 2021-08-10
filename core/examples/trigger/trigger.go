@@ -3,9 +3,9 @@ package sample
 import (
 	"context"
 
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 )
 
 var triggerMd = trigger.NewMetadata(&Settings{}, &HandlerSettings{}, &Output{}, &Reply{})

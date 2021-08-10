@@ -10,7 +10,7 @@ This activity allows you to write log messages.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/common/activity/log
+AIflow install github.com/r2d2-ai/AIflow/common/activity/log
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ The below example logs a message 'test message':
   "id": "log_message",
   "name": "Log Message",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/log",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/log",
     "input": {
       "message": "test message",
       "addDetails": "false"

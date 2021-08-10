@@ -1,6 +1,6 @@
 package state
 
-import "github.com/r2d2-ai/ai-box/flow/state/change"
+import "github.com/r2d2-ai/AIflow/flow/state/change"
 
 type Step struct {
 	Id           int                   `json:"id"`

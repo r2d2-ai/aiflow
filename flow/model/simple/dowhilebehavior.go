@@ -3,11 +3,11 @@ package simple
 import (
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/expression"
-	"github.com/r2d2-ai/ai-box/flow/instance"
-	"github.com/r2d2-ai/ai-box/flow/model"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
+	"github.com/r2d2-ai/AIflow/flow/instance"
+	"github.com/r2d2-ai/AIflow/flow/model"
 )
 
 // DoWhileTaskBehavior implements model.TaskBehavior

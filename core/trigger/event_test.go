@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/engine/event"
+	"github.com/r2d2-ai/AIflow/core/engine/event"
 	"github.com/stretchr/testify/assert"
 )
 

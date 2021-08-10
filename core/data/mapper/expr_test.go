@@ -6,11 +6,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
-	"github.com/r2d2-ai/ai-box/core/data/expression/function"
-	_ "github.com/r2d2-ai/ai-box/core/data/expression/script"
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/expression/function"
+	_ "github.com/r2d2-ai/AIflow/core/data/expression/script"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
 	"github.com/stretchr/testify/assert"
 )
 

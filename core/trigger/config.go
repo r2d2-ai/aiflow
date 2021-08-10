@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/data/expression"
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
 )
 
 // Config is the configuration for a Trigger

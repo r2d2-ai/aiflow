@@ -2,8 +2,9 @@ package state
 
 import (
 	"fmt"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
 	"strings"
+
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
 )
 
 type RecordingMode string

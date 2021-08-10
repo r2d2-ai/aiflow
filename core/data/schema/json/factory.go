@@ -3,7 +3,7 @@ package json
 import (
 	"errors"
 
-	"github.com/r2d2-ai/ai-box/core/data/schema"
+	"github.com/r2d2-ai/AIflow/core/data/schema"
 	"github.com/xeipuuv/gojsonschema"
 )
 

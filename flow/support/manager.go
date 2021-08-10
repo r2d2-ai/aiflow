@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/r2d2-ai/ai-box/core/support"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/flow/definition"
+	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/flow/definition"
 )
 
 const (

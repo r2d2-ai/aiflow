@@ -3,7 +3,7 @@ package expression
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
 )
 
 var scriptFactoryCreator FactoryCreatorFunc

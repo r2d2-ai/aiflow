@@ -3,7 +3,7 @@ package managed
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/support/log"
 )
 
 // Managed is an interface that is implemented by an object that needs to be

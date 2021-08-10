@@ -12,7 +12,7 @@ been stopped.
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/common/trigger/app
+AIflow install github.com/r2d2-ai/AIflow/common/trigger/app
 ```
 
 ## Configuration
@@ -31,14 +31,14 @@ Configure the trigger in order to have a special startup and cleanup action for 
   "triggers": [
     {
       "id": "AIflow-app",
-      "ref": "github.com/r2d2-ai/ai-box/common/trigger/app",
+      "ref": "github.com/r2d2-ai/AIflow/common/trigger/app",
       "handlers": [
         {
           "settings": {
             "lifecycle": "STARTUP"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/ai-box/flow",
+            "ref": "github.com/r2d2-ai/AIflow/flow",
             "settings": {
               "flowURI": "res://flow:app_startup"
             }
@@ -49,7 +49,7 @@ Configure the trigger in order to have a special startup and cleanup action for 
             "lifecycle": "SHUTDOWN"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/ai-box/flow",
+            "ref": "github.com/r2d2-ai/AIflow/flow",
             "settings": {
               "flowURI": "res://flow:app_cleanup"
             }

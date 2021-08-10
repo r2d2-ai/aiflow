@@ -10,7 +10,7 @@ This activity allows you to set and get global App attributes.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/common/activity/appdata
+AIflow install github.com/r2d2-ai/AIflow/common/activity/appdata
 ```
 
 ## Configuration
@@ -44,7 +44,7 @@ Get the value of the 'myAttr' attribute:
   "id": "get_app_attr",
   "name": "Get App Attr",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/appdata",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/appdata",
     "settings": {
       "attribute": "myAttr",
       "operation": "get"
@@ -61,7 +61,7 @@ Update the value of the 'myAttr' attribute to _bar_:
   "id": "set_app_attr",
   "name": "Set App Attr",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/appdata",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/appdata",
     "settings": {
       "attribute": "myAttr",
       "operation": "set"

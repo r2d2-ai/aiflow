@@ -1,7 +1,7 @@
 package definition
 
 import (
-	"github.com/r2d2-ai/ai-box/core/data/expression"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
 )
 
 var exprFactory expression.Factory

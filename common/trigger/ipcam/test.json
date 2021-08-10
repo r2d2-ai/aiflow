@@ -1,6 +1,6 @@
 {
   "id": "aiflow-cam",
-  "ref": "github.com/r2d2-ai/ai-box/cv/trigger/ipcam",
+  "ref": "github.com/r2d2-ai/AIflow/cv/trigger/ipcam",
   "settings": {},
   "handlers": [
     {

@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/r2d2-ai/ai-box/flow/definition"
+	"github.com/r2d2-ai/AIflow/flow/definition"
 )
 
 // TaskEntry is a struct used to specify what Task to

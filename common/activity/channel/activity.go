@@ -3,8 +3,8 @@ package channel
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/engine/channels"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/engine/channels"
 )
 
 func init() {

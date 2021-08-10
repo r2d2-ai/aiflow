@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "JSExec Activity",
   "description": "Executes JS",
-  "homepage": "https://github.com/r2d2-ai/ai-box/common/tree/master/activity/jsexec",
+  "homepage": "https://github.com/r2d2-ai/AIflow/common/tree/master/activity/jsexec",
   "settings":[
     {
       "name": "script",

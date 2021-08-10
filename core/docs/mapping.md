@@ -183,7 +183,7 @@ we wanted to grab the value of an environment variable we could use `$env.VarNam
 
 Mapping expressions also support functions.  These functions are used to manipulate the data that is being assigned.
 You may want to add some custom logic to the mapping, such as concat/substring/length of a string or generate a random 
-number base on a range and so on. Refer to the [functions repository](https://github.com/r2d2-ai/ai-box/common/tree/master/function) 
+number base on a range and so on. Refer to the [functions repository](https://github.com/r2d2-ai/AIflow/common/tree/master/function) 
 for available functions. Also note, you can install functions using the CLI’s `AIflow install` command.
 
 Example:

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/r2d2-ai/ai-box/flow/util"
+	"github.com/r2d2-ai/AIflow/flow/util"
 )
 
 var (

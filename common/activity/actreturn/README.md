@@ -10,7 +10,7 @@ This activity allows you to reply to a trigger invocation and map output values.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/common/activity/actreturn
+AIflow install github.com/r2d2-ai/AIflow/common/activity/actreturn
 ```
 
 ## Configuration
@@ -29,7 +29,7 @@ The below example allows you to configure the activity to reply and set the outp
   "id": "return",
   "name": "Return",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/actreturn",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/actreturn",
     "settings": {
       "mappings": {
         "Output1":"name",

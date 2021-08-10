@@ -5,18 +5,18 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/r2d2-ai/ai-box/core/app/resolve"
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/app/resolve"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data/expression"
-	"github.com/r2d2-ai/ai-box/core/data/mapper"
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
-	"github.com/r2d2-ai/ai-box/core/data/schema"
-	"github.com/r2d2-ai/ai-box/core/support"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	flowutil "github.com/r2d2-ai/ai-box/flow/util"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
+	"github.com/r2d2-ai/AIflow/core/data/mapper"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/AIflow/core/data/schema"
+	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	flowutil "github.com/r2d2-ai/AIflow/flow/util"
 )
 
 // DefinitionRep is a serializable representation of a flow Definition

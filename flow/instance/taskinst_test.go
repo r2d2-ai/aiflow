@@ -3,8 +3,8 @@ package instance
 import (
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/flow/model"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/flow/model"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,15 +4,15 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/support/test"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
 const testConfig string = `{
 	"id": "AIflow-timer",
-	"ref": "github.com/r2d2-ai/ai-box/common/trigger/timer",
+	"ref": "github.com/r2d2-ai/AIflow/common/trigger/timer",
 	"handlers": [
 	  {
 		"settings":{

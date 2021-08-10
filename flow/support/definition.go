@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/ai-box/core/app/resource"
-	"github.com/r2d2-ai/ai-box/flow/definition"
+	"github.com/r2d2-ai/AIflow/core/app/resource"
+	"github.com/r2d2-ai/AIflow/flow/definition"
 )
 
 // todo fix this

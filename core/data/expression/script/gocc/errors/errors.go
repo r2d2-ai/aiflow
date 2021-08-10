@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/AIflow/core/data/expression/script/gocc/token"
 )
 
 type ErrorSymbol interface {

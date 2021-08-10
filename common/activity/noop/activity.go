@@ -1,6 +1,6 @@
 package noop
 
-import "github.com/r2d2-ai/ai-box/core/activity"
+import "github.com/r2d2-ai/AIflow/core/activity"
 
 func init() {
 	_ = activity.Register(&Activity{})

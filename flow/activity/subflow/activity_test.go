@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/engine/runner"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/engine/runner"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/app/resource"
-	"github.com/r2d2-ai/ai-box/core/support/test"
-	"github.com/r2d2-ai/ai-box/flow"
-	"github.com/r2d2-ai/ai-box/flow/support"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/app/resource"
+	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/AIflow/flow"
+	"github.com/r2d2-ai/AIflow/flow/support"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -24,7 +24,7 @@ var jsonFlowRes1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/r2d2-ai/ai-box/flow/activity/subflow",
+        "ref": "github.com/r2d2-ai/AIflow/flow/activity/subflow",
         "settings": {
           "flowURI": "res://flow/flow2"
         },
@@ -75,7 +75,7 @@ var jsonFlow1 = `{
     {
       "id": "runFlow",
       "activity": {
-        "ref": "github.com/r2d2-ai/ai-box/flow/activity/subflow",
+        "ref": "github.com/r2d2-ai/AIflow/flow/activity/subflow",
         "settings": {
           "flowURI": "res://flow:flow2"
         },
@@ -128,7 +128,7 @@ func TestRegister(t *testing.T) {
 
 func TestSettings(t *testing.T) {
 
-	f := action.GetFactory("github.com/r2d2-ai/ai-box/flow")
+	f := action.GetFactory("github.com/r2d2-ai/AIflow/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)
@@ -156,7 +156,7 @@ func TestSettings(t *testing.T) {
 
 func TestDynamicIO(t *testing.T) {
 
-	f := action.GetFactory("github.com/r2d2-ai/ai-box/flow")
+	f := action.GetFactory("github.com/r2d2-ai/AIflow/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)
@@ -181,7 +181,7 @@ func TestDynamicIO(t *testing.T) {
 
 func TestSubFlow(t *testing.T) {
 
-	f := action.GetFactory("github.com/r2d2-ai/ai-box/flow")
+	f := action.GetFactory("github.com/r2d2-ai/AIflow/flow")
 	af := f.(*flow.ActionFactory)
 
 	err := initActionFactory(af)

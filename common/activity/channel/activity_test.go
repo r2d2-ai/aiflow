@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/engine/channels"
-	"github.com/r2d2-ai/ai-box/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/engine/channels"
+	"github.com/r2d2-ai/AIflow/core/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

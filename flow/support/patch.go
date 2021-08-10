@@ -1,8 +1,8 @@
 package support
 
 import (
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/mapper"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/mapper"
 )
 
 // Patch contains a set of task patches for a Flow Patch, this

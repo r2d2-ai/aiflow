@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/data/property"
+	"github.com/r2d2-ai/AIflow/core/data/property"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
 	"github.com/stretchr/testify/assert"
 )
 

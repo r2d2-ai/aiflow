@@ -48,7 +48,7 @@ the app imports section.  See [github.com/go-sql-driver/mysql](https://github.co
   "id": "dbquery",
   "name": "DbQuery",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/sqlquery",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/sqlquery",
     "settings": {
       "dbType": "mysql",
       "driverName": "mysql",
@@ -66,7 +66,7 @@ Query with parameters.  Parameters are referenced using ':', e.g. `:id`, regardl
   "id": "named_dbquery",
   "name": "Named DbQuery",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/common/activity/sqlquery",
+    "ref": "github.com/r2d2-ai/AIflow/common/activity/sqlquery",
     "settings": {
       "dbType": "mysql",
       "driverName": "mysql",

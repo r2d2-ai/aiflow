@@ -5,14 +5,14 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
-	"github.com/r2d2-ai/ai-box/core/data/schema"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/core/support/trace"
-	"github.com/r2d2-ai/ai-box/flow/definition"
-	"github.com/r2d2-ai/ai-box/flow/model"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/schema"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/support/trace"
+	"github.com/r2d2-ai/AIflow/flow/definition"
+	"github.com/r2d2-ai/AIflow/flow/model"
 )
 
 func NewTaskInst(flowInst *Instance, task *definition.Task) *TaskInst {

@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/api"
-	"github.com/r2d2-ai/ai-box/core/engine"
-	"github.com/r2d2-ai/ai-box/core/support"
-	"github.com/r2d2-ai/ai-box/core/support/test"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/api"
+	"github.com/r2d2-ai/AIflow/core/engine"
+	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -28,7 +28,7 @@ func TestTrigger_Register(t *testing.T) {
 
 const testConfig string = `{
 	"id": "trigger-rest",
-	"ref": "github.com/r2d2-ai/ai-box/common/trigger/rest",
+	"ref": "github.com/r2d2-ai/AIflow/common/trigger/rest",
 	"settings": {
         "port": "8888"
     },

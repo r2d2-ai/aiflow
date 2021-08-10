@@ -4,12 +4,12 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/app/resource"
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/schema"
-	"github.com/r2d2-ai/ai-box/core/support/connection"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/app/resource"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/schema"
+	"github.com/r2d2-ai/AIflow/core/support/connection"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 )
 
 const (

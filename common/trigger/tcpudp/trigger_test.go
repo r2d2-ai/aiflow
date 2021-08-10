@@ -4,15 +4,15 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/support/test"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
 const testConfig string = `{
 	"id": "AIflow-tcpudp-trigger",
-	"ref": "github.com/r2d2-ai/ai-box/common/trigger/tcp",
+	"ref": "github.com/r2d2-ai/AIflow/common/trigger/tcp",
 	"settings": {
       "network": "tcp",
 	  "host": "127.0.0.1",

@@ -32,7 +32,7 @@ the application logic.  For example, you might want to enable state recording fo
 
 ```json
   "actionSettings": {
-    "github.com/r2d2-ai/ai-box/flow": {
+    "github.com/r2d2-ai/AIflow/flow": {
       "stepRecordingMode": "full",
     }
   },
@@ -51,7 +51,7 @@ property.
 ```json
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/ai-box/services/flow-state/client/rest",
+      "ref": "github.com/r2d2-ai/AIflow/services/flow-state/client/rest",
       "enabled": true,
       "settings": {
         "host": "192.168.1.50",
@@ -63,7 +63,7 @@ property.
 ```json
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/ai-box/services/flow-state/client/local",
+      "ref": "github.com/r2d2-ai/AIflow/services/flow-state/client/local",
       "enabled": true
     }
 ```
@@ -75,23 +75,23 @@ Sample engine runtime configuration file.
 {
   "type": "AIflow:engine",
   "imports": [
-    "github.com/r2d2-ai/ai-box/services/flow-state/client/rest@master",
-    "github.com/r2d2-ai/ai-box/stream/service/telemetry@master"
+    "github.com/r2d2-ai/AIflow/services/flow-state/client/rest@master",
+    "github.com/r2d2-ai/AIflow/stream/service/telemetry@master"
   ],
   "actionSettings": {
-    "github.com/r2d2-ai/ai-box/flow": {
+    "github.com/r2d2-ai/AIflow/flow": {
       "stepRecordingMode": "full"
     }
   },
   "services": [
     {
       "name": "telemetry",
-      "ref": "github.com/r2d2-ai/ai-box/stream/service/telemetry",
+      "ref": "github.com/r2d2-ai/AIflow/stream/service/telemetry",
       "enabled": true
     },
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/ai-box/services/flow-state/client/rest",
+      "ref": "github.com/r2d2-ai/AIflow/services/flow-state/client/rest",
       "enabled": true,
       "settings": {
         "host": "192.168.1.50",

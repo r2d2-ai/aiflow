@@ -1,4 +1,4 @@
-module github.com/r2d2-ai/ai-box
+module github.com/r2d2-ai/AIflow
 
 go 1.16
 

@@ -3,8 +3,8 @@ package activity
 import (
 	"encoding/json"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/metadata"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/metadata"
 )
 
 type Metadata struct {

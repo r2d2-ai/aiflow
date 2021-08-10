@@ -3,14 +3,14 @@ package app
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/data/expression"
-	"github.com/r2d2-ai/ai-box/core/data/mapper"
-	"github.com/r2d2-ai/ai-box/core/data/schema"
-	"github.com/r2d2-ai/ai-box/core/support"
-	"github.com/r2d2-ai/ai-box/core/support/log"
-	"github.com/r2d2-ai/ai-box/core/support/managed"
-	"github.com/r2d2-ai/ai-box/core/trigger"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/data/expression"
+	"github.com/r2d2-ai/AIflow/core/data/mapper"
+	"github.com/r2d2-ai/AIflow/core/data/schema"
+	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/support/managed"
+	"github.com/r2d2-ai/AIflow/core/trigger"
 )
 
 func (a *App) createSharedActions(actionConfigs []*action.Config) (map[string]action.Action, error) {

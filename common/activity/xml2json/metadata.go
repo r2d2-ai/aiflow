@@ -1,7 +1,7 @@
 package xml2json
 
 import (
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
 )
 
 type Input struct {

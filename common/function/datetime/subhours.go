@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
-	"github.com/r2d2-ai/ai-box/core/data/expression/function"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/expression/function"
 )
 
 type fnSubHours struct {

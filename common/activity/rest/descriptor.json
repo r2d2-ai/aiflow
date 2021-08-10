@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "REST Invoke",
   "description": "Invokes a REST Service",
-  "homepage": "https://github.com/r2d2-ai/ai-box/common/tree/master/activity/rest",
+  "homepage": "https://github.com/r2d2-ai/AIflow/common/tree/master/activity/rest",
   "settings": [
     {
       "name": "method",

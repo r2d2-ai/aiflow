@@ -4,7 +4,7 @@
 	"version": "1.20.0",
 	"title": "SQL Database Activity",
   	"description": "AIflow Activity for SQL",
-  	"homepage": "https://github.com/r2d2-ai/ai-box/common/tree/master/activity/sqlquery",
+  	"homepage": "https://github.com/r2d2-ai/AIflow/common/tree/master/activity/sqlquery",
 	"settings": [
 		{
 			"name": "dbType",

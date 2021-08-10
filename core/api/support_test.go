@@ -3,7 +3,7 @@ package api
 import (
 	"testing"
 
-	sampleActivity "github.com/r2d2-ai/ai-box/core/examples/activity"
+	sampleActivity "github.com/r2d2-ai/AIflow/core/examples/activity"
 	"github.com/stretchr/testify/assert"
 )
 

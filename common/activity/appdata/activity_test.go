@@ -3,9 +3,9 @@ package appdata
 import (
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/app"
-	"github.com/r2d2-ai/ai-box/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/app"
+	"github.com/r2d2-ai/AIflow/core/support/test"
 
 	"github.com/stretchr/testify/assert"
 )

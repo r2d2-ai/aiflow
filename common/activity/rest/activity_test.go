@@ -3,10 +3,10 @@ package rest
 import (
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data/mapper"
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
-	"github.com/r2d2-ai/ai-box/core/support/test"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data/mapper"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

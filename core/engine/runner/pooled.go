@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/r2d2-ai/ai-box/core/action"
-	"github.com/r2d2-ai/ai-box/core/support"
-	"github.com/r2d2-ai/ai-box/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/AIflow/core/support/log"
 )
 
 // PooledRunner is a action runner that queues and runs a action in a worker pool

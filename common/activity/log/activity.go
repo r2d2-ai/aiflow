@@ -3,8 +3,8 @@ package log
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/activity"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/activity"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
 )
 
 func init() {

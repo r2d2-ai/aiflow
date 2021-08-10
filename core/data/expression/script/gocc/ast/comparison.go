@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/r2d2-ai/ai-box/core/data"
-	"github.com/r2d2-ai/ai-box/core/data/coerce"
-	"github.com/r2d2-ai/ai-box/core/data/expression/script/gocc/token"
-	"github.com/r2d2-ai/ai-box/core/data/resolve"
+	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/AIflow/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/AIflow/core/data/resolve"
 )
 
 func NewCmpExpr(left, operand, right interface{}) (Expr, error) {

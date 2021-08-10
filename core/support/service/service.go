@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/r2d2-ai/ai-box/core/support/managed"
+	"github.com/r2d2-ai/AIflow/core/support/managed"
 )
 
 // Service is an interface for defining/managing a service

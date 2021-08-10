@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/core/data/expression/function"
+	"github.com/r2d2-ai/AIflow/core/data/expression/function"
 	"github.com/stretchr/testify/assert"
 )
 

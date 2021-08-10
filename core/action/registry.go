@@ -3,9 +3,9 @@ package action
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/ai-box/core/support/log"
+	"github.com/r2d2-ai/AIflow/core/support/log"
 
-	"github.com/r2d2-ai/ai-box/core/support"
+	"github.com/r2d2-ai/AIflow/core/support"
 )
 
 var (
@@ -61,7 +61,7 @@ func GetFactory(ref string) Factory {
 
 	//temp hack
 	if ref == "github.com/TIBCOSoftware/AIflow-contrib/action/flow" {
-		ref = "github.com/r2d2-ai/ai-box/flow"
+		ref = "github.com/r2d2-ai/AIflow/flow"
 	}
 
 	return actionFactories[ref]

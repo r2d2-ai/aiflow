@@ -8,7 +8,7 @@ This trigger subscribes to a topic on Kafka cluster and listens for the messages
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/common/trigger/kafka
+AIflow install github.com/r2d2-ai/AIflow/common/trigger/kafka
 ```
 
 ## Configuration
@@ -44,7 +44,7 @@ AIflow install github.com/r2d2-ai/ai-box/common/trigger/kafka
   "triggers": [
     {
       "id": "AIflow-kafka",
-      "ref": "github.com/r2d2-ai/ai-box/common/trigger/kafka",
+      "ref": "github.com/r2d2-ai/AIflow/common/trigger/kafka",
       "settings": {
         "brokerUrls" : "localhost:9092",
         "trustStore" : "" 
@@ -55,7 +55,7 @@ AIflow install github.com/r2d2-ai/ai-box/common/trigger/kafka
             "topic": "syslog",
           },
           "action": {
-            "ref": "github.com/r2d2-ai/ai-box/flow",
+            "ref": "github.com/r2d2-ai/AIflow/flow",
             "settings": {
               "flowURI": "res://flow:my_flow"
             }
