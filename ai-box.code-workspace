@@ -31,6 +31,9 @@
 		{
 			"name": "server",
 			"path": "server"
+		},
+		{
+			"path": "cv"
 		}
 	],
 	"settings": {}

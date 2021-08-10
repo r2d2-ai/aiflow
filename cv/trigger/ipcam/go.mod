@@ -1,4 +1,4 @@
-module github.com/r2d2-ai/cv/trigger/ipcam
+module github.com/r2d2-ai/ai-box/cv/trigger/ipcam
 
 require (
 	github.com/r2d2-ai/core v1.20.0
