@@ -12,8 +12,8 @@ import (
 )
 
 const testConfig string = `{
-	"id": "flogo-cam",
-	"ref": "github.com/r2d2-ai/cam/trigger/ipcam",
+	"id": "aiflow-cam",
+	"ref": "github.com/r2d2-ai/ai-box/cv/trigger/ipcam",
 	"settings": {},
 	"handlers": [
 	  {
