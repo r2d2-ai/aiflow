@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/core/action"
-	"github.com/r2d2-ai/core/support/test"
-	"github.com/r2d2-ai/core/trigger"
+	"github.com/r2d2-ai/ai-box/core/action"
+	"github.com/r2d2-ai/ai-box/core/support/test"
+	"github.com/r2d2-ai/ai-box/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
