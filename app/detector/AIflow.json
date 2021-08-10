@@ -5,9 +5,9 @@
   "appModel": "1.0.0",
   "description": "",
   "imports": [
-    "github.com/r2d2-ai/contrib/activity/log",
-    "github.com/r2d2-ai/cv/trigger/ipcam",
-    "github.com/r2d2-ai/flow"
+    "github.com/r2d2-ai/ai-box/contrib/activity/log",
+    "github.com/r2d2-ai/ai-box/cv/trigger/ipcam",
+    "github.com/r2d2-ai/ai-box/flow"
   ],
   "triggers": [
     {
