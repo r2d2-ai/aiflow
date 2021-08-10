@@ -255,9 +255,9 @@ func (fa *FlowAction) Run(ctx context.Context, inputs map[string]interface{}, ha
 		logger.Debugf("Done Executing flow instance [%s] - Status: %d", inst.ID(), inst.Status())
 
 		if inst.Status() == model.FlowStatusCompleted {
-			logger.Infof("Flow instance [%s] Completed Successfully", inst.ID())
+			logger.Debugf("Flow instance [%s] Completed Successfully", inst.ID())
 		} else if inst.Status() == model.FlowStatusFailed {
-			logger.Infof("Flow instance [%s] Failed", inst.ID())
+			logger.Debugf("Flow instance [%s] Failed", inst.ID())
 		}
 	}()
 

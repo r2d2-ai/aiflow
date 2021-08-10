@@ -144,7 +144,7 @@ func (h *handlerImpl) Handle(ctx context.Context, triggerData interface{}) (resu
 		}
 	}()
 
-	h.Logger().Infof("Executing handler [%s] for event Id [%s]", handlerName, GetHandlerEventIdFromContext(newCtx))
+	h.Logger().Debugf("Executing handler [%s] for event Id [%s]", handlerName, GetHandlerEventIdFromContext(newCtx))
 	eventData := h.eventData
 
 	// check if any event data was attached to the context
