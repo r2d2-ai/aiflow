@@ -9,7 +9,7 @@ The `jsexec` activity evaluates a javascript `script` along with provided `param
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/AIflow/common/activity/jsexec
+AIflow install github.com/r2d2-ai/aiflow/common/activity/jsexec
 ```
 
 ## Configuration

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data"
 )
 
 var envResolverInfo = NewResolverInfo(true, true)

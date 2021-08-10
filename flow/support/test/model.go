@@ -1,8 +1,8 @@
 package test
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/model"
-	"github.com/r2d2-ai/AIflow/flow/model/simple"
+	"github.com/r2d2-ai/aiflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/model/simple"
 )
 
 func init() {

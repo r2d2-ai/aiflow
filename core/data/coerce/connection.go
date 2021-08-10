@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/support/connection"
+	"github.com/r2d2-ai/aiflow/core/support/connection"
 )
 
 func ToConnection(val interface{}) (connection.Manager, error) {

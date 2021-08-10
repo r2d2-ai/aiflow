@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/expression/function"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/expression/function"
 	"github.com/stretchr/testify/assert"
 )
 

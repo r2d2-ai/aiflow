@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Timer",
   "description": "Simple Timer trigger",
-  "homepage": "https://github.com/r2d2-ai/AIflow/common/tree/master/trigger/timer",
+  "homepage": "https://github.com/r2d2-ai/aiflow/common/tree/master/trigger/timer",
   "handler": {
     "settings": [
       {

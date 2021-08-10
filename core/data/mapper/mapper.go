@@ -1,6 +1,6 @@
 package mapper
 
-import "github.com/r2d2-ai/AIflow/core/data"
+import "github.com/r2d2-ai/aiflow/core/data"
 
 type Factory interface {
 	NewMapper(mappings map[string]interface{}) (Mapper, error)

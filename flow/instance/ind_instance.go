@@ -6,14 +6,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/r2d2-ai/AIflow/flow/state"
+	"github.com/r2d2-ai/aiflow/flow/state"
 
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/trace"
-	"github.com/r2d2-ai/AIflow/flow/definition"
-	"github.com/r2d2-ai/AIflow/flow/model"
-	flowsupport "github.com/r2d2-ai/AIflow/flow/support"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/flow/definition"
+	"github.com/r2d2-ai/aiflow/flow/model"
+	flowsupport "github.com/r2d2-ai/aiflow/flow/support"
 )
 
 type IndependentInstance struct {

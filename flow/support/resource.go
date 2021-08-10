@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/app/resource"
-	"github.com/r2d2-ai/AIflow/flow/definition"
+	"github.com/r2d2-ai/aiflow/core/app/resource"
+	"github.com/r2d2-ai/aiflow/flow/definition"
 )
 
 const (

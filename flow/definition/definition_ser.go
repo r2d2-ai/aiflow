@@ -5,18 +5,18 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/r2d2-ai/AIflow/core/app/resolve"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/app/resolve"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
 
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/data/expression"
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/data/schema"
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	flowutil "github.com/r2d2-ai/AIflow/flow/util"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/data/expression"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data/schema"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	flowutil "github.com/r2d2-ai/aiflow/flow/util"
 )
 
 // DefinitionRep is a serializable representation of a flow Definition

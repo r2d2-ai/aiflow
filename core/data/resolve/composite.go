@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/path"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/path"
 )
 
 var defaultResolver = NewCompositeResolver(map[string]Resolver{

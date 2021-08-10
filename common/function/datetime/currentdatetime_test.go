@@ -3,7 +3,7 @@ package datetime
 import (
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/data/expression/function"
+	"github.com/r2d2-ai/aiflow/core/data/expression/function"
 	"github.com/stretchr/testify/assert"
 )
 

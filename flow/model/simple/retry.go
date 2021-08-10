@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/r2d2-ai/AIflow/flow/instance"
+	"github.com/r2d2-ai/aiflow/flow/instance"
 
-	"github.com/r2d2-ai/AIflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/model"
 )
 
 // constants for retry data

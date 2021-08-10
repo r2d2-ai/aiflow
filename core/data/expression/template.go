@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
 )
 
 func IsTemplateExpr(exprStr string) bool {

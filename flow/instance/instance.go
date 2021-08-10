@@ -3,13 +3,13 @@ package instance
 import (
 	"strconv"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/trace"
-	"github.com/r2d2-ai/AIflow/flow/definition"
-	"github.com/r2d2-ai/AIflow/flow/model"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/flow/definition"
+	"github.com/r2d2-ai/aiflow/flow/model"
 )
 
 type Instance struct {

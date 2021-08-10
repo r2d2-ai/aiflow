@@ -1,7 +1,7 @@
 package simple
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/model"
 )
 
 const (

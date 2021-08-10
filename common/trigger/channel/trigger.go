@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/engine/channels"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/engine/channels"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 )
 
 var triggerMd = trigger.NewMetadata(&HandlerSettings{}, &Output{})

@@ -6,10 +6,10 @@ import (
 	"strconv"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/service"
-	"github.com/r2d2-ai/AIflow/flow/instance"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/service"
+	"github.com/r2d2-ai/aiflow/flow/instance"
 )
 
 func init() {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 )
 
 const (

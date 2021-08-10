@@ -6,17 +6,17 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/trace"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/app"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 )
 
 // toAppConfig converts an App to the core app configuration model

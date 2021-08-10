@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data"
 )
 
 //

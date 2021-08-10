@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/log"
 )
 
 var channels = make(map[string]*channelImpl)

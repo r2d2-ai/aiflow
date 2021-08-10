@@ -12,7 +12,7 @@ essentially an internal communication channel in the engine.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/AIflow/common/activity/channel
+AIflow install github.com/r2d2-ai/aiflow/common/activity/channel
 ```
 
 ## Configuration

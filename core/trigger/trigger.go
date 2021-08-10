@@ -1,8 +1,8 @@
 package trigger
 
 import (
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/managed"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/managed"
 )
 
 // Trigger is object that triggers/starts flow instances and

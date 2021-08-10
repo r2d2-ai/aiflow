@@ -11,7 +11,7 @@ This activity allows you to cause an explicit error in the flow (throw an error)
 
 ### AIflow CLI
 ```bash
-AIflow install  github.com/r2d2-ai/AIflow/common/activity/error
+AIflow install  github.com/r2d2-ai/aiflow/common/activity/error
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ The below example throws a simple error with a message:
   "id": "throw_error",
   "name": "Throw Error",
   "activity": {
-    "ref": "github.com/r2d2-ai/AIflow/common/activity/error",
+    "ref": "github.com/r2d2-ai/aiflow/common/activity/error",
     "input": {
       "message": "Unexpected Threshold Value"
     }

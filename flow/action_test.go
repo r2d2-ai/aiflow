@@ -1,15 +1,15 @@
 package flow
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/instance"
-	"github.com/r2d2-ai/AIflow/flow/support"
+	"github.com/r2d2-ai/aiflow/flow/instance"
+	"github.com/r2d2-ai/aiflow/flow/support"
 )
 
-const FlowRef = "github.com/r2d2-ai/AIflow/flow"
+const FlowRef = "github.com/r2d2-ai/aiflow/flow"
 
 var testFlowActionCfg = `{
  "id": "flow",
- "ref": "github.com/r2d2-ai/AIflow/flow",
+ "ref": "github.com/r2d2-ai/aiflow/flow",
  "metadata": {
    "input": [],
    "output": []
@@ -31,7 +31,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/r2d2-ai/AIflow/common/activity/log",
+         "activityRef": "github.com/r2d2-ai/aiflow/common/activity/log",
          "attributes": [
            {
              "name": "message",
@@ -59,7 +59,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/r2d2-ai/AIflow/common/activity/log",
+         "activityRef": "github.com/r2d2-ai/aiflow/common/activity/log",
          "attributes": [
            {
              "name": "message",

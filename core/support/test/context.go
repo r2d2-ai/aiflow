@@ -1,13 +1,13 @@
 package test
 
 import (
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/trace"
 )
 
 var logger = log.ChildLogger(log.RootLogger(), "test")
@@ -20,7 +20,7 @@ func NewActivityContext(md *activity.Metadata) *TestActivityContext {
 
 	ac := &TestActivityHost{
 		HostId:     "1",
-		HostRef:    "github.com/r2d2-ai/AIflow/flow",
+		HostRef:    "github.com/r2d2-ai/aiflow/flow",
 		IoMetadata: &metadata.IOMetadata{Input: input, Output: output},
 		HostData:   data.NewSimpleScope(nil, nil),
 	}

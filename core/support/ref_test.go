@@ -13,5 +13,5 @@ func TestGetRef(t *testing.T) {
 
 	ts := &TestStruct{}
 	ref := GetRef(ts)
-	assert.Equal(t, "github.com/r2d2-ai/AIflow/core/support", ref)
+	assert.Equal(t, "github.com/r2d2-ai/aiflow/core/support", ref)
 }

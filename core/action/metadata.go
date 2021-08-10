@@ -3,8 +3,8 @@ package action
 import (
 	"encoding/json"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
 )
 
 type Metadata struct {

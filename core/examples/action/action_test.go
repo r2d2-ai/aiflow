@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/support"
 	"github.com/stretchr/testify/assert"
 )
 

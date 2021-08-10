@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestfnObjKeys(t *testing.T) {
+func TestFnObjKeys(t *testing.T) {
 	input := `{
 		"key1": 123,
 		"key2": {

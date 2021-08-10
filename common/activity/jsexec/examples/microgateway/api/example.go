@@ -1,10 +1,10 @@
 package api
 
 import (
-	"github.com/r2d2-ai/AIflow/common/activity/jsexec"
-	trigger "github.com/r2d2-ai/AIflow/common/trigger/rest"
-	"github.com/r2d2-ai/AIflow/core/api"
-	"github.com/r2d2-ai/AIflow/core/engine"
+	"github.com/r2d2-ai/aiflow/common/activity/jsexec"
+	trigger "github.com/r2d2-ai/aiflow/common/trigger/rest"
+	"github.com/r2d2-ai/aiflow/core/api"
+	"github.com/r2d2-ai/aiflow/core/engine"
 	"github.com/r2d2-ai/microgateway"
 	microapi "github.com/r2d2-ai/microgateway/api"
 )

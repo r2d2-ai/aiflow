@@ -9,12 +9,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/engine"
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/engine"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 )
 
 var triggerMd = trigger.NewMetadata(&HandlerSettings{}, &Output{}, &Reply{})

@@ -1,6 +1,6 @@
 package error
 
-import "github.com/r2d2-ai/AIflow/core/activity"
+import "github.com/r2d2-ai/aiflow/core/activity"
 
 func init() {
 	_ = activity.Register(&Activity{})

@@ -1,4 +1,4 @@
-module github.com/r2d2-ai/AIflow
+module github.com/r2d2-ai/aiflow
 
 go 1.16
 

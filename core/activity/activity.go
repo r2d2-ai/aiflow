@@ -1,8 +1,8 @@
 package activity
 
 import (
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/support/log"
 )
 
 // Activity is an interface for defining a custom Activity Execution

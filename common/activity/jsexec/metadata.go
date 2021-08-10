@@ -1,7 +1,7 @@
 package jsexec
 
 import (
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
 )
 
 // Settings are the jsexec settings

@@ -1,8 +1,8 @@
 package instance
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/definition"
-	"github.com/r2d2-ai/AIflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/definition"
+	"github.com/r2d2-ai/aiflow/flow/model"
 )
 
 // LinkInst represents data associated with an instance of a Link

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/flow/state/change"
+	"github.com/r2d2-ai/aiflow/flow/state/change"
 	"github.com/stretchr/testify/assert"
 )
 

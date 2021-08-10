@@ -1,8 +1,8 @@
 package test
 
 import (
-	"github.com/r2d2-ai/AIflow/core/app/resource"
-	"github.com/r2d2-ai/AIflow/core/support/service"
+	"github.com/r2d2-ai/aiflow/core/app/resource"
+	"github.com/r2d2-ai/aiflow/core/support/service"
 )
 
 func NewActionInitCtx() *ActionInitCtx {

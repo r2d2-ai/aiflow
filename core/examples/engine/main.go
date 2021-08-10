@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	_ "github.com/r2d2-ai/AIflow/core/data/expression/script"
-	"github.com/r2d2-ai/AIflow/core/engine"
+	_ "github.com/r2d2-ai/aiflow/core/data/expression/script"
+	"github.com/r2d2-ai/aiflow/core/engine"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	appresolve "github.com/r2d2-ai/AIflow/core/app/resolve"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	appresolve "github.com/r2d2-ai/aiflow/core/app/resolve"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
 )
 
 func TestResolveConfig(t *testing.T) {

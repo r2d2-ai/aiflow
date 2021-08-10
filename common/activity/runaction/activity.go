@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/engine/runner"
-	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/core/support"
 )
 
 func init() {

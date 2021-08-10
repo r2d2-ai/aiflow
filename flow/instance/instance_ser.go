@@ -3,8 +3,8 @@ package instance
 import (
 	"encoding/json"
 
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/flow/model"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/flow/model"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

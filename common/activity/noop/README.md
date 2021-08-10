@@ -10,7 +10,7 @@ This activity is a simple No-Op that can be used for testing.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/AIflow/common/activity/noop
+AIflow install github.com/r2d2-ai/aiflow/common/activity/noop
 ```
 
 ## Examples
@@ -21,7 +21,7 @@ Configuration of a No-Op activity
   "id": "noop",
   "name": "NoOp",
   "activity": {
-    "ref": "github.com/r2d2-ai/AIflow/common/activity/noop"
+    "ref": "github.com/r2d2-ai/aiflow/common/activity/noop"
   }
 }
 ```

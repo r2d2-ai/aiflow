@@ -3,9 +3,9 @@ package instance
 import (
 	"time"
 
-	coreevent "github.com/r2d2-ai/AIflow/core/engine/event"
-	"github.com/r2d2-ai/AIflow/flow/model"
-	"github.com/r2d2-ai/AIflow/flow/support/event"
+	coreevent "github.com/r2d2-ai/aiflow/core/engine/event"
+	"github.com/r2d2-ai/aiflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/support/event"
 )
 
 type taskEvent struct {

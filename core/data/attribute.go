@@ -3,7 +3,7 @@ package data
 import (
 	"encoding/json"
 
-	"github.com/r2d2-ai/AIflow/core/data/schema"
+	"github.com/r2d2-ai/aiflow/core/data/schema"
 )
 
 func NewAttribute(name string, dataType Type, value interface{}) *Attribute {

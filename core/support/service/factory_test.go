@@ -33,7 +33,7 @@ func TestRegisterFactory(t *testing.T) {
 	err := RegisterFactory(ts)
 	assert.Nil(t, err)
 
-	f := serviceFactories["github.com/r2d2-ai/AIflow/core/support/service"]
+	f := serviceFactories["github.com/r2d2-ai/aiflow/core/support/service"]
 	assert.Equal(t, ts, f)
 
 	err = RegisterFactory(ts)

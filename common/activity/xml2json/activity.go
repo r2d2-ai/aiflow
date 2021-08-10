@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/clbanning/mxj"
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
 )
 
 // Activity is an activity that converts XML data into JSON object.

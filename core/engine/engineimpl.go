@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/app"
-	"github.com/r2d2-ai/AIflow/core/data/property"
-	"github.com/r2d2-ai/AIflow/core/engine/channels"
-	"github.com/r2d2-ai/AIflow/core/engine/runner"
-	"github.com/r2d2-ai/AIflow/core/engine/secret"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/managed"
-	"github.com/r2d2-ai/AIflow/core/support/service"
-	"github.com/r2d2-ai/AIflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/data/property"
+	"github.com/r2d2-ai/aiflow/core/engine/channels"
+	"github.com/r2d2-ai/aiflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/core/engine/secret"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/managed"
+	"github.com/r2d2-ai/aiflow/core/support/service"
+	"github.com/r2d2-ai/aiflow/core/support/trace"
 )
 
 // engineImpl is the type for the Default Engine Implementation

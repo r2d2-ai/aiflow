@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data"
 )
 
 // Resolver is for resolving a value for a specific environment or construct, ex. OS environment

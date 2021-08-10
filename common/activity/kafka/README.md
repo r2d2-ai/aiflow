@@ -9,7 +9,7 @@ This activity publishes messages on a topic in a Kafka cluster.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/AIflow/common/activity/kafka
+AIflow install github.com/r2d2-ai/aiflow/common/activity/kafka
 ```
 
 ## Configuration
@@ -45,7 +45,7 @@ The below example sends `Hello From AIflow` to a Kafka Broker running on localho
   "id": "publish_kafka_message",
   "name": "Publish Message to Kafka",
   "activity": {
-    "ref": "github.com/r2d2-ai/AIflow/common/activity/kafka",
+    "ref": "github.com/r2d2-ai/aiflow/common/activity/kafka",
     "settings": {
       "brokerUrls" : "localhost:9092",
       "topic"      : "syslog"

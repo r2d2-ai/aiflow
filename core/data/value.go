@@ -1,6 +1,6 @@
 package data
 
-import "github.com/r2d2-ai/AIflow/core/data/schema"
+import "github.com/r2d2-ai/aiflow/core/data/schema"
 
 type TypedValue interface {
 	Type() Type

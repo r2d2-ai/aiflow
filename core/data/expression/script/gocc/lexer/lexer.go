@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"unicode/utf8"
 
-	"github.com/r2d2-ai/AIflow/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/aiflow/core/data/expression/script/gocc/token"
 )
 
 const (

@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
-	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/support/test"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -67,7 +67,7 @@ func newActivityHost() *test.TestActivityHost {
 
 	ac := &test.TestActivityHost{
 		HostId:     "1",
-		HostRef:    "github.com/r2d2-ai/AIflow/flow",
+		HostRef:    "github.com/r2d2-ai/aiflow/flow",
 		IoMetadata: &metadata.IOMetadata{Input: input, Output: output},
 		HostData:   data.NewSimpleScope(nil, nil),
 	}

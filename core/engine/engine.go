@@ -7,9 +7,9 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/r2d2-ai/AIflow/core/app"
-	"github.com/r2d2-ai/AIflow/core/support/log"
-	"github.com/r2d2-ai/AIflow/core/support/managed"
+	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/managed"
 )
 
 var managedServices []managed.Managed

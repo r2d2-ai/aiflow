@@ -8,7 +8,7 @@ This trigger provides your AIflow application the ability to start an action via
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/AIflow/common/trigger/rest
+AIflow install github.com/r2d2-ai/aiflow/common/trigger/rest
 ```
 
 ## Configuration
@@ -57,7 +57,7 @@ Configure the Trigger to handle a POST on /device
   "triggers": [
     {
       "id": "AIflow-rest",
-      "ref": "github.com/r2d2-ai/AIflow/common/trigger/rest",
+      "ref": "github.com/r2d2-ai/aiflow/common/trigger/rest",
       "settings": {
         "port": 8080
       },
@@ -68,7 +68,7 @@ Configure the Trigger to handle a POST on /device
             "path": "/device"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/AIflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/flow",
             "settings": {
               "flowURI": "res://flow:new_device_flow"
             }
@@ -88,7 +88,7 @@ Configure the Trigger to handle a GET on /device/:id
   "triggers": [
     {
       "id": "AIflow-rest",
-      "ref": "github.com/r2d2-ai/AIflow/common/trigger/rest",
+      "ref": "github.com/r2d2-ai/aiflow/common/trigger/rest",
       "settings": {
         "port": 8080
       },
@@ -99,7 +99,7 @@ Configure the Trigger to handle a GET on /device/:id
             "path": "/device/:id"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/AIflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/flow",
             "settings": {
               "flowURI": "res://flow:get_device_flow"
             },

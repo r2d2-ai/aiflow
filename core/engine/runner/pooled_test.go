@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
 
-	"github.com/r2d2-ai/AIflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/action"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

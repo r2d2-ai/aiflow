@@ -3,8 +3,8 @@ package error
 import (
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/activity"
-	"github.com/r2d2-ai/AIflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/core/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Load Tester",
   "description": "Simple Load Tester",
-  "homepage": "https://github.com/r2d2-ai/AIflow/common/tree/master/trigger/loadtester",
+  "homepage": "https://github.com/r2d2-ai/aiflow/common/tree/master/trigger/loadtester",
   "settings": [
     {
       "name": "startDelay",

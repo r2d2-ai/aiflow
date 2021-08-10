@@ -1,10 +1,10 @@
 package instance
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/model"
-	"github.com/r2d2-ai/AIflow/flow/state"
-	"github.com/r2d2-ai/AIflow/flow/state/change"
-	"github.com/r2d2-ai/AIflow/flow/util"
+	"github.com/r2d2-ai/aiflow/flow/model"
+	"github.com/r2d2-ai/aiflow/flow/state"
+	"github.com/r2d2-ai/aiflow/flow/state/change"
+	"github.com/r2d2-ai/aiflow/flow/util"
 )
 
 var defaultChgTracker = &NoopChangeTracker{}

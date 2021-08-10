@@ -1,7 +1,7 @@
 package instance
 
 import (
-	"github.com/r2d2-ai/AIflow/flow/support"
+	"github.com/r2d2-ai/aiflow/flow/support"
 )
 
 const (

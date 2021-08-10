@@ -5,15 +5,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/support/test"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
 const testConfig string = `{
 	"id": "aiflow-cam",
-	"ref": "github.com/r2d2-ai/AIflow/cv/trigger/ipcam",
+	"ref": "github.com/r2d2-ai/aiflow/cv/trigger/ipcam",
 	"settings": {},
 	"handlers": [
 	  {

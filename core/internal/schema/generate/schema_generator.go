@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/r2d2-ai/AIflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/app"
 	"github.com/square-it/jsonschema"
 )
 

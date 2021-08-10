@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	sampleAction "github.com/r2d2-ai/AIflow/core/examples/action"
-	sampleTrigger "github.com/r2d2-ai/AIflow/core/examples/trigger"
-	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/data"
+	sampleAction "github.com/r2d2-ai/aiflow/core/examples/action"
+	sampleTrigger "github.com/r2d2-ai/aiflow/core/examples/trigger"
+	"github.com/r2d2-ai/aiflow/core/support/log"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -47,7 +47,7 @@ type IndependentAction struct {
 }
 
 func (ind *IndependentAction) Ref() string {
-	return "github.com/r2d2-ai/AIflow/core/examples/action"
+	return "github.com/r2d2-ai/aiflow/core/examples/action"
 }
 func TestIndependentAction(t *testing.T) {
 

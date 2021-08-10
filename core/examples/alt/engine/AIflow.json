@@ -5,9 +5,9 @@
   "description": "My AIflow application description",
   "appModel": "1.0.0",
   "imports": [
-    "github.com/r2d2-ai/AIflow/common@latest:/activity/log",
-    "github.com/r2d2-ai/AIflow/common@latest:/trigger/rest",
-    "github.com/r2d2-ai/AIflow/flow@latest"
+    "github.com/r2d2-ai/aiflow/common@latest:/activity/log",
+    "github.com/r2d2-ai/aiflow/common@latest:/trigger/rest",
+    "github.com/r2d2-ai/aiflow/flow@latest"
   ],
   "triggers": [
     {

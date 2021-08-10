@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/core/support/log"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/data/expression"
-	"github.com/r2d2-ai/AIflow/core/data/mapper"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
-	"github.com/r2d2-ai/AIflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/data/expression"
+	"github.com/r2d2-ai/aiflow/core/data/mapper"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/engine/runner"
 	"github.com/stretchr/testify/assert"
 )
 

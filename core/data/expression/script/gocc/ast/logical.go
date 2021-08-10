@@ -3,11 +3,11 @@ package ast
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
 
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
-	"github.com/r2d2-ai/AIflow/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data/expression/script/gocc/token"
 )
 
 func NewBoolExpr(left, operand, right interface{}) (Expr, error) {

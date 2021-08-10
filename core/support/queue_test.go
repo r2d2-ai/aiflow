@@ -11,7 +11,7 @@ func TestNewSyncQueue(t *testing.T) {
 	q := NewSyncQueue()
 	assert.NotNil(t, q)
 	assert.NotNil(t, q.List)
-	assert.NotNil(t, q.lock)
+	//assert.NotNil(t, q.lock)
 }
 
 func TestSyncQueue_IsEmpty(t *testing.T) {

@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/r2d2-ai/AIflow/core/app"
-	"github.com/r2d2-ai/AIflow/core/data/schema"
-	"github.com/r2d2-ai/AIflow/core/engine/secret"
-	"github.com/r2d2-ai/AIflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/data/schema"
+	"github.com/r2d2-ai/aiflow/core/engine/secret"
+	"github.com/r2d2-ai/aiflow/core/support"
 )
 
 var appName, appVersion string

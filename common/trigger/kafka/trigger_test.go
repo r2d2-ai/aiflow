@@ -4,15 +4,15 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/support/test"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 
 const testConfig string = `{
 	"id": "AIflow-timer",
-	"ref": "github.com/r2d2-ai/AIflow/common/trigger/kafka",
+	"ref": "github.com/r2d2-ai/aiflow/common/trigger/kafka",
 	"settings": {
 	  "brokerUrls": "localhost:9092"
 	},

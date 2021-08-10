@@ -4,7 +4,7 @@
   "version": "1.20.1",
   "title": "Simple Flow",
   "description": "Simple Flow Action",
-  "homepage": "https://github.com/r2d2-ai/AIflow/flow",
+  "homepage": "https://github.com/r2d2-ai/aiflow/flow",
   "async": true,
   "passthru":true,
   "settings":[

@@ -3,10 +3,10 @@ package string
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
 
-	"github.com/r2d2-ai/AIflow/core/data/expression/function"
+	"github.com/r2d2-ai/aiflow/core/data/expression/function"
 )
 
 func init() {

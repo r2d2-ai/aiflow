@@ -6,11 +6,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
 
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
-	"github.com/r2d2-ai/AIflow/core/data/expression/script/gocc/token"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data/expression/script/gocc/token"
 )
 
 func NewUnaryExpr(operand, tok interface{}) (Expr, error) {

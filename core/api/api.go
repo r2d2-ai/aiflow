@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/r2d2-ai/AIflow/core/action"
-	"github.com/r2d2-ai/AIflow/core/app"
-	"github.com/r2d2-ai/AIflow/core/app/resource"
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/coerce"
-	"github.com/r2d2-ai/AIflow/core/data/metadata"
-	"github.com/r2d2-ai/AIflow/core/engine"
-	"github.com/r2d2-ai/AIflow/core/engine/runner"
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/action"
+	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/core/app/resource"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/core/engine"
+	"github.com/r2d2-ai/aiflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 )
 
 // App is the structure that defines an application

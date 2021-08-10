@@ -3,8 +3,8 @@ package sample
 import (
 	"testing"
 
-	"github.com/r2d2-ai/AIflow/core/support"
-	"github.com/r2d2-ai/AIflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/core/trigger"
 	"github.com/stretchr/testify/assert"
 )
 

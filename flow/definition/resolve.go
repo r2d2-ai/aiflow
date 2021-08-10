@@ -3,10 +3,10 @@ package definition
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/AIflow/core/data"
-	"github.com/r2d2-ai/AIflow/core/data/path"
-	"github.com/r2d2-ai/AIflow/core/data/property"
-	"github.com/r2d2-ai/AIflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/core/data/path"
+	"github.com/r2d2-ai/aiflow/core/data/property"
+	"github.com/r2d2-ai/aiflow/core/data/resolve"
 )
 
 var defResolver = resolve.NewCompositeResolver(map[string]resolve.Resolver{

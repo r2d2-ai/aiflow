@@ -1,6 +1,6 @@
 package resolve
 
-import "github.com/r2d2-ai/AIflow/core/data"
+import "github.com/r2d2-ai/aiflow/core/data"
 
 var r simpleResolve
 

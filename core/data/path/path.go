@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/r2d2-ai/AIflow/core/data/mapper/config"
+	"github.com/r2d2-ai/aiflow/core/data/mapper/config"
 )
 
 var skipMissing = config.IsMappingSkipMissingOn()
