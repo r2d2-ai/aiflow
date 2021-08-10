@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/r2d2-ai/ai-box/contrib/trigger/rest/cors"
+	"github.com/r2d2-ai/ai-box/common/trigger/rest/cors"
 	"github.com/r2d2-ai/ai-box/core/data/metadata"
 	"github.com/r2d2-ai/ai-box/core/support/log"
 	"github.com/r2d2-ai/ai-box/core/trigger"

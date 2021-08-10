@@ -28,7 +28,7 @@ func TestTrigger_Register(t *testing.T) {
 
 const testConfig string = `{
 	"id": "trigger-rest",
-	"ref": "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+	"ref": "github.com/r2d2-ai/ai-box/common/trigger/rest",
 	"settings": {
         "port": "8888"
     },

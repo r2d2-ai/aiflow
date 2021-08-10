@@ -4,7 +4,7 @@
   "version": "1.20.0",
   "title": "Log",
   "description": "Logs a message",
-  "homepage": "https://github.com/r2d2-ai/ai-box/contrib/tree/master/activity/log",
+  "homepage": "https://github.com/r2d2-ai/ai-box/common/tree/master/activity/log",
   "display": {
     "icon": "log-icon.svg"
   },

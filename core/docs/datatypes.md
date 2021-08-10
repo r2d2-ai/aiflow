@@ -35,7 +35,7 @@ connection is defined once in the AIflow.json and can shared between multiple re
   "ref": "#sql",
   "settings": {
     "connection": {
-      "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
+      "ref" : "github.com/r2d2-ai/ai-box/common/connection/sql",
       "settings" : {
         "dbType": "mysql",
         "driver": "mysql",
@@ -51,7 +51,7 @@ connection is defined once in the AIflow.json and can shared between multiple re
 ```json
 "connections": {
   "myConn": {
-    "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
+    "ref" : "github.com/r2d2-ai/ai-box/common/connection/sql",
     "settings" : {
       "dbType": "mysql",
       "driver": "mysql",

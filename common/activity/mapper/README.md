@@ -10,7 +10,7 @@ This activity allows you to map values to the working attribute set of an action
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/contrib/activity/mapper
+AIflow install github.com/r2d2-ai/ai-box/common/activity/mapper
 ```
 
 ## Configuration
@@ -28,7 +28,7 @@ The below example allows you to configure the activity to map the output 'value'
   "id": "mapper",
   "name": "Mapper",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/contrib/activity/mapper",
+    "ref": "github.com/r2d2-ai/ai-box/common/activity/mapper",
     "input": {
       "mappings": 
         {

@@ -1,8 +1,8 @@
-module github.com/r2d2-ai/ai-box/contrib/activity/jsexec
+module github.com/r2d2-ai/ai-box/common/activity/jsexec
 
 require (
 	github.com/kr/text v0.2.0 // indirect
-	github.com/r2d2-ai/ai-box/contrib/trigger/rest v0.0.0-00010101000000-000000000000
+	github.com/r2d2-ai/ai-box/common/trigger/rest v0.0.0-00010101000000-000000000000
 	github.com/r2d2-ai/ai-box/core v0.9.4-hf.1
 	github.com/r2d2-ai/microgateway v0.0.0-00010101000000-000000000000
 	github.com/stretchr/testify v1.7.0
@@ -14,24 +14,24 @@ go 1.16
 
 replace github.com/r2d2-ai/ai-box/core => ../../../../../../core
 
-replace github.com/r2d2-ai/ai-box/contrib/trigger/rest => ../../../../../trigger/rest
+replace github.com/r2d2-ai/ai-box/common/trigger/rest => ../../../../../trigger/rest
 
-replace github.com/r2d2-ai/ai-box/contrib/trigger/channel => ../../../../../trigger/channel
+replace github.com/r2d2-ai/ai-box/common/trigger/channel => ../../../../../trigger/channel
 
-replace github.com/r2d2-ai/ai-box/contrib/activity/channel => ../../../../channel
+replace github.com/r2d2-ai/ai-box/common/activity/channel => ../../../../channel
 
-replace github.com/r2d2-ai/ai-box/contrib/activity/counter => ../../../../counter
+replace github.com/r2d2-ai/ai-box/common/activity/counter => ../../../../counter
 
-replace github.com/r2d2-ai/ai-box/contrib/activity/log => ../../../../log
+replace github.com/r2d2-ai/ai-box/common/activity/log => ../../../../log
 
-replace github.com/r2d2-ai/ai-box/contrib/activity/rest => ../../../../rest
+replace github.com/r2d2-ai/ai-box/common/activity/rest => ../../../../rest
 
-replace github.com/r2d2-ai/ai-box/contrib/function/coerce => ../../../../../function/coerce
+replace github.com/r2d2-ai/ai-box/common/function/coerce => ../../../../../function/coerce
 
-replace github.com/r2d2-ai/ai-box/contrib/function/json => ../../../../../function/json
+replace github.com/r2d2-ai/ai-box/common/function/json => ../../../../../function/json
 
-replace github.com/r2d2-ai/ai-box/contrib/function/number => ../../../../../function/number
+replace github.com/r2d2-ai/ai-box/common/function/number => ../../../../../function/number
 
-replace github.com/r2d2-ai/ai-box/contrib/function/string => ../../../../../function/string
+replace github.com/r2d2-ai/ai-box/common/function/string => ../../../../../function/string
 
 replace github.com/r2d2-ai/microgateway => ../../../../../../microgateway

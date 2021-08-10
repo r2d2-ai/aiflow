@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/r2d2-ai/ai-box/contrib/trigger/cli"
+	"github.com/r2d2-ai/ai-box/common/trigger/cli"
 )
 
 func main() {

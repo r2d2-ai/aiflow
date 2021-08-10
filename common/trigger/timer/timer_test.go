@@ -12,7 +12,7 @@ import (
 
 const testConfig string = `{
 	"id": "AIflow-timer",
-	"ref": "github.com/r2d2-ai/ai-box/contrib/trigger/timer",
+	"ref": "github.com/r2d2-ai/ai-box/common/trigger/timer",
 	"handlers": [
 	  {
 		"settings":{

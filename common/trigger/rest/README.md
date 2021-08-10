@@ -8,7 +8,7 @@ This trigger provides your AIflow application the ability to start an action via
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/rest
+AIflow install github.com/r2d2-ai/ai-box/common/trigger/rest
 ```
 
 ## Configuration
@@ -57,7 +57,7 @@ Configure the Trigger to handle a POST on /device
   "triggers": [
     {
       "id": "AIflow-rest",
-      "ref": "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/ai-box/common/trigger/rest",
       "settings": {
         "port": 8080
       },
@@ -88,7 +88,7 @@ Configure the Trigger to handle a GET on /device/:id
   "triggers": [
     {
       "id": "AIflow-rest",
-      "ref": "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/ai-box/common/trigger/rest",
       "settings": {
         "port": 8080
       },

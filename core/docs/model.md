@@ -21,8 +21,8 @@ The imports section allows one to define all the contributions that should be im
 ```json
   "imports": [
     "github.com/r2d2-ai/ai-box/flow",
-    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
-    "github.com/r2d2-ai/ai-box/contrib/activity/log"
+    "github.com/r2d2-ai/ai-box/common/trigger/rest",
+    "github.com/r2d2-ai/ai-box/common/activity/log"
   ],
 ```
 
@@ -62,7 +62,7 @@ The channels section allows one to define internal communications channels for t
 ```
 A channel is used for internal communications in an engine.  It is defined by a channel name and buffer size. 
 
-The `github.com/r2d2-ai/ai-box/contrib/activity/channel` activity can be used to put a message on the channel.  The `github.com/r2d2-ai/ai-box/contrib/trigger/channel` trigger can be used to listen on a channel and trigger actions from messages received on that channel.
+The `github.com/r2d2-ai/ai-box/common/activity/channel` activity can be used to put a message on the channel.  The `github.com/r2d2-ai/ai-box/common/trigger/channel` trigger can be used to listen on a channel and trigger actions from messages received on that channel.
 
 ## Triggers
 The triggers section is used to define the triggers that will be used by the application.
@@ -211,7 +211,7 @@ activities.  It allows you to define a connection once and use it in multiple pl
 ```json
 "connections": {
   "myConn": {
-    "ref" : "github.com/r2d2-ai/ai-box/contrib/connection/sql",
+    "ref" : "github.com/r2d2-ai/ai-box/common/connection/sql",
     "settings" : {
       "dbType": "mysql",
       "driver": "mysql",
@@ -244,8 +244,8 @@ Sample AIflow application configuration file.
   "description": "My AIflow application description",
   "imports": [
     "github.com/r2d2-ai/ai-box/flow",
-    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
-    "github.com/r2d2-ai/ai-box/contrib/activity/log"
+    "github.com/r2d2-ai/ai-box/common/trigger/rest",
+    "github.com/r2d2-ai/ai-box/common/activity/log"
   ],
   "triggers": [
     {

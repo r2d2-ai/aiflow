@@ -22,7 +22,7 @@ import (
 
 const testConfig string = `{
   "id": "AIflow-cli",
-	"ref": "github.com/r2d2-ai/ai-box/contrib/trigger/cli",
+	"ref": "github.com/r2d2-ai/ai-box/common/trigger/cli",
 	"settings":{
 		"singleCmd":true
 	},

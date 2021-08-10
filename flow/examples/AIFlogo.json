@@ -5,13 +5,13 @@
   "appModel": "1.0.0",
   "imports": [
     "github.com/r2d2-ai/ai-box/flow",
-    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
-    "github.com/r2d2-ai/ai-box/contrib/activity/log"
+    "github.com/r2d2-ai/ai-box/common/trigger/rest",
+    "github.com/r2d2-ai/ai-box/common/activity/log"
   ],
   "triggers": [
     {
       "id": "receive_http_message",
-      "ref": "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/ai-box/common/trigger/rest",
       "name": "Receive HTTP Message",
       "settings": {
         "port": "8888"

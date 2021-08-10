@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/r2d2-ai/ai-box/contrib/activity/jsexec"
-	trigger "github.com/r2d2-ai/ai-box/contrib/trigger/rest"
+	"github.com/r2d2-ai/ai-box/common/activity/jsexec"
+	trigger "github.com/r2d2-ai/ai-box/common/trigger/rest"
 	"github.com/r2d2-ai/ai-box/core/api"
 	"github.com/r2d2-ai/ai-box/core/engine"
 	"github.com/r2d2-ai/microgateway"

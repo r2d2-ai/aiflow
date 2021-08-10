@@ -8,7 +8,7 @@ This trigger reads/writes data using TCI/UDP networks.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/tcpudp
+AIflow install github.com/r2d2-ai/ai-box/common/trigger/tcpudp
 ```
 
 ## Configuration
@@ -42,7 +42,7 @@ AIflow install github.com/r2d2-ai/ai-box/contrib/trigger/tcpudp
 {
   "triggers": [
           {
-              "ref": "github.com/r2d2-ai/ai-box/contrib/trigger/tcpudp",
+              "ref": "github.com/r2d2-ai/ai-box/common/trigger/tcpudp",
               "name": "ReceiveTCPData",
               "settings": {
                   "network": "tcp4",

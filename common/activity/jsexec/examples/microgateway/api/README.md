@@ -6,7 +6,7 @@ This recipe is a gateway which runs some javascript.
 
 ## Setup
 ```bash
-git clone https://github.com/r2d2-ai/ai-box/contrib/activity/jsexec
+git clone https://github.com/r2d2-ai/ai-box/common/activity/jsexec
 cd jsexec/examples/microgateway/api
 ```
 

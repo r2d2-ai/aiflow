@@ -245,8 +245,8 @@ import (
 	"github.com/r2d2-ai/ai-box/core/engine"
 	"github.com/r2d2-ai/ai-box/flow"
 
-	_ "github.com/r2d2-ai/ai-box/contrib/activity/log" //our flow contains a log activity, so we need to include this
-	"github.com/r2d2-ai/ai-box/contrib/trigger/rest"
+	_ "github.com/r2d2-ai/ai-box/common/activity/log" //our flow contains a log activity, so we need to include this
+	"github.com/r2d2-ai/ai-box/common/trigger/rest"
 )
 
 func main() {

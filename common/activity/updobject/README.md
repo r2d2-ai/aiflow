@@ -10,7 +10,7 @@ This activity allows update an existing object's values.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/contrib/activity/updobject
+AIflow install github.com/r2d2-ai/ai-box/common/activity/updobject
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ Update the passthru object's foo value:
   "id": "updflowpassthru",
   "name": "Update Flow Passthru",
   "activity": {
-    "ref": "github.com/r2d2-ai/ai-box/contrib/activity/updobject",
+    "ref": "github.com/r2d2-ai/ai-box/common/activity/updobject",
     "input": {
       "object": "=$flow.passthru",
       "values": {"foo": "bar"}

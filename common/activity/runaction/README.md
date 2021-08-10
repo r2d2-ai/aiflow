@@ -5,7 +5,7 @@ This activity allows you to run AIflow actions.
 
 ### AIflow CLI
 ```bash
-AIflow install github.com/r2d2-ai/ai-box/contrib/activity/runaction
+AIflow install github.com/r2d2-ai/ai-box/common/activity/runaction
 ```
 
 ## Configuration
@@ -31,7 +31,7 @@ The below example logs a message 'test message':
 ```json
 {
     "id": "cmlact",
-    "ref": "github.com/r2d2-ai/ai-box/contrib/activity/runaction",
+    "ref": "github.com/r2d2-ai/ai-box/common/activity/runaction",
     "settings": {
         "actionRef": "github.com/r2d2-ai/catalystml-AIflow/action",
         "actionSettings": { "catalystMlURI" : "file://cml.json" }
