@@ -1,5 +1,5 @@
 {
-  "name": "../../../app/detector/Detector",
+  "name": "Detector",
   "type": "AIflow:app",
   "version": "0.0.1",
   "appModel": "1.0.0",
