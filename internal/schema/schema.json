@@ -5,7 +5,8 @@
         "type",
         "version",
         "description",
-        "appModel"
+        "appModel",
+        "triggers"
     ],
     "properties": {
         "actions": {
@@ -23,6 +24,15 @@
                 "type": "string"
             },
             "type": "array"
+        },
+        "connections": {
+            "patternProperties": {
+                ".*": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$ref": "#/definitions/connection.Config"
+                }
+            },
+            "type": "object"
         },
         "description": {
             "type": "string"
@@ -50,6 +60,15 @@
             },
             "type": "array"
         },
+        "schemas": {
+            "patternProperties": {
+                ".*": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$ref": "#/definitions/schema.Def"
+                }
+            },
+            "type": "object"
+        },
         "triggers": {
             "items": {
                 "$schema": "http://json-schema.org/draft-07/schema#",
@@ -73,7 +92,8 @@
                 "type",
                 "version",
                 "description",
-                "appModel"
+                "appModel",
+                "triggers"
             ],
             "properties": {
                 "actions": {
@@ -91,6 +111,15 @@
                         "type": "string"
                     },
                     "type": "array"
+                },
+                "connections": {
+                    "patternProperties": {
+                        ".*": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "$ref": "#/definitions/connection.Config"
+                        }
+                    },
+                    "type": "object"
                 },
                 "description": {
                     "type": "string"
@@ -118,6 +147,15 @@
                     },
                     "type": "array"
                 },
+                "schemas": {
+                    "patternProperties": {
+                        ".*": {
+                            "$schema": "http://json-schema.org/draft-07/schema#",
+                            "$ref": "#/definitions/schema.Def"
+                        }
+                    },
+                    "type": "object"
+                },
                 "triggers": {
                     "items": {
                         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -137,9 +175,6 @@
         },
         "action.Config": {
             "properties": {
-                "data": {
-                    "type": "object"
-                },
                 "id": {
                     "type": "string"
                 },
@@ -151,6 +186,18 @@
                 },
                 "type": {
                     "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "type": "object"
+        },
+        "connection.Config": {
+            "properties": {
+                "ref": {
+                    "type": "string"
+                },
+                "settings": {
+                    "type": "object"
                 }
             },
             "additionalProperties": false,
@@ -176,11 +223,24 @@
             "additionalProperties": false,
             "type": "object"
         },
+        "schema.Def": {
+            "required": [
+                "type",
+                "value"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "type": "object"
+        },
         "trigger.ActionConfig": {
             "properties": {
-                "data": {
-                    "type": "object"
-                },
                 "id": {
                     "type": "string"
                 },
@@ -209,6 +269,7 @@
         "trigger.Config": {
             "required": [
                 "id",
+                "ref",
                 "settings",
                 "handlers"
             ],
@@ -238,46 +299,41 @@
         },
         "trigger.HandlerConfig": {
             "required": [
-                "settings"
+                "settings",
+                "actions"
             ],
-            "oneOf":[
-                    {
-                        "required":["actions"],
-                            "properties":{
-                                "actions": {
-                                    "items": {
-                                        "$schema": "http://json-schema.org/draft-07/schema#",
-                                        "$ref": "#/definitions/trigger.ActionConfig"
-                                    },
-                                    "type": "array"
-                                }
-                            }
-                        
-                    },
-                    {
-                        "required":["action"],
-                        "properties":{
-                                "action" : {
-                                    "items": {
-                                        "$schema": "http://json-schema.org/draft-07/schema#",
-                                        "$ref": "#/definitions/trigger.ActionConfig"
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                    }
-                ]
-            ,
             "properties": {
-                
+                "actions": {
+                    "items": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "$ref": "#/definitions/trigger.ActionConfig"
+                    },
+                    "type": "array"
+                },
                 "name": {
                     "type": "string"
+                },
+                "schemas": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$ref": "#/definitions/trigger.SchemaConfig"
                 },
                 "settings": {
                     "type": "object"
                 }
             },
-            "additionalProperties": true,
+            "additionalProperties": false,
+            "type": "object"
+        },
+        "trigger.SchemaConfig": {
+            "properties": {
+                "output": {
+                    "type": "object"
+                },
+                "reply": {
+                    "type": "object"
+                }
+            },
+            "additionalProperties": false,
             "type": "object"
         }
     }
