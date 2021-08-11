@@ -8,7 +8,4 @@ type Config struct {
 
 	//referenced action
 	Id string `json:"id,omitempty"`
-
-	//DEPRECATED
-	Type string `json:"type,omitempty"`
 }
