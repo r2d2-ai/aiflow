@@ -1,12 +1,11 @@
 package api
 
 import (
+	microapi "github.com/r2d2-ai/aiflow-microgateway/api"
+	"github.com/r2d2-ai/aiflow/activity/common/jsexec"
 	"github.com/r2d2-ai/aiflow/api"
-	"github.com/r2d2-ai/aiflow/common/activity/jsexec"
-	trigger "github.com/r2d2-ai/aiflow/common/trigger/rest"
 	"github.com/r2d2-ai/aiflow/engine"
-	"github.com/r2d2-ai/microgateway"
-	microapi "github.com/r2d2-ai/microgateway/api"
+	trigger "github.com/r2d2-ai/aiflow/trigger/net/rest"
 )
 
 // Example returns an API example

@@ -1,4 +1,4 @@
-module github.com/r2d2-ai/aiflow/common/activity/jsexec
+module github.com/r2d2-ai/aiflow/activity/common/jsexec
 
 require (
 	github.com/kr/text v0.2.0 // indirect
