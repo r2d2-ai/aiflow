@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/r2d2-ai/aiflow/common/trigger/cli"
+	"github.com/r2d2-ai/aiflow/trigger/common/cli"
 )
 
 func main() {

@@ -12,10 +12,10 @@ import (
 	"strings"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/r2d2-ai/aiflow/common/trigger/rest/cors"
 	"github.com/r2d2-ai/aiflow/core/data/metadata"
 	"github.com/r2d2-ai/aiflow/core/support/log"
 	"github.com/r2d2-ai/aiflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/trigger/net/rest/cors"
 )
 
 const (
