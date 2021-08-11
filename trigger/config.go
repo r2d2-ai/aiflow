@@ -16,9 +16,6 @@ type Config struct {
 	Ref      string                 `json:"ref"`
 	Settings map[string]interface{} `json:"settings"`
 	Handlers []*HandlerConfig       `json:"handlers"`
-
-	//DEPRECATED
-	Type string `json:"type,omitempty"`
 }
 
 func (c *Config) FixUp(md *Metadata, resolver resolve.CompositeResolver) error {

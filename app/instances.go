@@ -19,11 +19,6 @@ func (a *App) createSharedActions(actionConfigs []*action.Config) (map[string]ac
 
 	for _, config := range actionConfigs {
 
-		if config.Ref == "" && config.Type != "" {
-			log.RootLogger().Warnf("action configuration 'type' deprecated, use 'ref' in the future")
-			config.Ref = "#" + config.Type
-		}
-
 		if config.Ref == "" {
 			return nil, fmt.Errorf("ref not specified for action: %s", config.Id)
 		}
@@ -71,11 +66,6 @@ func (a *App) createTriggers(tConfigs []*trigger.Config, runner action.Runner) (
 			if t != nil && t.id == tConfig.Id {
 				return nil, fmt.Errorf("trigger with id '%s' already registered, trigger ids have to be unique", tConfig.Id)
 			}
-		}
-
-		if tConfig.Ref == "" && tConfig.Type != "" {
-			log.RootLogger().Warnf("trigger [%s]'s configuration uses deprecated property 'type', use 'ref' in the future", tConfig.Id)
-			tConfig.Ref = "#" + tConfig.Type
 		}
 
 		ref := tConfig.Ref
@@ -143,11 +133,6 @@ func (a *App) createTriggers(tConfigs []*trigger.Config, runner action.Runner) (
 						acts = append(acts, act)
 					} else {
 						//create the action
-
-						if act.Ref == "" && act.Type != "" {
-							log.RootLogger().Warnf("action configuration 'type' deprecated in trigger [%s]'s handler [%s], use 'ref' in the future", tConfig.Id, hConfig.Name)
-							act.Ref = "#" + act.Type
-						}
 
 						if act.Ref == "" {
 							return nil, fmt.Errorf("ref not specified for action in trigger [%s]'s handler [%s]", tConfig.Id, hConfig.Name)
