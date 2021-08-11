@@ -38,7 +38,7 @@ Configure the trigger in order to have a special startup and cleanup action for 
             "lifecycle": "STARTUP"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/aiflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/action/flow",
             "settings": {
               "flowURI": "res://flow:app_startup"
             }
@@ -49,7 +49,7 @@ Configure the trigger in order to have a special startup and cleanup action for 
             "lifecycle": "SHUTDOWN"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/aiflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/action/flow",
             "settings": {
               "flowURI": "res://flow:app_cleanup"
             }

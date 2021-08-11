@@ -90,7 +90,7 @@ Configure the Trigger to run a flow repeating every 10 minutes. "repeatInterval"
             "repeatInterval": "10m"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/aiflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/action/flow",
             "settings": {
               "flowURI": "res://flow:myflow"
             }
@@ -118,7 +118,7 @@ Configure the Trigger to run a flow every minute, with a delayed start of 10 min
             "startDelay": "10m30s"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/aiflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/action/flow",
             "settings": {
               "flowURI": "res://flow:myflow"
             }

@@ -243,7 +243,7 @@ import (
 
 	"github.com/r2d2-ai/aiflow/core/api"
 	"github.com/r2d2-ai/aiflow/core/engine"
-	"github.com/r2d2-ai/aiflow/flow"
+	"github.com/r2d2-ai/aiflow/action/flow"
 
 	_ "github.com/r2d2-ai/aiflow/common/activity/log" //our flow contains a log activity, so we need to include this
 	"github.com/r2d2-ai/aiflow/common/trigger/rest"

@@ -6,7 +6,7 @@
   "appModel": "1.0.0",
   "imports": [
     "github.com/r2d2-ai/aiflow/common/trigger/cli",
-    "github.com/r2d2-ai/aiflow/flow",
+    "github.com/r2d2-ai/aiflow/action/flow",
     "github.com/r2d2-ai/aiflow/common/activity/log"
   ],
   "triggers": [

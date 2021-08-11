@@ -10,6 +10,7 @@ require (
 	github.com/dop251/goja v0.0.0-20210804101310-32956a348b49
 	github.com/dustin/go-coap v0.0.0-20190908170653-752e0f79981e
 	github.com/eclipse/paho.mqtt.golang v1.3.5
+	github.com/gorilla/websocket v1.4.2
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852

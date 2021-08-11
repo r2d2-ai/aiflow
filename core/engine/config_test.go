@@ -14,7 +14,7 @@ const testEngineConfig = `
     "github.com/r2d2-ai/aiflow/services/flow-state/store/mem"
   ],
   "actionSettings": {
-    "github.com/r2d2-ai/aiflow/flow": {
+    "github.com/r2d2-ai/aiflow/action/flow": {
       "stepRecordingMode": "full",
       "snapshotRecordingMode": "off",
       "enableExternalFlows": true
@@ -23,7 +23,7 @@ const testEngineConfig = `
   "services": [
     {
       "name": "flowTester",
-      "ref": "github.com/r2d2-ai/aiflow/flow/tester",
+      "ref": "github.com/r2d2-ai/aiflow/action/flow/tester",
       "enabled": true,
       "settings": {
         "port": "8181"

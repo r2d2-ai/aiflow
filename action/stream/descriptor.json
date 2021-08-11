@@ -1,0 +1,27 @@
+{
+  "name": "stream",
+  "type": "AIflow:action",
+  "version": "0.2.1",
+  "title": "AIflow Stream",
+  "description": "Simple Stream Action",
+  "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/action/stream",
+  "async": true,
+  "settings": [
+    {
+      "name": "streamURI",
+      "type": "string"
+    },
+    {
+      "name": "pipelineURI",
+      "type": "string"
+    },
+    {
+      "name": "groupBy",
+      "type": "string"
+    },
+    {
+      "name": "outputChannel",
+      "type": "string"
+    }
+  ]
+}

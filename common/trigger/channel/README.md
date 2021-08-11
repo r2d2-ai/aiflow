@@ -44,7 +44,7 @@ Configure the Trigger to handle an event received on the 'test' channel
             "channel": "test"
           },
           "action": {
-            "ref": "github.com/r2d2-ai/aiflow/flow",
+            "ref": "github.com/r2d2-ai/aiflow/action/flow",
             "settings": {
                 "flowURI": "res://flow:testflow"
             }       

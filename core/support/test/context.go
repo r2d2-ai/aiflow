@@ -20,7 +20,7 @@ func NewActivityContext(md *activity.Metadata) *TestActivityContext {
 
 	ac := &TestActivityHost{
 		HostId:     "1",
-		HostRef:    "github.com/r2d2-ai/aiflow/flow",
+		HostRef:    "github.com/r2d2-ai/aiflow/action/flow",
 		IoMetadata: &metadata.IOMetadata{Input: input, Output: output},
 		HostData:   data.NewSimpleScope(nil, nil),
 	}

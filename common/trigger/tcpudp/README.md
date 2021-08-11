@@ -56,7 +56,7 @@ AIflow install github.com/r2d2-ai/aiflow/common/trigger/tcpudp
                   {
                       "settings": {},
                       "action": {
-                          "ref": "github.com/r2d2-ai/aiflow/flow",
+                          "ref": "github.com/r2d2-ai/aiflow/action/flow",
                           "settings": {
                               "flowURI": "res://flow:TCP"
                           },

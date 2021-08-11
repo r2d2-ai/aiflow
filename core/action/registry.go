@@ -61,7 +61,7 @@ func GetFactory(ref string) Factory {
 
 	//temp hack
 	if ref == "github.com/TIBCOSoftware/AIflow-contrib/action/flow" {
-		ref = "github.com/r2d2-ai/aiflow/flow"
+		ref = "github.com/r2d2-ai/aiflow/action/flow"
 	}
 
 	return actionFactories[ref]

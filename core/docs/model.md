@@ -20,7 +20,7 @@ The imports section allows one to define all the contributions that should be im
 
 ```json
   "imports": [
-    "github.com/r2d2-ai/aiflow/flow",
+    "github.com/r2d2-ai/aiflow/action/flow",
     "github.com/r2d2-ai/aiflow/common/trigger/rest",
     "github.com/r2d2-ai/aiflow/common/activity/log"
   ],
@@ -28,7 +28,7 @@ The imports section allows one to define all the contributions that should be im
 
 A contribution can be referenced directly using the full go package or indirectly to its imported package.
 
-Direct: `"ref" : "github.com/r2d2-ai/aiflow/flow"`
+Direct: `"ref" : "github.com/r2d2-ai/aiflow/action/flow"`
  
 Indirect: `"ref" : "#flow"` 
 
@@ -243,7 +243,7 @@ Sample AIflow application configuration file.
   "appModel": "1.0.0",
   "description": "My AIflow application description",
   "imports": [
-    "github.com/r2d2-ai/aiflow/flow",
+    "github.com/r2d2-ai/aiflow/action/flow",
     "github.com/r2d2-ai/aiflow/common/trigger/rest",
     "github.com/r2d2-ai/aiflow/common/activity/log"
   ],
