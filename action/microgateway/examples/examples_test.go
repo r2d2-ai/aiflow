@@ -10,6 +10,7 @@ import (
 	"testing"
 	"time"
 
+	_ "github.com/r2d2-ai/activity/net/rest"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/jwt"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/ratelimiter"
@@ -17,7 +18,6 @@ import (
 	test "github.com/r2d2-ai/aiflow/action/microgateway/internal/testing"
 	"github.com/r2d2-ai/aiflow/engine"
 	_ "github.com/r2d2-ai/contrib/activity/channel"
-	_ "github.com/r2d2-ai/contrib/activity/rest"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -100,7 +100,7 @@ const resource = `{
   "services": [{
     "name": "PetStorePets",
     "description": "Get pets by ID from the petstore",
-    "ref": "github.com/r2d2-ai/contrib/activity/rest",
+    "ref": "github.com/r2d2-ai/activity/net/rest",
     "settings": {
       "uri": "http://petstore.swagger.io/v2/pet/:petId",
       "method": "GET",

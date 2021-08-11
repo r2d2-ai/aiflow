@@ -12,7 +12,7 @@ import (
 
 var testFlogoJSON = `{
   "name": "Test",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "1.0.0",
   "description": "This is a test application.",
 	"imports": [
@@ -33,7 +33,7 @@ var testFlogoJSON = `{
   ],
   "triggers": [
     {
-      "name": "flogo-test0",
+      "name": "AIflow-test0",
       "id": "test0",
       "ref": "#trigger",
       "settings": {
@@ -53,7 +53,7 @@ var testFlogoJSON = `{
       ]
     },
 		{
-      "name": "flogo-test1",
+      "name": "AIflow-test1",
       "id": "test1",
       "ref": "#trigger",
       "settings": {
@@ -73,7 +73,7 @@ var testFlogoJSON = `{
       ]
     },
 		{
-      "name": "flogo-test1",
+      "name": "AIflow-test1",
       "id": "test1",
       "ref": "github.com/r2d2-ai/aiflow/examples/trigger",
       "settings": {

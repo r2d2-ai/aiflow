@@ -7,20 +7,20 @@ import (
 	"testing"
 	"time"
 
+	"github.com/r2d2-ai/activity/net/rest"
 	microapi "github.com/r2d2-ai/aiflow/action/microgateway/api"
 	"github.com/r2d2-ai/aiflow/action/microgateway/internal/testing/activity"
 	"github.com/r2d2-ai/aiflow/action/microgateway/internal/testing/trigger"
 	coreactivity "github.com/r2d2-ai/aiflow/activity"
 	"github.com/r2d2-ai/aiflow/api"
 	"github.com/r2d2-ai/aiflow/engine/channels"
-	"github.com/r2d2-ai/contrib/activity/rest"
 	"github.com/stretchr/testify/assert"
 
+	_ "github.com/r2d2-ai/activity/net/rest"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/jwt"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/ratelimiter"
 	_ "github.com/r2d2-ai/contrib/activity/channel"
-	_ "github.com/r2d2-ai/contrib/activity/rest"
 )
 
 func TestMicrogateway(t *testing.T) {

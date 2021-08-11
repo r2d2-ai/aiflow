@@ -9,7 +9,7 @@ https://github.com/r2d2-ai/aiflow/action/microgateway/examples/json/default-chan
 This recipe is a gateway using the defult channel pattern which uses JWT.
 This receipe uses 2 triggers.
 1. REST trigger:- For calling the channel pattern
-Link: https://github.com/r2d2-ai/contrib/trigger/rest
+Link: https://github.com/r2d2-ai/trigger/net/rest
 
 2. Channel Trigger:- For calling second microgateway action
 Link: https://github.com/r2d2-ai/contrib/trigger/channel

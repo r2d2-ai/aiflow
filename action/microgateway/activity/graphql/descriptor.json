@@ -1,6 +1,6 @@
 {
-    "name": "flogo-gql",
-    "type": "flogo:activity",
+    "name": "AIflow-gql",
+    "type": "AIflow:activity",
     "version": "0.1.0",
     "title": "GraphQL",
     "description": "Executes GraphQL query",

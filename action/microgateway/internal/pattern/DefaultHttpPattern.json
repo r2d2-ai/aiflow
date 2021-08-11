@@ -136,7 +136,7 @@
     {
       "name": "HttpBackendA",
       "description": "Make an http call to your backend",
-      "ref": "github.com/r2d2-ai/contrib/activity/rest",
+      "ref": "github.com/r2d2-ai/activity/net/rest",
       "settings": {
         "method": "=$.conf.method",
         "uri": "=$.conf.backendUrl"
@@ -145,7 +145,7 @@
     {
       "name": "HttpBackendB",
       "description": "Make an http call to your backend",
-      "ref": "github.com/r2d2-ai/contrib/activity/rest",
+      "ref": "github.com/r2d2-ai/activity/net/rest",
       "settings": {
         "method": "=$.conf.method",
         "uri": "=$.conf.backendUrl"

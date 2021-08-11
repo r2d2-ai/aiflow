@@ -1,13 +1,13 @@
 package examples
 
 import (
+	"github.com/r2d2-ai/activity/net/rest"
 	microgateway "github.com/r2d2-ai/aiflow/action/microgateway"
 	"github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker"
 	microapi "github.com/r2d2-ai/aiflow/action/microgateway/api"
 	"github.com/r2d2-ai/aiflow/api"
 	"github.com/r2d2-ai/aiflow/engine"
-	"github.com/r2d2-ai/contrib/activity/rest"
-	trigger "github.com/r2d2-ai/contrib/trigger/rest"
+	trigger "github.com/r2d2-ai/trigger/net/rest"
 )
 
 // Example returns an API example

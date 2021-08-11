@@ -1,15 +1,15 @@
 package examples
 
 import (
+	"github.com/r2d2-ai/activity/common/log"
+	"github.com/r2d2-ai/activity/net/rest"
 	microgateway "github.com/r2d2-ai/aiflow/action/microgateway"
 	microapi "github.com/r2d2-ai/aiflow/action/microgateway/api"
 	"github.com/r2d2-ai/aiflow/api"
 	"github.com/r2d2-ai/aiflow/engine"
 	"github.com/r2d2-ai/aiflow/engine/channels"
-	"github.com/r2d2-ai/contrib/activity/log"
-	"github.com/r2d2-ai/contrib/activity/rest"
 	channeltrigger "github.com/r2d2-ai/contrib/trigger/channel"
-	trigger "github.com/r2d2-ai/contrib/trigger/rest"
+	trigger "github.com/r2d2-ai/trigger/net/rest"
 )
 
 // BasicGatewayExample returns a Basic Gateway API example

@@ -1,6 +1,6 @@
 {
   "name": "jwt",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "JSON Web Token",
   "description": "JSON web token authentication",

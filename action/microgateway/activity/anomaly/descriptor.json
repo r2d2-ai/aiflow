@@ -1,6 +1,6 @@
 {
   "name": "anomaly",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "Anomaly",
   "description": "Anomaly detection",

@@ -39,7 +39,7 @@ Create the gateway:
 ```bash
 flogo create -f flogo.json
 cd MyProxy
-flogo install github.com/r2d2-ai/contrib/activity/rest
+flogo install github.com/r2d2-ai/activity/net/rest
 flogo install github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker
 flogo install github.com/r2d2-ai/aiflow/action/microgateway/activity/jwt
 flogo install github.com/r2d2-ai/aiflow/action/microgateway/activity/ratelimiter

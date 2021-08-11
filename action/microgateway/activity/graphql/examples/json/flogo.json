@@ -1,19 +1,19 @@
 {
     "name": "MyProxy",
-    "type": "flogo:app",
+    "type": "AIflow:app",
     "version": "1.0.0",
     "description": "This is a simple proxy.",
     "properties": null,
     "channels": null,
     "imports":[
-      "resta github.com/r2d2-ai/contrib/trigger/rest",
+      "resta github.com/r2d2-ai/trigger/net/rest",
 	    "graphqla github.com/r2d2-ai/aiflow/action/microgateway/activity/graphql"
     ],
     "triggers": [
       {
-        "name": "flogo-rest",
+        "name": "AIflow-rest",
         "id": "MyProxy",
-        "ref": "github.com/r2d2-ai/contrib/trigger/rest",
+        "ref": "github.com/r2d2-ai/trigger/net/rest",
         "settings": {
           "port": "9096"
         },
@@ -91,7 +91,7 @@
             {
               "name": "GraphQLQuery",
               "description": "query graphql endpoint",
-              "ref": "github.com/r2d2-ai/contrib/activity/rest",
+              "ref": "github.com/r2d2-ai/activity/net/rest",
               "settings": {
                 "uri": "https://bahnql.herokuapp.com/graphql",
                 "method": "POST",

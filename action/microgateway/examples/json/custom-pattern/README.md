@@ -25,7 +25,7 @@ flogo create -f flogo.json
 cd MyProxy
 flogo install github.com/r2d2-ai/aiflow/action/microgateway/examples/json/custom-pattern
 flogo install github.com/r2d2-ai/contrib/activity/counter
-flogo install github.com/r2d2-ai/contrib/activity/rest
+flogo install github.com/r2d2-ai/activity/net/rest
 flogo build
 ```
 

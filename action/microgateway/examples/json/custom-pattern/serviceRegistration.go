@@ -48,7 +48,7 @@ const pattern = `{
     {
       "name": "HttpBackend",
       "description": "Make an http call to your backend",
-      "ref": "github.com/r2d2-ai/contrib/activity/rest",
+      "ref": "github.com/r2d2-ai/activity/net/rest",
       "settings": {
         "method": "GET",
         "uri": "http://localhost:1234/pets"

@@ -11,7 +11,7 @@ Pattern checks for JWT, Ratelimiter and CircuitBreaker conditions.
 If valid ... it runs corresponding activity.
 This receipe uses REST trigger.
 1. REST trigger:- For calling the http pattern
-Link: https://github.com/r2d2-ai/contrib/trigger/rest
+Link: https://github.com/r2d2-ai/trigger/net/rest
 
 
 #Circuit Breaker Service:

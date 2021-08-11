@@ -7,12 +7,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	_ "github.com/r2d2-ai/activity/net/rest"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/jwt"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/ratelimiter"
 	"github.com/r2d2-ai/aiflow/action/microgateway/examples"
 	"github.com/r2d2-ai/aiflow/engine"
-	_ "github.com/r2d2-ai/contrib/activity/rest"
 )
 
 var (

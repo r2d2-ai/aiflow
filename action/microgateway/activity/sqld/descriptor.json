@@ -1,6 +1,6 @@
 {
   "name": "sqld",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "SQL Detector",
   "description": "Detects SQL injection attacks",

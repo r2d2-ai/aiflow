@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"testing"
 
+	_ "github.com/r2d2-ai/activity/net/rest"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/graphql"
 	"github.com/r2d2-ai/aiflow/action/microgateway/api"
 	test "github.com/r2d2-ai/aiflow/action/microgateway/internal/testing"
 	"github.com/r2d2-ai/aiflow/engine"
-	_ "github.com/r2d2-ai/contrib/activity/rest"
-	_ "github.com/r2d2-ai/contrib/trigger/rest"
+	_ "github.com/r2d2-ai/trigger/net/rest"
 	"github.com/stretchr/testify/assert"
 )
 

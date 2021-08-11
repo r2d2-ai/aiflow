@@ -129,7 +129,7 @@ type GenerateResource interface {
 
 // Generate generates flogo go API code
 func Generate(config *app.Config, file string, modFile string) {
-	if config.Type != "flogo:app" {
+	if config.Type != "AIflow:app" {
 		panic("invalid app type")
 	}
 

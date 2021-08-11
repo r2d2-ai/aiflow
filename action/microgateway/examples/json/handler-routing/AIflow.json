@@ -1,15 +1,15 @@
 {
   "name": "MyProxy",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "1.0.0",
   "description": "This is a simple proxy.",
   "properties": null,
   "channels": null,
   "triggers": [
     {
-      "name": "flogo-rest",
+      "name": "AIflow-rest",
       "id": "MyProxy",
-      "ref": "github.com/r2d2-ai/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/trigger/net/rest",
       "settings": {
         "port": "9096"
       },
@@ -70,7 +70,7 @@
           {
             "name": "PetStorePets",
             "description": "Get pets by ID from the petstore",
-            "ref": "github.com/r2d2-ai/contrib/activity/rest",
+            "ref": "github.com/r2d2-ai/activity/net/rest",
             "settings": {
               "uri": "http://petstore.swagger.io/v2/pet/:petId",
               "method": "GET",
@@ -108,7 +108,7 @@
           {
             "name": "PetStorePets",
             "description": "Get pets by ID from the petstore",
-            "ref": "github.com/r2d2-ai/contrib/activity/rest",
+            "ref": "github.com/r2d2-ai/activity/net/rest",
             "settings": {
               "uri": "http://petstore.swagger.io/v2/pet/:petId",
               "method": "GET",

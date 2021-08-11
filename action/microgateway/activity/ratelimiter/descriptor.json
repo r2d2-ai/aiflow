@@ -1,6 +1,6 @@
 {
   "name": "ratelimiter",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "Rate Limiter",
   "description": "Limits the rate a which a service is called",

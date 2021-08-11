@@ -7,11 +7,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	_ "github.com/r2d2-ai/activity/net/rest"
 	_ "github.com/r2d2-ai/aiflow/action/microgateway/activity/circuitbreaker"
 	"github.com/r2d2-ai/aiflow/action/microgateway/examples"
 	"github.com/r2d2-ai/aiflow/engine"
 	_ "github.com/r2d2-ai/contrib/activity/counter"
-	_ "github.com/r2d2-ai/contrib/activity/rest"
 )
 
 var (
@@ -68,7 +68,7 @@ const pattern = `{
     {
       "name": "HttpBackend",
       "description": "Make an http call to your backend",
-      "ref": "github.com/r2d2-ai/contrib/activity/rest",
+      "ref": "github.com/r2d2-ai/activity/net/rest",
       "settings": {
         "method": "GET",
         "uri": "http://localhost:1234/pets"

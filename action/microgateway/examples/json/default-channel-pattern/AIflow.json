@@ -1,15 +1,17 @@
 {
   "name": "MyProxy",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "1.0.0",
-  "description": "This is an example for async microgateway.",
+  "description": "This is a simple proxy.",
   "properties": null,
-  "channels": null,
+  "channels": [
+    "test:5"
+  ],
   "triggers": [
     {
-      "name": "flogo-rest",
+      "name": "AIflow-rest",
       "id": "MyProxy",
-      "ref": "github.com/r2d2-ai/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/trigger/net/rest",
       "settings": {
         "port": "9096"
       },
@@ -18,6 +20,36 @@
           "settings": {
             "method": "GET",
             "path": "/endpoint"
+          },
+          "actions": [
+            {
+              "ref": "github.com/r2d2-ai/aiflow/action/microgateway/",
+              "settings": {
+                "uri": "pattern://DefaultChannelPattern",
+                "useJWT": true,
+                "jwtSigningMethod": "HMAC",
+                "jwtKey": "qwertyuiopasdfghjklzxcvbnm789101",
+                "jwtAud": "www.mashling.io",
+                "jwtIss": "Mashling",
+                "jwtSub": "tempuser@mail.com",
+                "channel": "test",
+                "value": "test"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AIflow-channel",
+      "id": "MyChannelProxy",
+      "ref": "github.com/r2d2-ai/contrib/trigger/channel",
+      "settings": {
+      },
+      "handlers": [
+        {
+          "settings": {
+            "channel": "test"
           },
           "actions": [
             {
@@ -55,7 +87,7 @@
           {
             "name": "LogService",
             "description": "simple Log service",
-            "ref": "github.com/r2d2-ai/contrib/activity/log",
+            "ref": "github.com/r2d2-ai/activity/common/log",
             "settings": {
             }
           }
@@ -67,8 +99,7 @@
     {
       "ref": "github.com/r2d2-ai/aiflow/action/microgateway/",
       "settings": {
-        "uri": "microgateway:Log",
-        "async": true
+        "uri": "microgateway:Log"
       },
       "id": "microgateway:Log",
       "metadata": null

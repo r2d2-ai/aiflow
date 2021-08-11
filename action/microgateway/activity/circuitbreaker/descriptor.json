@@ -1,6 +1,6 @@
 {
   "name": "circuitbreaker",
-  "type": "flogo:activity",
+  "type": "AIflow:activity",
   "version": "0.0.1",
   "title": "Circuit Breaker",
   "description": "Adds protection for a service",

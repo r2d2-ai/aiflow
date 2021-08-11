@@ -85,7 +85,7 @@ A service definition looks like:
 {
   "name": "PetStorePets",
   "description": "Get pets by ID from the petstore",
-  "ref": "github.com/r2d2-ai/contrib/activity/rest",
+  "ref": "github.com/r2d2-ai/activity/net/rest",
   "settings": {
     "uri": "http://petstore.swagger.io/v2/pet/:petId",
     "method": "GET"

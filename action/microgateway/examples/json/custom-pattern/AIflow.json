@@ -1,15 +1,15 @@
 {
   "name": "MyProxy",
-  "type": "flogo:app",
+  "type": "AIflow:app",
   "version": "1.0.0",
   "description": "This is a simple proxy.",
   "properties": null,
   "channels": null,
   "triggers": [
     {
-      "name": "flogo-rest",
+      "name": "AIflow-rest",
       "id": "MyProxy",
-      "ref": "github.com/r2d2-ai/contrib/trigger/rest",
+      "ref": "github.com/r2d2-ai/trigger/net/rest",
       "settings": {
         "port": "9096"
       },
@@ -17,25 +17,20 @@
         {
           "settings": {
             "method": "GET",
-            "path": "/pets/:petId"
+            "path": "/endpoint"
           },
           "actions": [
             {
-              "id": "microgateway:Pets"
+              "ref": "github.com/r2d2-ai/aiflow/action/microgateway/",
+              "settings": {
+                "uri": "pattern://CustomPattern"
+              }
             }
           ]
         }
       ]
     }
   ],
-  "actions": [
-    {
-      "ref": "github.com/r2d2-ai/aiflow/action/microgateway/",
-      "settings": {
-        "uri": "file://../resource.json"
-      },
-      "id": "microgateway:Pets",
-      "metadata": null
-    }
-  ]
+  "resources": [],
+  "actions": []
 }
