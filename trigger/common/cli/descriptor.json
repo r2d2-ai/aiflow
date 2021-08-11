@@ -2,7 +2,7 @@
   "name": "AIflow-cli",
   "type": "AIflow:trigger",
   "shim": "main",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "CLI Trigger",
   "description": "Simple CLI Trigger",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/trigger/cli",

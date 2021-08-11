@@ -1,6 +1,6 @@
 package streamtester
 
-import "github.com/r2d2-ai/aiflow/core/data/coerce"
+import "github.com/r2d2-ai/aiflow/data/coerce"
 
 type Settings struct {
 	Port string `md:"port,required"`

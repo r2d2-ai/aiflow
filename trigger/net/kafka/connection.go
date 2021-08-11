@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/Shopify/sarama"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 type KafkaConnection struct {

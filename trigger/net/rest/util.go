@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 )
 
 const HeaderSetCookie = "Set-Cookie"

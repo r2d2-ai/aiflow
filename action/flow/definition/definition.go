@@ -3,16 +3,16 @@ package definition
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/expression"
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
-	"github.com/r2d2-ai/aiflow/core/data/schema"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/expression"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/metadata"
+	"github.com/r2d2-ai/aiflow/data/schema"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 // Definition is the object that describes the definition of

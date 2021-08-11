@@ -2,7 +2,7 @@
   "name": "AIflow-xml2json",
   "type": "AIflow:activity",
   "ref": "github.com/r2d2-ai/aiflow/common/activity/xml2json",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "XML2JSON Activity",
   "description": "Converts given XML into JSON",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/activity/xml2json",

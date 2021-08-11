@@ -3,9 +3,9 @@ package number
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/data/expression/function"
-	"github.com/r2d2-ai/aiflow/core/data/expression/script"
-	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/data/expression/function"
+	"github.com/r2d2-ai/aiflow/data/expression/script"
+	"github.com/r2d2-ai/aiflow/data/resolve"
 	"github.com/stretchr/testify/assert"
 )
 

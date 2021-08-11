@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/trigger"
 	"github.com/stretchr/testify/assert"
 )
 

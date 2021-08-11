@@ -1,9 +1,9 @@
 package actreply
 
 import (
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/metadata"
 )
 
 func init() {

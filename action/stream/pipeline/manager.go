@@ -11,10 +11,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/resolve"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/resolve"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 const (

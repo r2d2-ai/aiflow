@@ -2,7 +2,7 @@ package util
 
 import (
 	"github.com/mohae/deepcopy"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 )
 
 func DeepCopy(data interface{}) interface{} {

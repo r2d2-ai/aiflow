@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/action"
-	"github.com/r2d2-ai/aiflow/core/api"
-	"github.com/r2d2-ai/aiflow/core/engine"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/test"
-	"github.com/r2d2-ai/aiflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/action"
+	"github.com/r2d2-ai/aiflow/api"
+	"github.com/r2d2-ai/aiflow/engine"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/test"
+	"github.com/r2d2-ai/aiflow/trigger"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
 package tcpudp
 
 import (
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 )
 
 type Settings struct {

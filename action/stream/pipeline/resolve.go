@@ -3,9 +3,9 @@ package pipeline
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/property"
-	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/property"
+	"github.com/r2d2-ai/aiflow/data/resolve"
 )
 
 var pipelineRes = resolve.NewCompositeResolver(map[string]resolve.Resolver{

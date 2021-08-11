@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/r2d2-ai/aiflow/action"
 	"github.com/r2d2-ai/aiflow/action/stream/pipeline"
-	"github.com/r2d2-ai/aiflow/core/action"
-	"github.com/r2d2-ai/aiflow/core/app/resource"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
-	"github.com/r2d2-ai/aiflow/core/engine/channels"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/app/resource"
+	"github.com/r2d2-ai/aiflow/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/metadata"
+	"github.com/r2d2-ai/aiflow/engine/channels"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 func init() {

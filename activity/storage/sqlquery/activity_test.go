@@ -3,7 +3,7 @@ package sqlquery
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/activity"
 	"github.com/stretchr/testify/assert"
 )
 

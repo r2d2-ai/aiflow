@@ -5,7 +5,7 @@ import (
 
 	"github.com/r2d2-ai/aiflow/action/flow/model"
 	"github.com/r2d2-ai/aiflow/action/flow/support/event"
-	coreevent "github.com/r2d2-ai/aiflow/core/engine/event"
+	coreevent "github.com/r2d2-ai/aiflow/engine/event"
 )
 
 type taskEvent struct {

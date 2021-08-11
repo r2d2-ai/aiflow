@@ -1,7 +1,7 @@
 {
   "name": "AIflow-tcpudp",
   "type": "AIflow:trigger",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "Receive TCP or UDP Data",
   "description": "Simple TCP/UDP Trigger",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commontrigger/tcpudp",

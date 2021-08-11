@@ -3,12 +3,12 @@ package jsexec
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
-	logger "github.com/r2d2-ai/aiflow/core/support/log"
-	"github.com/r2d2-ai/aiflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/metadata"
+	logger "github.com/r2d2-ai/aiflow/support/log"
+	"github.com/r2d2-ai/aiflow/support/trace"
 	"github.com/stretchr/testify/assert"
 )
 

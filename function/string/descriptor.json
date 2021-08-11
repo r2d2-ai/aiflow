@@ -1,7 +1,7 @@
 {
   "name": "string",
   "type": "AIflow:function",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "String Functions",
   "description": "String Functions",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/string",

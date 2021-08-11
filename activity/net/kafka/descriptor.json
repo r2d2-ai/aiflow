@@ -1,6 +1,6 @@
 {
     "name": "AIflow-kafka",
-    "version": "1.20.0",
+    "version": "1.0.0",
     "title": "Publish Kafka message",
     "type": "AIflow:activity",
     "description": "Publish a message to a kafka topic",

@@ -1,7 +1,7 @@
 {
     "name": "array",
     "type": "AIflow:function",
-    "version": "1.20.0",
+    "version": "1.0.0",
     "title": "arrayFunctions",
     "description": "arrayFunctions",
     "functions": [

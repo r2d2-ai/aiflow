@@ -1,7 +1,7 @@
 {
   "name": "utils",
   "type": "AIflow:function",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "Misc utility functions",
   "description": "Useful tools and utilities",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/function/utils",

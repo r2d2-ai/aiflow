@@ -3,8 +3,8 @@ package streamtester
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/trigger"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/trigger"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/r2d2-ai/aiflow/action"
 	"github.com/r2d2-ai/aiflow/action/stream/pipeline"
-	"github.com/r2d2-ai/aiflow/core/action"
-	"github.com/r2d2-ai/aiflow/core/app/resource"
-	"github.com/r2d2-ai/aiflow/core/engine/channels"
-	"github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/app/resource"
+	"github.com/r2d2-ai/aiflow/engine/channels"
+	"github.com/r2d2-ai/aiflow/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

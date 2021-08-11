@@ -3,7 +3,7 @@ package instance
 import (
 	"strings"
 
-	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/data"
 )
 
 type WorkingDataScope struct {

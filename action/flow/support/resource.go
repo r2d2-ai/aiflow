@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/r2d2-ai/aiflow/action/flow/definition"
-	"github.com/r2d2-ai/aiflow/core/app/resource"
+	"github.com/r2d2-ai/aiflow/app/resource"
 )
 
 const (

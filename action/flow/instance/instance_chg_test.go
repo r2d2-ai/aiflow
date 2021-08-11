@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/r2d2-ai/aiflow/action/flow/model"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support/log"
 	"github.com/stretchr/testify/assert"
 )
 

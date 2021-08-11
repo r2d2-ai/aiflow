@@ -1,8 +1,8 @@
 package updobject
 
 import (
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 )
 
 type Input struct {

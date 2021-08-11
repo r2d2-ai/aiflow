@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/dustin/go-coap"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 func NewServer(n, addr string, handler coap.Handler) *Server {

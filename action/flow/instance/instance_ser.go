@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/r2d2-ai/aiflow/action/flow/model"
-	"github.com/r2d2-ai/aiflow/core/support"
+	"github.com/r2d2-ai/aiflow/support"
 )
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

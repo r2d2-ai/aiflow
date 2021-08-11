@@ -1,7 +1,7 @@
 {
   "name": "AIflow-reply",
   "type": "AIflow:activity",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "Reply To Trigger",
   "description": "Replies to Trigger",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/activity/actreply",

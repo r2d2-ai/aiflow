@@ -12,8 +12,8 @@ import (
 	"sync"
 
 	"github.com/r2d2-ai/aiflow/action/flow/definition"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 const (

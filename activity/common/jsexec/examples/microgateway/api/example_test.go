@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/engine"
+	"github.com/r2d2-ai/aiflow/engine"
 	"github.com/r2d2-ai/microgateway/api"
 	"github.com/stretchr/testify/assert"
 )

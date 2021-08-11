@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
-	"github.com/r2d2-ai/aiflow/core/data/expression/function"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/expression/function"
 )
 
 func init() {

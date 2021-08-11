@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/engine/runner"
 
+	"github.com/r2d2-ai/aiflow/action"
 	"github.com/r2d2-ai/aiflow/action/flow"
 	"github.com/r2d2-ai/aiflow/action/flow/support"
-	"github.com/r2d2-ai/aiflow/core/action"
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/app/resource"
-	"github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/app/resource"
+	"github.com/r2d2-ai/aiflow/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

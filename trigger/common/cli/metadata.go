@@ -1,6 +1,6 @@
 package cli
 
-import "github.com/r2d2-ai/aiflow/core/data/coerce"
+import "github.com/r2d2-ai/aiflow/data/coerce"
 
 const ovArgs = "args"
 const ovFlags = "flags"

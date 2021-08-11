@@ -7,9 +7,9 @@ import (
 
 	"github.com/julienschmidt/httprouter"
 	"github.com/r2d2-ai/aiflow/action/flow/instance"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
-	"github.com/r2d2-ai/aiflow/core/support/log"
-	"github.com/r2d2-ai/aiflow/core/support/service"
+	"github.com/r2d2-ai/aiflow/data/coerce"
+	"github.com/r2d2-ai/aiflow/support/log"
+	"github.com/r2d2-ai/aiflow/support/service"
 )
 
 func init() {

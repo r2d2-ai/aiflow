@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	flowUtil "github.com/r2d2-ai/aiflow/action/flow/util"
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/expression"
-	_ "github.com/r2d2-ai/aiflow/core/data/expression/script"
-	"github.com/r2d2-ai/aiflow/core/data/mapper"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/expression"
+	_ "github.com/r2d2-ai/aiflow/data/expression/script"
+	"github.com/r2d2-ai/aiflow/data/mapper"
+	"github.com/r2d2-ai/aiflow/data/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

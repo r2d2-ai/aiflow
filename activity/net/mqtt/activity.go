@@ -5,10 +5,10 @@ import (
 	"strings"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
-	"github.com/r2d2-ai/aiflow/core/support/log"
-	"github.com/r2d2-ai/aiflow/core/support/ssl"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data/metadata"
+	"github.com/r2d2-ai/aiflow/support/log"
+	"github.com/r2d2-ai/aiflow/support/ssl"
 )
 
 var activityMd = activity.ToMetadata(&Settings{}, &Input{}, &Output{})

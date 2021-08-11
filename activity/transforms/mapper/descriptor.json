@@ -1,7 +1,7 @@
 {
   "name": "AIflow-mapper",
   "type": "AIflow:activity",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "Mapper",
   "description": "Mapper",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/commonactivity/mapper",

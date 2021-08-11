@@ -11,9 +11,9 @@ import (
 	"github.com/r2d2-ai/aiflow/action/flow/definition"
 	"github.com/r2d2-ai/aiflow/action/flow/model"
 	flowsupport "github.com/r2d2-ai/aiflow/action/flow/support"
-	"github.com/r2d2-ai/aiflow/core/support"
-	"github.com/r2d2-ai/aiflow/core/support/log"
-	"github.com/r2d2-ai/aiflow/core/support/trace"
+	"github.com/r2d2-ai/aiflow/support"
+	"github.com/r2d2-ai/aiflow/support/log"
+	"github.com/r2d2-ai/aiflow/support/trace"
 )
 
 type IndependentInstance struct {

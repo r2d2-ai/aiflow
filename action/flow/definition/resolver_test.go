@@ -3,7 +3,7 @@ package definition
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/data"
 	"github.com/stretchr/testify/assert"
 )
 

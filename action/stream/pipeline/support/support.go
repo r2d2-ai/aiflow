@@ -3,7 +3,7 @@ package support
 import (
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
+	"github.com/r2d2-ai/aiflow/activity"
 )
 
 type TimerCallback func(ctx activity.Context) (resume bool)

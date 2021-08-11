@@ -5,8 +5,8 @@ import (
 	"sync/atomic"
 
 	"github.com/r2d2-ai/aiflow/action/flow/instance"
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data/metadata"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data/metadata"
 )
 
 func init() {

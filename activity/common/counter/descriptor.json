@@ -1,7 +1,7 @@
 {
   "name": "AIflow-counter",
   "type": "AIflow:activity",
-  "version": "1.20.0",
+  "version": "1.0.0",
   "title": "Counter Activity",
   "description": "Global Counter Activity",
   "homepage": "https://github.com/r2d2-ai/aiflow/tree/master/common/activity/counter",

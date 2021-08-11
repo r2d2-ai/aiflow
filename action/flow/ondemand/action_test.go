@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/support/test"
 
-	"github.com/r2d2-ai/aiflow/core/action"
-	_ "github.com/r2d2-ai/aiflow/core/support/test"
+	"github.com/r2d2-ai/aiflow/action"
+	_ "github.com/r2d2-ai/aiflow/support/test"
 
-	"github.com/r2d2-ai/aiflow/core/engine/runner"
+	"github.com/r2d2-ai/aiflow/engine/runner"
 	"github.com/stretchr/testify/assert"
 )
 

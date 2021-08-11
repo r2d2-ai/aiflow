@@ -2,7 +2,7 @@ package model
 
 import (
 	"github.com/r2d2-ai/aiflow/action/flow/definition"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 // FlowContext is the execution context of the Flow when executing

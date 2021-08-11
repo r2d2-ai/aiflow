@@ -3,11 +3,11 @@ package tester
 import (
 	"context"
 
+	"github.com/r2d2-ai/aiflow/action"
 	"github.com/r2d2-ai/aiflow/action/flow/instance"
 	"github.com/r2d2-ai/aiflow/action/flow/support"
-	"github.com/r2d2-ai/aiflow/core/action"
-	"github.com/r2d2-ai/aiflow/core/engine/runner"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/engine/runner"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 const (

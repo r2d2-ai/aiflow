@@ -3,10 +3,10 @@ package datetime
 import (
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/support/log"
 
-	"github.com/r2d2-ai/aiflow/core/data/expression/function"
+	"github.com/r2d2-ai/aiflow/data/expression/function"
 )
 
 const DateTimeFormatDefault string = "2006-01-02T15:04:05-07:00"

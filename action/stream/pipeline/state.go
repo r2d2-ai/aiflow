@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data"
 )
 
 type StateManager interface {

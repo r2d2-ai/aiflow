@@ -8,7 +8,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
+	"github.com/r2d2-ai/aiflow/data/coerce"
 )
 
 type DataSet interface {

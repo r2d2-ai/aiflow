@@ -5,9 +5,9 @@ import (
 
 	"github.com/r2d2-ai/aiflow/action/flow/instance"
 	"github.com/r2d2-ai/aiflow/action/flow/model"
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/expression"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/expression"
 )
 
 // DoWhileTaskBehavior implements model.TaskBehavior

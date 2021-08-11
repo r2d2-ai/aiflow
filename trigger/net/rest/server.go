@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 const (

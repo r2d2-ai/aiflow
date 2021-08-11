@@ -1,6 +1,6 @@
 package sqlquery
 
-import "github.com/r2d2-ai/aiflow/core/data/coerce"
+import "github.com/r2d2-ai/aiflow/data/coerce"
 
 type Settings struct {
 	DbType          string `md:"dbType,allowed(mysql,oracle,postgres,sqlite,sqlserver), required"`

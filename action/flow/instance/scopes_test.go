@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/r2d2-ai/aiflow/action/flow/definition"
-	"github.com/r2d2-ai/aiflow/core/data"
-	"github.com/r2d2-ai/aiflow/core/data/resolve"
+	"github.com/r2d2-ai/aiflow/data"
+	"github.com/r2d2-ai/aiflow/data/resolve"
 	"github.com/stretchr/testify/assert"
 )
 

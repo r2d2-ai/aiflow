@@ -9,10 +9,10 @@ import (
 
 	"github.com/r2d2-ai/aiflow/action/stream/pipeline/support"
 
-	"github.com/r2d2-ai/aiflow/core/activity"
-	"github.com/r2d2-ai/aiflow/core/data/coerce"
-	"github.com/r2d2-ai/aiflow/core/engine/channels"
-	"github.com/r2d2-ai/aiflow/core/support/log"
+	"github.com/r2d2-ai/aiflow/activity"
+	"github.com/r2d2-ai/aiflow/data/coerce"
+	"github.com/r2d2-ai/aiflow/engine/channels"
+	"github.com/r2d2-ai/aiflow/support/log"
 )
 
 type Instance struct {
