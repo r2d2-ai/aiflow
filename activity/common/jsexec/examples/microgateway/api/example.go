@@ -1,7 +1,8 @@
 package api
 
 import (
-	microapi "github.com/r2d2-ai/aiflow-microgateway/api"
+	"github.com/r2d2-ai/aiflow/action/microgateway"
+	microapi "github.com/r2d2-ai/aiflow/action/microgateway/api"
 	"github.com/r2d2-ai/aiflow/activity/common/jsexec"
 	"github.com/r2d2-ai/aiflow/api"
 	"github.com/r2d2-ai/aiflow/engine"

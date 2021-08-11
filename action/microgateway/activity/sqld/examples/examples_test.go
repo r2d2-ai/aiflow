@@ -1,57 +1,74 @@
-package api
+package examples
 
 import (
+	"bytes"
 	"encoding/json"
 	"io/ioutil"
-	"net"
 	"net/http"
 	"path/filepath"
-	"strings"
 	"testing"
-	"time"
 
 	"github.com/r2d2-ai/aiflow/action/microgateway/api"
+	test "github.com/r2d2-ai/aiflow/action/microgateway/internal/testing"
 	"github.com/r2d2-ai/aiflow/engine"
 	"github.com/stretchr/testify/assert"
 )
 
-func Drain(port string) {
-	for {
-		conn, err := net.DialTimeout("tcp", net.JoinHostPort("", port), time.Second)
-		if conn != nil {
-			conn.Close()
-		}
-		if err != nil && strings.Contains(err.Error(), "connect: connection refused") {
-			break
-		}
-	}
-}
-
-func Pour(port string) {
-	for {
-		conn, _ := net.Dial("tcp", net.JoinHostPort("", port))
-		if conn != nil {
-			conn.Close()
-			break
-		}
-	}
-}
-
 // Response is a reply form the server
 type Response struct {
-	Sum float64 `json:"sum"`
+	Status string `json:"status"`
+	Error  string `json:"error"`
 }
+
+var (
+	payload = `{
+	  "id": 1,
+	  "category": {
+	    "id": 0,
+	    "name": "string"
+	  },
+	  "name": "cat",
+	  "photoUrls": [
+	    "string"
+	  ],
+	  "tags": [
+	    {
+	      "id": 0,
+	      "name": "string"
+	    }
+	  ],
+	  "status": "available"
+	}`
+	attackPayload = `{
+	  "id": 1,
+	  "category": {
+	    "id": 0,
+	    "name": "string"
+	  },
+	  "name": " or 1=1 ",
+	  "photoUrls": [
+	    "string"
+	  ],
+	  "tags": [
+	    {
+	      "id": 0,
+	      "name": "string"
+	    }
+	  ],
+	  "status": "available"
+	}`
+)
 
 func testApplication(t *testing.T, e engine.Engine) {
 	defer api.ClearResources()
-	Drain("9096")
+	test.Drain("9096")
 	err := e.Start()
 	assert.Nil(t, err)
 	defer func() {
 		err := e.Stop()
 		assert.Nil(t, err)
 	}()
-	Pour("9096")
+	test.Pour("9096")
 
 	transport := &http.Transport{
 		MaxIdleConns: 1,
@@ -60,9 +77,10 @@ func testApplication(t *testing.T, e engine.Engine) {
 	client := &http.Client{
 		Transport: transport,
 	}
-	request := func() Response {
-		req, err := http.NewRequest(http.MethodGet, "http://localhost:9096/calculate", nil)
+	request := func(payload string) Response {
+		req, err := http.NewRequest(http.MethodPut, "http://localhost:9096/pets", bytes.NewReader([]byte(payload)))
 		assert.Nil(t, err)
+		req.Header.Set("Content-Type", "application/json")
 		response, err := client.Do(req)
 		assert.Nil(t, err)
 		body, err := ioutil.ReadAll(response.Body)
@@ -74,8 +92,11 @@ func testApplication(t *testing.T, e engine.Engine) {
 		return rsp
 	}
 
-	response := request()
-	assert.Equal(t, 3.0, response.Sum)
+	response := request(payload)
+	assert.NotEqual(t, "", response.Status)
+
+	response = request(attackPayload)
+	assert.Equal(t, "hack attack!", response.Error)
 }
 
 func TestIntegrationAPI(t *testing.T) {
@@ -93,7 +114,7 @@ func TestIntegrationJSON(t *testing.T) {
 		t.Skip("skipping JSON integration test in short mode")
 	}
 
-	data, err := ioutil.ReadFile(filepath.FromSlash("../json/AIflow.json"))
+	data, err := ioutil.ReadFile(filepath.FromSlash("./json/flogo.json"))
 	assert.Nil(t, err)
 	cfg, err := engine.LoadAppConfig(string(data), false)
 	assert.Nil(t, err)

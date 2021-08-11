@@ -1,13 +1,15 @@
 {
   "name": "MyProxy",
-  "type": "AIflow:app",
+  "type": "flogo:app",
   "version": "1.0.0",
-  "description": "This is a simple proxy.",
+  "description": "This is an example for async microgateway.",
+  "properties": null,
+  "channels": null,
   "triggers": [
     {
-      "name": "AIflow-rest",
+      "name": "flogo-rest",
       "id": "MyProxy",
-      "ref": "github.com/r2d2-ai/aiflow/trigger/net/rest",
+      "ref": "github.com/r2d2-ai/contrib/trigger/rest",
       "settings": {
         "port": "9096"
       },
@@ -15,11 +17,11 @@
         {
           "settings": {
             "method": "GET",
-            "path": "/calculate"
+            "path": "/endpoint"
           },
           "actions": [
             {
-              "id": "microgateway:JS"
+              "id": "microgateway:Log"
             }
           ]
         }
@@ -28,18 +30,15 @@
   ],
   "resources": [
     {
-      "id": "microgateway:JS",
+      "id": "microgateway:Log",
       "compressed": false,
       "data": {
-        "name": "JS",
+        "name": "Log",
         "steps": [
           {
-            "service": "JS",
+            "service": "LogService",
             "input": {
-              "parameters": {
-                "a": 1.0,
-                "b": 2.0
-              }
+              "message": "Output: Test log message service invoked"
             }
           }
         ],
@@ -48,17 +47,16 @@
             "error": false,
             "output": {
               "code": 200,
-              "data": "=$.JS.outputs.result"
+              "data": "Successful call to action"
             }
           }
         ],
         "services": [
           {
-            "name": "JS",
-            "description": "Calculate sum",
-            "ref": "github.com/r2d2-ai/aiflow/activity/common/jsexec",
+            "name": "LogService",
+            "description": "simple Log service",
+            "ref": "github.com/r2d2-ai/contrib/activity/log",
             "settings": {
-              "script": "result.sum = parameters.a + parameters.b"
             }
           }
         ]
@@ -67,11 +65,12 @@
   ],
   "actions": [
     {
-      "ref": "github.com/r2d2-ai/aiflow/action/microgateway",
+      "ref": "github.com/r2d2-ai/aiflow/action/microgateway/",
       "settings": {
-        "uri": "microgateway:JS"
+        "uri": "microgateway:Log",
+        "async": true
       },
-      "id": "microgateway:JS",
+      "id": "microgateway:Log",
       "metadata": null
     }
   ]
