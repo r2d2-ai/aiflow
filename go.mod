@@ -10,13 +10,10 @@ require (
 	github.com/dop251/goja v0.0.0-20210804101310-32956a348b49
 	github.com/dustin/go-coap v0.0.0-20190908170653-752e0f79981e
 	github.com/eclipse/paho.mqtt.golang v1.3.5
-	github.com/goccmack/gocc v0.0.0-20210331093148-09606ea4d4d9 // indirect
 	github.com/gorilla/websocket v1.4.2
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852
-	github.com/shuLhan/go-bindata v4.0.0+incompatible // indirect
-	github.com/square-it/jsonschema v1.9.1 // indirect
 	github.com/stianeikeland/go-rpio/v4 v4.4.0
 	github.com/stretchr/testify v1.7.0
 	github.com/tkuchiki/parsetime v0.3.0
