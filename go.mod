@@ -12,8 +12,10 @@ require (
 	github.com/eclipse/paho.mqtt.golang v1.3.5
 	github.com/gorilla/websocket v1.4.2
 	github.com/julienschmidt/httprouter v1.3.0
+	github.com/lib/pq v1.10.2
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852
+	github.com/rs/cors v1.8.0
 	github.com/stretchr/testify v1.7.0
 	github.com/tkuchiki/parsetime v0.3.0
 	github.com/xeipuuv/gojsonschema v1.2.0

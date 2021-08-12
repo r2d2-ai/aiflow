@@ -22,14 +22,11 @@ const (
 	DefaultStopEngineOnError = true
 	EnvKeyRunnerType         = "AIFLOW_RUNNER_TYPE"
 	DefaultRunnerType        = ValueRunnerTypePooled
-	EnvKeyRunnerWorkers      = "AIFLOW_RUNNER_WORKERS"
-	DefaultRunnerWorkers     = 5
+	EnvKeyPooledWorkers      = "AIFLOW_POOLED_WORKERS"
+	DefaultPooledWorkers     = 5
 
-	//Deprecated
-	EnvKeyRunnerQueueSizeLegacy = "AIFLOW_RUNNER_QUEUE"
-
-	EnvKeyRunnerQueueSize  = "AIFLOW_RUNNER_QUEUE_SIZE"
-	DefaultRunnerQueueSize = 50
+	EnvKeyPooledQueueSize  = "AIFLOW_POOLED_QUEUE_SIZE"
+	DefaultPooledQueueSize = 50
 
 	EnvAppPropertyResolvers   = "AIFLOW_APP_PROP_RESOLVERS"
 	EnvEnableSchemaSupport    = "AIFLOW_SCHEMA_SUPPORT"
@@ -197,8 +194,8 @@ func GetRunnerType() string {
 
 //GetRunnerWorkers returns the number of workers to use
 func GetRunnerWorkers() int {
-	numWorkers := DefaultRunnerWorkers
-	workersEnv := os.Getenv(EnvKeyRunnerWorkers)
+	numWorkers := DefaultPooledWorkers
+	workersEnv := os.Getenv(EnvKeyPooledWorkers)
 	if len(workersEnv) > 0 {
 		i, err := strconv.Atoi(workersEnv)
 		if err == nil {
@@ -210,21 +207,12 @@ func GetRunnerWorkers() int {
 
 //GetRunnerQueueSize returns the runner queue size
 func GetRunnerQueueSize() int {
-	queueSize := DefaultRunnerQueueSize
-	queueSizeEnv := os.Getenv(EnvKeyRunnerQueueSize)
+	queueSize := DefaultPooledQueueSize
+	queueSizeEnv := os.Getenv(EnvKeyPooledQueueSize)
 	if len(queueSizeEnv) > 0 {
 		i, err := strconv.Atoi(queueSizeEnv)
 		if err == nil {
 			queueSize = i
-		}
-	} else {
-		//For backward compatible.
-		legacyQueueSize := os.Getenv(EnvKeyRunnerQueueSizeLegacy)
-		if len(legacyQueueSize) > 0 {
-			i, err := strconv.Atoi(queueSizeEnv)
-			if err == nil {
-				queueSize = i
-			}
 		}
 	}
 	return queueSize

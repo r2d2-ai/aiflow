@@ -11,7 +11,7 @@ const testEngineConfig = `
 {
   "type": "AIflow:engine",
   "imports": [
-    "github.com/r2d2-ai/aiflow/support/services/flow-state/store/mem"
+    "github.com/r2d2-ai/aiflow/service/flow-state/store/mem"
   ],
   "actionSettings": {
     "github.com/r2d2-ai/aiflow/action/flow": {
@@ -31,14 +31,14 @@ const testEngineConfig = `
     },
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/aiflow/support/services/flow-state/client/local",
+      "ref": "github.com/r2d2-ai/aiflow/service/flow-state/client/local",
       "enabled": true,
       "settings": {
       }
     },
     {
       "name": "flowStateProvider",
-      "ref": "github.com/r2d2-ai/aiflow/support/services/flow-state/server/rest",
+      "ref": "github.com/r2d2-ai/aiflow/service/flow-state/server/rest",
       "enabled": true,
       "settings": {
         "host": "blah",

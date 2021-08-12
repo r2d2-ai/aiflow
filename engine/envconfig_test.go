@@ -13,23 +13,23 @@ func TestNewPooledConfigDefault(t *testing.T) {
 	pooledConfig := NewPooledRunnerConfig()
 
 	// assert Success
-	assert.Equal(t, DefaultRunnerWorkers, pooledConfig.NumWorkers)
-	assert.Equal(t, DefaultRunnerQueueSize, pooledConfig.WorkQueueSize)
+	assert.Equal(t, DefaultPooledWorkers, pooledConfig.NumWorkers)
+	assert.Equal(t, DefaultPooledQueueSize, pooledConfig.WorkQueueSize)
 }
 
 //TestNewPooledConfigOk
 func TestNewPooledConfigOverride(t *testing.T) {
-	previousWorkers := os.Getenv(EnvKeyRunnerWorkers)
-	defer os.Setenv(EnvKeyRunnerWorkers, previousWorkers)
-	previousQueue := os.Getenv(EnvKeyRunnerQueueSize)
-	defer os.Setenv(EnvKeyRunnerQueueSize, previousQueue)
+	previousWorkers := os.Getenv(EnvKeyPooledWorkers)
+	defer os.Setenv(EnvKeyPooledWorkers, previousWorkers)
+	previousQueue := os.Getenv(EnvKeyPooledQueueSize)
+	defer os.Setenv(EnvKeyPooledQueueSize, previousQueue)
 
 	newWorkersValue := 6
 	newQueueValue := 60
 
 	// Change values
-	_ = os.Setenv(EnvKeyRunnerWorkers, strconv.Itoa(newWorkersValue))
-	_ = os.Setenv(EnvKeyRunnerQueueSize, strconv.Itoa(newQueueValue))
+	_ = os.Setenv(EnvKeyPooledWorkers, strconv.Itoa(newWorkersValue))
+	_ = os.Setenv(EnvKeyPooledQueueSize, strconv.Itoa(newQueueValue))
 
 	pooledConfig := NewPooledRunnerConfig()
 
