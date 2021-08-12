@@ -14,7 +14,7 @@ import (
 )
 
 func init() {
-	_ = activity.LegacyRegister("log", NewLogActivity())
+	// _ = activity.LegacyRegister("log", NewLogActivity())
 }
 
 const defTestJSON = `

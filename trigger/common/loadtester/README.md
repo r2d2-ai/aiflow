@@ -10,7 +10,7 @@ Implementation based off [go-wrk](github.com/tsliwowicz/go-wrk).
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/aiflow/common/trigger/loadtester
+AIflow install github.com/r2d2-ai/aiflow/trigger/common/loadtester
 ```
 
 ## Configuration    
@@ -39,7 +39,7 @@ Configure the Trigger to load test the 'flow:testflow'
   "triggers": [
     {
       "id": "tester",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/loadtester",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/common/loadtester",
       "settings": {
         "startDelay": 15,
         "duration": 120,

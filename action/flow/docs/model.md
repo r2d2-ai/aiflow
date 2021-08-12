@@ -281,8 +281,8 @@ Sample AIflow application configuration file.
   "description": "My AIflow application description",
   "imports": [
     "github.com/r2d2-ai/aiflow/action/flow",
-    "github.com/r2d2-ai/aiflow/common/trigger/rest",
-    "github.com/r2d2-ai/aiflow/common/activity/log"
+    "github.com/r2d2-ai/aiflow/trigger/net/rest",
+    "github.com/r2d2-ai/aiflow/activity/common/log"
   ],
   "triggers": [
     {

@@ -3,8 +3,8 @@ package aggregate
 import (
 	"fmt"
 
-	"github.com/r2d2-ai/aiflow/activity/common/aggregate/window"
-	"github.com/r2d2-ai/aiflow/activity/common/aggregate/window/functions"
+	"github.com/r2d2-ai/aiflow/activity/data/aggregate/window"
+	"github.com/r2d2-ai/aiflow/activity/data/aggregate/window/functions"
 )
 
 func NewTumblingWindow(function string, settings *window.Settings) (window.Window, error) {

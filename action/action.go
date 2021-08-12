@@ -5,7 +5,7 @@ import (
 
 	"github.com/r2d2-ai/aiflow/app/resource"
 	"github.com/r2d2-ai/aiflow/data/metadata"
-	"github.com/r2d2-ai/aiflow/support/service"
+	"github.com/r2d2-ai/aiflow/service"
 )
 
 // Action is an action to perform as a result of a trigger

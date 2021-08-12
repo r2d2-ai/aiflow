@@ -8,7 +8,7 @@ import (
 
 	"github.com/r2d2-ai/aiflow/action/stream/pipeline/support"
 	"github.com/r2d2-ai/aiflow/activity"
-	"github.com/r2d2-ai/aiflow/activity/common/aggregate/window"
+	"github.com/r2d2-ai/aiflow/activity/data/aggregate/window"
 	"github.com/r2d2-ai/aiflow/data/metadata"
 )
 

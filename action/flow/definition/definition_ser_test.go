@@ -16,7 +16,7 @@ import (
 )
 
 func init() {
-	_ = activity.LegacyRegister("log", NewLogActivity())
+	// _ = activity.LegacyRegister("log", NewLogActivity())
 
 	flowUtil.RegisterModelValidator("test", &dummyModelValidator{})
 	exprFactory := expression.NewFactory(GetDataResolver())

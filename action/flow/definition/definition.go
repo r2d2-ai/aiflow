@@ -128,8 +128,7 @@ type ActivityConfig struct {
 
 	Details *activity.Details
 
-	outputs  map[string]interface{}
-	IsLegacy bool
+	outputs map[string]interface{}
 }
 
 func (ac *ActivityConfig) GetInputSchema(name string) schema.Schema {

@@ -3,7 +3,7 @@ package window
 import (
 	"testing"
 
-	"github.com/r2d2-ai/aiflow/activity/common/aggregate/window/functions"
+	"github.com/r2d2-ai/aiflow/activity/data/aggregate/window/functions"
 	"github.com/stretchr/testify/assert"
 )
 

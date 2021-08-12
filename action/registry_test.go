@@ -2,7 +2,6 @@ package action
 
 import (
 	"context"
-	"errors"
 	"testing"
 
 	"github.com/r2d2-ai/aiflow/data"
@@ -116,24 +115,7 @@ func TestGetFactoriesOk(t *testing.T) {
 	assert.Equal(t, 1, len(fs))
 }
 
-func TestLegacyRegister(t *testing.T) {
-	inputs := []struct {
-		ref    string
-		f      Factory
-		result error
-	}{
-		{"", nil, errors.New("'action ref' must be specified when registering")},
-		{"sample", nil, errors.New("cannot register action with 'nil' action factory")},
-		{"sample", &MockFactory{}, nil},
-		{"sample", &MockFactory{}, errors.New("action already registered: sample")},
-	}
-
-	for _, in := range inputs {
-		assert.Equal(t, in.result, LegacyRegister(in.ref, in.f))
-	}
-}
-
 func TestGetFactory(t *testing.T) {
 	assert.NotNil(t, GetFactory("sample"))
-	assert.Nil(t, GetFactory("github.com/TIBCOSoftware/AIflow-contrib/action/flow"))
+	assert.Nil(t, GetFactory("github.com/r2d2-ai/aiflow/action/flow"))
 }

@@ -30,7 +30,7 @@ func getTestMetadata(t *testing.T) *trigger.Metadata {
 //
 const testConfig string = `{
   "id": "AIflow-channel",
-  "ref": "github.com/r2d2-ai/aiflow/common/trigger/channel",
+  "ref": "github.com/r2d2-ai/aiflow/trigger/data/channel",
   "handlers": [
     {
       "settings": {

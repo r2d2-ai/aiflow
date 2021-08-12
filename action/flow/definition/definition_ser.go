@@ -218,7 +218,6 @@ func createActivityConfig(task *Task, rep *activity.Config, ef expression.Factor
 	activityCfg := &ActivityConfig{}
 	activityCfg.Activity = act
 	activityCfg.Logger = activity.GetLogger(rep.Ref)
-	activityCfg.IsLegacy = activity.HasLegacyActivities() && activity.IsLegacyActivity(rep.Ref)
 
 	if hasDetails, ok := act.(activity.HasDetails); ok {
 		activityCfg.Details = hasDetails.Details()
@@ -312,16 +311,14 @@ func createActivityConfig(task *Task, rep *activity.Config, ef expression.Factor
 	}
 
 	if len(rep.Output) > 0 {
-		if !activityCfg.IsLegacy {
-			//TODO comment out for now. we can reconsider for custom outpout mapper in the future.
-			//activityCfg.outputMapper, err = mf.NewMapper(output)
-			//if err != nil {
-			//	return nil, err
-			//}
-			activityCfg.outputs = output
-		} else {
-			activityCfg.outputs = output
-		}
+
+		//TODO comment out for now. we can reconsider for custom outpout mapper in the future.
+		//activityCfg.outputMapper, err = mf.NewMapper(output)
+		//if err != nil {
+		//	return nil, err
+		//}
+		activityCfg.outputs = output
+
 	}
 
 	//If outputMapper is null, use default output mapper

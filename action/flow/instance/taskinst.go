@@ -340,11 +340,7 @@ func (ti *TaskInst) EvalActivity() (done bool, evalErr error) {
 			}
 		}
 
-		var ctx activity.Context
-		ctx = ti
-		if actCfg.IsLegacy {
-			ctx = &LegacyCtx{task: ti}
-		}
+		ctx := ti
 
 		done, evalErr = actCfg.Activity.Eval(ctx)
 

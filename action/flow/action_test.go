@@ -31,7 +31,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/r2d2-ai/aiflow/common/activity/log",
+         "activityRef": "github.com/r2d2-ai/aiflow/activity/common/log",
          "attributes": [
            {
              "name": "message",
@@ -59,7 +59,7 @@ var testFlowActionCfg = `{
          "description": "Simple Log Activity",
          "type": 1,
          "activityType": "log",
-         "activityRef": "github.com/r2d2-ai/aiflow/common/activity/log",
+         "activityRef": "github.com/r2d2-ai/aiflow/activity/common/log",
          "attributes": [
            {
              "name": "message",

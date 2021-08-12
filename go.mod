@@ -14,7 +14,6 @@ require (
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 	github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852
-	github.com/stianeikeland/go-rpio/v4 v4.4.0
 	github.com/stretchr/testify v1.7.0
 	github.com/tkuchiki/parsetime v0.3.0
 	github.com/xeipuuv/gojsonschema v1.2.0

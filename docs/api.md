@@ -245,8 +245,8 @@ import (
 	"github.com/r2d2-ai/aiflow/engine"
 	"github.com/r2d2-ai/aiflow/action/flow"
 
-	_ "github.com/r2d2-ai/aiflow/common/activity/log" //our flow contains a log activity, so we need to include this
-	"github.com/r2d2-ai/aiflow/common/trigger/rest"
+	_ "github.com/r2d2-ai/aiflow/activity/common/log" //our flow contains a log activity, so we need to include this
+	"github.com/r2d2-ai/aiflow/trigger/net/rest"
 )
 
 func main() {

@@ -8,7 +8,7 @@ This trigger provides your AIflow application the ability to schedule an action
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/aiflow/common/trigger/timer
+AIflow install github.com/r2d2-ai/aiflow/trigger/common/timer
 ```
 
 ## Configuration
@@ -32,7 +32,7 @@ Configure the Trigger to run a flow immediately
   "triggers": [
     {
       "id": "AIflow-timer",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/timer",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/common/timer",
       "handlers": [
         {
           "action": {
@@ -56,7 +56,7 @@ Configure the Trigger to run a flow once with a delay of one minute.  "startDela
   "triggers": [
     {
       "id": "AIflow-timer",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/timer",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/common/timer",
       "handlers": [
         {
           "settings": {
@@ -83,7 +83,7 @@ Configure the Trigger to run a flow repeating every 10 minutes. "repeatInterval"
   "triggers": [
     {
       "id": "AIflow-timer",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/timer",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/common/timer",
       "handlers": [
         {
           "settings": {
@@ -110,7 +110,7 @@ Configure the Trigger to run a flow every minute, with a delayed start of 10 min
   "triggers": [
     {
       "id": "AIflow-timer",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/timer",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/common/timer",
       "handlers": [
         {
           "settings": {

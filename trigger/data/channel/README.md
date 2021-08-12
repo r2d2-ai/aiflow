@@ -9,7 +9,7 @@ This trigger provides your AIflow application the ability to start an action via
 ## Installation
 
 ```bash
-AIflow install github.com/r2d2-ai/aiflow/common/trigger/channel
+AIflow install github.com/r2d2-ai/aiflow/trigger/data/channel
 ```
 
 ## Configuration    
@@ -37,7 +37,7 @@ Configure the Trigger to handle an event received on the 'test' channel
   "triggers": [
     {
       "id": "AIflow-channel",
-      "ref": "github.com/r2d2-ai/aiflow/common/trigger/channel",
+      "ref": "github.com/r2d2-ai/aiflow/trigger/data/channel",
       "handlers": [
         {
           "settings": {

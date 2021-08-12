@@ -12,7 +12,7 @@ import (
 
 const testConfig string = `{
 	"id": "AIflow-tcpudp-trigger",
-	"ref": "github.com/r2d2-ai/aiflow/common/trigger/tcp",
+	"ref": "github.com/r2d2-ai/aiflow/trigger/common/tcp",
 	"settings": {
       "network": "tcp",
 	  "host": "127.0.0.1",

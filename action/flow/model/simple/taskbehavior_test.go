@@ -16,7 +16,7 @@ import (
 )
 
 func init() {
-	_ = activity.LegacyRegister("log", NewLogActivity())
+	// _ = activity.LegacyRegister("log", NewLogActivity())
 }
 
 func TestSortTaskEntries(t *testing.T) {
