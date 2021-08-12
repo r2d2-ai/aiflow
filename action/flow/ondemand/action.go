@@ -19,9 +19,9 @@ import (
 	"github.com/r2d2-ai/aiflow/data/mapper"
 	"github.com/r2d2-ai/aiflow/data/metadata"
 	"github.com/r2d2-ai/aiflow/data/resolve"
-	"github.com/r2d2-ai/aiflow/service"
 	"github.com/r2d2-ai/aiflow/support"
 	"github.com/r2d2-ai/aiflow/support/log"
+	"github.com/r2d2-ai/aiflow/support/service"
 )
 
 const (

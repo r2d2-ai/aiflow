@@ -2,7 +2,7 @@ package test
 
 import (
 	"github.com/r2d2-ai/aiflow/app/resource"
-	"github.com/r2d2-ai/aiflow/service"
+	"github.com/r2d2-ai/aiflow/support/service"
 )
 
 func NewActionInitCtx() *ActionInitCtx {

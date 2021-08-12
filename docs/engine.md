@@ -51,7 +51,7 @@ property.
 ```json
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/aiflow/services/flow-state/client/rest",
+      "ref": "github.com/r2d2-ai/aiflow/support/services/flow-state/client/rest",
       "enabled": true,
       "settings": {
         "host": "192.168.1.50",
@@ -63,7 +63,7 @@ property.
 ```json
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/aiflow/services/flow-state/client/local",
+      "ref": "github.com/r2d2-ai/aiflow/support/services/flow-state/client/local",
       "enabled": true
     }
 ```
@@ -75,7 +75,7 @@ Sample engine runtime configuration file.
 {
   "type": "AIflow:engine",
   "imports": [
-    "github.com/r2d2-ai/aiflow/services/flow-state/client/rest@master",
+    "github.com/r2d2-ai/aiflow/support/services/flow-state/client/rest@master",
     "github.com/r2d2-ai/aiflow/action/stream/service/telemetry@master"
   ],
   "actionSettings": {
@@ -91,7 +91,7 @@ Sample engine runtime configuration file.
     },
     {
       "name": "flowStateRecorder",
-      "ref": "github.com/r2d2-ai/aiflow/services/flow-state/client/rest",
+      "ref": "github.com/r2d2-ai/aiflow/support/services/flow-state/client/rest",
       "enabled": true,
       "settings": {
         "host": "192.168.1.50",
