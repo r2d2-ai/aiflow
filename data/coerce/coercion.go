@@ -52,6 +52,8 @@ func ToType(value interface{}, dataType data.Type) (interface{}, error) {
 		coerced, err = ToArrayIfNecessary(value)
 	case data.TypeConnection:
 		coerced, err = ToConnection(value)
+	case data.TypeImage:
+		coerced, err = ToImage(value)
 	case data.TypeDateTime:
 		coerced, err = ToDateTime(value)
 	case data.TypeUnknown:
