@@ -21,8 +21,8 @@ func TestEval(t *testing.T) {
 	act := &Activity{}
 	tc := test.NewActivityContext(act.Metadata())
 
-	input := &Input{Message: "test message", AddDetails: true}
-	tc.SetInputObject(input)
+	// input := &Input{Message: "test message", AddDetails: true}
+	// tc.SetInputObject(input)
 
 	act.Eval(tc)
 }
@@ -33,8 +33,8 @@ func TestAddToFlow(t *testing.T) {
 	tc := test.NewActivityContext(act.Metadata())
 
 	//setup attrs
-	tc.SetInput("message", "test message")
-	tc.SetInput("addDetails", true)
+	// tc.SetInput("message", "test message")
+	// tc.SetInput("addDetails", true)
 
 	act.Eval(tc)
 }

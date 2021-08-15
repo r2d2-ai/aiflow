@@ -7,24 +7,31 @@
   "display": {
     "icon": "object-detection.svg"
   },
+  "settings": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "The name of the shared attribute"
+    }
+  ],
   "input": [
     {
-      "name": "message",
-      "type": "string",
-      "value": "",
-      "description": "The message to log"
+      "name": "image",
+      "type": "image",
+      "description": "The image to run detection on"
     },
     {
-      "name": "addDetails",
-      "type": "boolean",
-      "value": false,
-      "description": "Append contextual execution information to the log message"
-    },
+      "name": "rois",
+      "type": "array",
+      "description": "Region of interests"
+    }
+  ],
+  "output": [
     {
-      "name": "usePrint",
-      "type": "boolean",
-      "value": false,
-      "description": "Use Print to stdout instead of built-in logger"
+      "name": "objects",
+      "type": "object",
+      "description": "The detected objects"
     }
   ]
 }

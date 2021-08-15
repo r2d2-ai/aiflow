@@ -1,6 +1,9 @@
 package ipcam
 
-import "github.com/r2d2-ai/aiflow/data/coerce"
+import (
+	"github.com/r2d2-ai/aiflow/data/coerce"
+	cv "gocv.io/x/gocv"
+)
 
 type Settings struct {
 }
@@ -16,9 +19,9 @@ type HandlerSettings struct {
 }
 
 type Output struct {
-	Image    interface{} `md:"image"`
-	GroupdId string      `md:"groupId"`
-	CameraId string      `md:"cameraId"`
+	Image    *cv.Mat `md:"image"`
+	GroupdId string  `md:"groupId"`
+	CameraId string  `md:"cameraId"`
 }
 
 func (o *Output) ToMap() map[string]interface{} {
@@ -31,7 +34,10 @@ func (o *Output) ToMap() map[string]interface{} {
 
 func (o *Output) FromMap(values map[string]interface{}) error {
 	var err error
-	o.Image = values["image"]
+	o.Image, err = coerce.ToImage(values["image"])
+	if err != nil {
+		return err
+	}
 
 	o.GroupdId, err = coerce.ToString(values["groupId"])
 	if err != nil {

@@ -9,7 +9,7 @@
   "output": [
     {
       "name": "image",
-      "type": "any",
+      "type": "image",
       "description": "The image received from the IP Camera"
     },
     {

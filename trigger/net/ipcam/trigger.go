@@ -113,6 +113,7 @@ func (camHnd *CameraHandler) run() {
 	var err error
 
 	img := gocv.NewMat()
+	defer img.Close()
 
 	camHnd.logger.Infof("Running IP Cam %v stream", camHnd.id)
 
@@ -120,6 +121,7 @@ func (camHnd *CameraHandler) run() {
 		select {
 		case <-camHnd.shutdown:
 			camHnd.logger.Infof("Stopping IP Cam %v stream", camHnd.id)
+			camHnd.cap.Close()
 			return
 		default:
 			camHnd.cap.Read(&img)

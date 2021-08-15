@@ -7,6 +7,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	cv "gocv.io/x/gocv"
 )
 
 // Type denotes a data type
@@ -38,6 +40,7 @@ const (
 
 	//Special Type
 	TypeConnection
+	TypeImage
 )
 
 var types = [...]string{
@@ -57,6 +60,7 @@ var types = [...]string{
 	"array",
 	"map",
 	"connection",
+	"image",
 }
 
 func (t Type) String() string {
@@ -85,6 +89,7 @@ var names = map[Type]string{
 	TypeArray:      "TypeArray",
 	TypeMap:        "TypeMap",
 	TypeConnection: "TypeConnection",
+	TypeImage:      "TypeImage",
 }
 
 // Name returns the name of the type
@@ -126,6 +131,8 @@ func ToTypeEnum(typeStr string) (Type, error) {
 		return TypeMap, nil
 	case "connection":
 		return TypeConnection, nil
+	case "image":
+		return TypeImage, nil
 	default:
 		return TypeUnknown, errors.New("unknown type: " + typeStr)
 	}
@@ -168,6 +175,8 @@ func GetType(val interface{}) (Type, error) {
 		return TypeBytes, nil
 	case time.Time:
 		return TypeDateTime, nil
+	case cv.Mat:
+		return TypeImage, nil
 	default:
 		return TypeUnknown, fmt.Errorf("unable to determine type of %#v", t)
 	}
@@ -204,6 +213,8 @@ func ToTypeFromGoRep(strType string) Type {
 		dt = TypeParams
 	case "connection.Manager":
 		dt = TypeConnection
+	case "Mat":
+		dt = TypeImage
 	}
 
 	return dt
