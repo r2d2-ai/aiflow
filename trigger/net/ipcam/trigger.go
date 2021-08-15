@@ -82,11 +82,7 @@ func (t *Trigger) Initialize(ctx trigger.InitContext) error {
 func (t *Trigger) Start() error {
 
 	for _, camHdl := range t.cameraHandlers {
-		err := camHdl.startStream()
-		if err != nil {
-			return err
-		}
-		go camHdl.run()
+		go camHdl.startStream()
 	}
 	return nil
 }
@@ -109,6 +105,7 @@ func (camHnd *CameraHandler) startStream() error {
 	camHnd.cap = cap
 	camHnd.shutdown = make(chan bool)
 	camHnd.id = id
+	go camHnd.run()
 	return nil
 }
 

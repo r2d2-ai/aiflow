@@ -1,11 +1,11 @@
 {
-  "name": "AIflow-log",
+  "name": "AIflow-object-detection",
   "type": "AIflow:activity",
   "version": "1.0.0",
-  "title": "Log",
-  "description": "Logs a message",
+  "title": "Object detection",
+  "description": "Object detection",
   "display": {
-    "icon": "log-icon.svg"
+    "icon": "object-detection.svg"
   },
   "input": [
     {
