@@ -1,6 +1,8 @@
 package log
 
 import (
+	"image"
+
 	"github.com/r2d2-ai/aiflow/activity"
 	"github.com/r2d2-ai/aiflow/data/coerce"
 	cv "gocv.io/x/gocv"
@@ -55,19 +57,17 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
 	input := &Input{}
 	ctx.GetInputObject(input)
-	ctx.Logger().Infof("Image with size %s", input.Image.Size())
-	// msg := input.Message
-
-	// if input.AddDetails {
-	// 	msg = fmt.Sprintf("'%s' - HostID [%s], HostName [%s], Activity [%s]", msg,
-	// 		ctx.ActivityHost().ID(), ctx.ActivityHost().Name(), ctx.Name())
-	// }
-
-	// if input.UsePrint {
-	// 	fmt.Println(msg)
-	// } else {
-	// 	ctx.Logger().Info(msg)
-	// }
+	if input.Image == nil {
+		//no image nothing to do
+		return true, nil
+	}
+	img := *input.Image
+	ratio := 1.0 / 127.5
+	mean := cv.NewScalar(127.5, 127.5, 127.5, 0)
+	swapRGB := true
+	blob := cv.BlobFromImage(img, ratio, image.Pt(300, 300), mean, swapRGB, false)
+	blob.Close()
+	// ctx.Logger().Infof("Image with size %s", input.Image.Size())
 
 	return true, nil
 }
