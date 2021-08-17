@@ -9,10 +9,10 @@
   },
   "settings": [
     {
-      "name": "name",
+      "name": "model",
       "type": "string",
       "required": true,
-      "description": "The name of the shared attribute"
+      "description": "The model"
     }
   ],
   "input": [

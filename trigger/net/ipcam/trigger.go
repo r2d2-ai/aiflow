@@ -116,8 +116,9 @@ func (camHnd *CameraHandler) run() {
 	defer img.Close()
 
 	camHnd.logger.Infof("Running IP Cam %v stream", camHnd.id)
-
+	//var times []int64
 	for {
+		//t_start := time.Now()
 		select {
 		case <-camHnd.shutdown:
 			camHnd.logger.Infof("Stopping IP Cam %v stream", camHnd.id)
@@ -132,7 +133,17 @@ func (camHnd *CameraHandler) run() {
 		output.CameraId = camHnd.settings.CameraId
 		output.GroupdId = camHnd.settings.GroupId
 		_, err = camHnd.handler.Handle(context.Background(), output)
-
+		//t_duration := time.Since(t_start).Milliseconds()
+		//times = append(times, t_duration)
+		// if len(times) == 100 {
+		// 	var sum int64 = 0
+		// 	for _, t := range times {
+		// 		sum += t
+		// 	}
+		// 	mean := float64(sum) / float64(len(times))
+		// 	camHnd.logger.Infof("Average time %d", mean)
+		// 	times = times[75:]
+		// }
 		if err != nil {
 			camHnd.logger.Errorf("Failed to handle frame for IP Cam %v ", camHnd.id)
 		}

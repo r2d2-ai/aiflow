@@ -8,7 +8,8 @@ import (
 	"strings"
 	"time"
 
-	cv "gocv.io/x/gocv"
+	vision_types "github.com/r2d2-ai/aiflow/data/vision_types"
+	gocv "gocv.io/x/gocv"
 )
 
 // Type denotes a data type
@@ -40,7 +41,13 @@ const (
 
 	//Special Type
 	TypeConnection
+
+	//Vision
 	TypeImage
+	TypePoint
+	TypePoints
+	TypeROI
+	TypeROIs
 )
 
 var types = [...]string{
@@ -61,6 +68,10 @@ var types = [...]string{
 	"map",
 	"connection",
 	"image",
+	"point",
+	"points",
+	"roi",
+	"rois",
 }
 
 func (t Type) String() string {
@@ -90,6 +101,10 @@ var names = map[Type]string{
 	TypeMap:        "TypeMap",
 	TypeConnection: "TypeConnection",
 	TypeImage:      "TypeImage",
+	TypePoint:      "TypePoint",
+	TypePoints:     "TypePints",
+	TypeROI:        "TypeROI",
+	TypeROIs:       "TypeROIs",
 }
 
 // Name returns the name of the type
@@ -133,6 +148,14 @@ func ToTypeEnum(typeStr string) (Type, error) {
 		return TypeConnection, nil
 	case "image":
 		return TypeImage, nil
+	case "point":
+		return TypePoint, nil
+	case "points":
+		return TypePoints, nil
+	case "roi":
+		return TypeROI, nil
+	case "rois":
+		return TypeROIs, nil
 	default:
 		return TypeUnknown, errors.New("unknown type: " + typeStr)
 	}
@@ -175,8 +198,16 @@ func GetType(val interface{}) (Type, error) {
 		return TypeBytes, nil
 	case time.Time:
 		return TypeDateTime, nil
-	case cv.Mat:
+	case gocv.Mat:
 		return TypeImage, nil
+	case gocv.Point2f:
+		return TypePoint, nil
+	case gocv.Point2fVector:
+		return TypePoints, nil
+	case vision_types.ROI:
+		return TypeROI, nil
+	case []vision_types.ROI:
+		return TypeROIs, nil
 	default:
 		return TypeUnknown, fmt.Errorf("unable to determine type of %#v", t)
 	}
@@ -213,8 +244,16 @@ func ToTypeFromGoRep(strType string) Type {
 		dt = TypeParams
 	case "connection.Manager":
 		dt = TypeConnection
-	case "Mat":
+	case "gocv.Mat":
 		dt = TypeImage
+	case "gocv.Point2f":
+		dt = TypePoint
+	case "gocv.Point2fVector":
+		dt = TypePoints
+	case "vision_types.ROI":
+		dt = TypeROI
+	case "vision_types.ROIs":
+		dt = TypeROIs
 	}
 
 	return dt
