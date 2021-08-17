@@ -1,5 +1,5 @@
 {
-  "name": "AIflow-object-detection",
+  "name": "AIflow-detection",
   "type": "AIflow:activity",
   "version": "1.0.0",
   "title": "Object detection",
@@ -25,13 +25,23 @@
       "name": "rois",
       "type": "array",
       "description": "Region of interests"
+    },
+    {
+      "name": "cameraId",
+      "type": "string",
+      "description": "The camera identifier"
+    },
+    {
+      "name": "groupId",
+      "type": "string",
+      "description": "The camera group identifier"
     }
   ],
   "output": [
     {
-      "name": "objects",
+      "name": "results",
       "type": "object",
-      "description": "The detected objects"
+      "description": "The detected results"
     }
   ]
 }

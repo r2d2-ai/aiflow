@@ -1,4 +1,4 @@
-package log
+package detection
 
 import (
 	"image"
@@ -13,14 +13,18 @@ func init() {
 }
 
 type Input struct {
-	Image *cv.Mat       `md:"image"` // The message to log
-	ROIs  []interface{} `md:"rois"`
+	Image    *cv.Mat       `md:"image"` // The message to log
+	ROIs     []interface{} `md:"rois"`
+	GroupdId string        `md:"groupId"`
+	CameraId string        `md:"cameraId"`
 }
 
 func (i *Input) ToMap() map[string]interface{} {
 	return map[string]interface{}{
-		"image": i.Image,
-		"rois":  i.ROIs,
+		"image":    i.Image,
+		"rois":     i.ROIs,
+		"groupId":  i.GroupdId,
+		"cameraId": i.CameraId,
 	}
 }
 
@@ -36,6 +40,17 @@ func (i *Input) FromMap(values map[string]interface{}) error {
 	if err != nil {
 		return err
 	}
+
+	i.GroupdId, err = coerce.ToString(values["groupId"])
+	if err != nil {
+		return err
+	}
+
+	i.CameraId, err = coerce.ToString(values["cameraId"])
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
 
@@ -61,13 +76,14 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 		//no image nothing to do
 		return true, nil
 	}
+
 	img := *input.Image
 	ratio := 1.0 / 127.5
 	mean := cv.NewScalar(127.5, 127.5, 127.5, 0)
 	swapRGB := true
 	blob := cv.BlobFromImage(img, ratio, image.Pt(300, 300), mean, swapRGB, false)
 	blob.Close()
-	// ctx.Logger().Infof("Image with size %s", input.Image.Size())
+	ctx.Logger().Infof("Image from %s - %s", input.GroupdId, input.CameraId)
 
 	return true, nil
 }

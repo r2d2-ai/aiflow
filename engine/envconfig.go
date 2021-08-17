@@ -23,10 +23,10 @@ const (
 	EnvKeyRunnerType         = "AIFLOW_RUNNER_TYPE"
 	DefaultRunnerType        = ValueRunnerTypePooled
 	EnvKeyPooledWorkers      = "AIFLOW_POOLED_WORKERS"
-	DefaultPooledWorkers     = 5
+	DefaultPooledWorkers     = 1
 
 	EnvKeyPooledQueueSize  = "AIFLOW_POOLED_QUEUE_SIZE"
-	DefaultPooledQueueSize = 50
+	DefaultPooledQueueSize = 2
 
 	EnvAppPropertyResolvers   = "AIFLOW_APP_PROP_RESOLVERS"
 	EnvEnableSchemaSupport    = "AIFLOW_SCHEMA_SUPPORT"

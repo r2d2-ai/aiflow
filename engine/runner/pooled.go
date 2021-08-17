@@ -65,6 +65,8 @@ func (runner *PooledRunner) Start() error {
 		go func() {
 			for {
 				select {
+				default:
+					continue
 				case work := <-runner.workQueue:
 					logger.Debug("Received work request")
 
@@ -75,6 +77,7 @@ func (runner *PooledRunner) Start() error {
 						logger.Debug("Dispatching work request")
 						worker <- work
 					}()
+
 				}
 			}
 		}()
