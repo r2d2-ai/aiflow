@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"image"
 	"strconv"
 	"strings"
 	"time"
@@ -200,9 +201,9 @@ func GetType(val interface{}) (Type, error) {
 		return TypeDateTime, nil
 	case gocv.Mat:
 		return TypeImage, nil
-	case gocv.Point2f:
+	case image.Point:
 		return TypePoint, nil
-	case gocv.Point2fVector:
+	case []image.Point:
 		return TypePoints, nil
 	case vision_types.ROI:
 		return TypeROI, nil
@@ -246,9 +247,9 @@ func ToTypeFromGoRep(strType string) Type {
 		dt = TypeConnection
 	case "gocv.Mat":
 		dt = TypeImage
-	case "gocv.Point2f":
+	case "image.Point":
 		dt = TypePoint
-	case "gocv.Point2fVector":
+	case "[]image.Point":
 		dt = TypePoints
 	case "vision_types.ROI":
 		dt = TypeROI

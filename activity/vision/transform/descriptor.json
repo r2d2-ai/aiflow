@@ -1,0 +1,32 @@
+{
+  "name": "AIflow-transform",
+  "type": "AIflow:activity",
+  "version": "1.0.0",
+  "title": "Image transform",
+  "description": "Image transform",
+  "display": {
+    "icon": "transform.svg"
+  },
+  "settings": [
+    {
+      "name": "model",
+      "type": "string",
+      "required": true,
+      "description": "The model"
+    }
+  ],
+  "input": [
+    {
+      "name": "image",
+      "type": "image",
+      "description": "The image to run detection on"
+    }
+  ],
+  "output": [
+    {
+      "name": "image",
+      "type": "image",
+      "description": "The output image"
+    }
+  ]
+}

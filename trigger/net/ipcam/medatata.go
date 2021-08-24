@@ -19,9 +19,9 @@ type HandlerSettings struct {
 }
 
 type Output struct {
-	Image    *gocv.Mat `md:"image"`
-	GroupdId string    `md:"groupId"`
-	CameraId string    `md:"cameraId"`
+	Image    gocv.Mat `md:"image"`
+	GroupdId string   `md:"groupId"`
+	CameraId string   `md:"cameraId"`
 }
 
 func (o *Output) ToMap() map[string]interface{} {

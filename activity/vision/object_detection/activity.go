@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	_ = activity.Register(&Activity{})
+	_ = activity.Register(&Activity{}, New)
 }
 
 var activityMd = activity.ToMetadata(&Settings{}, &Input{}, &Output{})
@@ -42,12 +42,18 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
 	input := &Input{}
 	ctx.GetInputObject(input)
-	if input.Image == nil {
-		//no image nothing to do
-		return true, nil
+	// if input.Image == nil {
+	// 	//no image nothing to do
+	// 	return true, nil
+	// }
+
+	img := input.Image
+
+	if img.Empty() {
+		//TODO error handling
+		return false, nil
 	}
 
-	img := *input.Image
 	ratio := 1.0 / 127.5
 	mean := gocv.NewScalar(127.5, 127.5, 127.5, 0)
 	swapRGB := true

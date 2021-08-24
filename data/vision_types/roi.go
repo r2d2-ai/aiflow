@@ -1,11 +1,11 @@
 package vision_types
 
 import (
-	gocv "gocv.io/x/gocv"
+	"image"
 )
 
 type ROI struct {
-	Name   string          `json:"name,omitempty"`
-	Points *[]gocv.Point2f `json:"points"`
-	Type   string          `json:"type"`
+	Name   string        `json:"name,omitempty"`
+	Points []image.Point `json:"points"`
+	Type   string        `json:"type"`
 }

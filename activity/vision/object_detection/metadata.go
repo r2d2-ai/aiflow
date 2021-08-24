@@ -11,10 +11,10 @@ type Settings struct {
 }
 
 type Input struct {
-	Image    *gocv.Mat           `md:"image"`
-	ROIs     *[]vision_types.ROI `md:"rois"`
-	GroupdId string              `md:"groupId"`
-	CameraId string              `md:"cameraId"`
+	Image    gocv.Mat           `md:"image"`
+	ROIs     []vision_types.ROI `md:"rois"`
+	GroupdId string             `md:"groupId"`
+	CameraId string             `md:"cameraId"`
 }
 
 func (i *Input) ToMap() map[string]interface{} {

@@ -128,8 +128,13 @@ func (camHnd *CameraHandler) run() {
 			camHnd.cap.Read(&img)
 		}
 
+		if img.Empty() {
+			//TODO error handling
+			continue
+		}
+
 		output := &Output{}
-		output.Image = &img //send pointer
+		output.Image = img
 		output.CameraId = camHnd.settings.CameraId
 		output.GroupdId = camHnd.settings.GroupId
 		_, err = camHnd.handler.Handle(context.Background(), output)
