@@ -49,6 +49,12 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
 	img := input.Image
 
+	ctx.SetOutput("results", map[string]interface{}{
+		"groupId":    input.GroupdId,
+		"camId":      input.CameraId,
+		"detections": nil,
+	})
+
 	if img.Empty() {
 		//TODO error handling
 		return false, nil
@@ -59,7 +65,7 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 	swapRGB := true
 	blob := gocv.BlobFromImage(img, ratio, image.Pt(300, 300), mean, swapRGB, false)
 	blob.Close()
-	//ctx.Logger().Infof("Image from %s - %s", input.GroupdId, input.CameraId)
 
+	//ctx.Logger().Infof("Image from %s - %s", input.GroupdId, input.CameraId)
 	return true, nil
 }
